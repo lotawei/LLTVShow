@@ -48,9 +48,11 @@ class LLUser: NSObject ,NSCoding{
 }
 //扩展一个归档
 extension   LLUser{
+    //    存储用户信息
     func  saveuser() ->  Bool{
         return  NSKeyedArchiver.archiveRootObject(self, toFile:userAccountPath)
     }
+    
 }
 
 
