@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4WX-di-amH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的视频-->
+        <scene sceneID="FoB-OB-Egw">
+            <objects>
+                <viewController id="Azx-Cg-An5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WgZ-Jd-YTA"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6N-iw-q2p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kmD-9p-HBW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的视频" image="MyAcount_normal" selectedImage="MyAcount_select" id="pdB-6x-rZR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Tq-i8-D3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-45"/>
+        </scene>
+        <!--直播电视-->
+        <scene sceneID="jvX-AR-A8a">
+            <objects>
+                <viewController id="C1B-Hi-YnS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jU4-Fy-L0t"/>
+                        <viewControllerLayoutGuide type="bottom" id="hva-g9-y2E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AvE-dJ-HrW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="直播电视" image="Mytv_normal.png" selectedImage="Mytv_select.png" id="eJm-ir-dvG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyf-8P-3MW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-700"/>
+        </scene>
+        <!--Tabbar Controller-->
+        <scene sceneID="WXn-26-7hd">
+            <objects>
+                <tabBarController id="4WX-di-amH" customClass="LLTabbarController" customModule="LLTVShow" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="y6H-4Z-L3K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabbar" destination="y6H-4Z-L3K" id="QBv-ad-3j8"/>
+                        <segue destination="C1B-Hi-YnS" kind="relationship" relationship="viewControllers" id="pOp-En-DyQ"/>
+                        <segue destination="Azx-Cg-An5" kind="relationship" relationship="viewControllers" id="DDa-aw-vhw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxG-Sg-2yy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1402" y="-873"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MyAcount_normal" width="40" height="40"/>
+        <image name="MyAcount_select" width="38" height="38"/>
+        <image name="Mytv_normal.png" width="52" height="42"/>
+        <image name="Mytv_select.png" width="52" height="42"/>
+    </resources>
+</document>
