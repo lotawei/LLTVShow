@@ -15,6 +15,7 @@ enum Usertype:Int {
 enum   Substyle:Int {
     case normal,dark, eyeprotect //正常,黑夜,护眼
 }
+
 class LLUser: NSObject ,NSCoding{
     //昵称
     var   name:String!
@@ -45,6 +46,17 @@ class LLUser: NSObject ,NSCoding{
         usertype = Usertype(rawValue: Int(aDecoder.decodeInt32(forKey: "usertype")))
         substyle = Substyle(rawValue: Int(aDecoder.decodeInt32(forKey: "substyle")))
     }
+    
+  init( _ name:String,_ psd:String,_ islogin:Bool,_ usertype:Usertype,_ portrait:String, _ substyle:Substyle) {
+        
+        self.name = name
+        self.psd = psd
+        self.islogin = islogin
+        self.usertype = usertype
+        self.portrait = portrait
+        self.substyle = substyle
+    }
+    
 }
 //扩展一个归档
 extension   LLUser{

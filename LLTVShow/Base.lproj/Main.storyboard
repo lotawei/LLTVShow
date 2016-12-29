@@ -31,7 +31,7 @@
         <!--直播电视-->
         <scene sceneID="jvX-AR-A8a">
             <objects>
-                <viewController id="C1B-Hi-YnS" sceneMemberID="viewController">
+                <viewController id="C1B-Hi-YnS" customClass="BaseViewController" customModule="LLTVShow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jU4-Fy-L0t"/>
                         <viewControllerLayoutGuide type="bottom" id="hva-g9-y2E"/>

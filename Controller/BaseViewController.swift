@@ -14,6 +14,21 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = normalcolor
 
+        
+        
+        print(userAccountPath)
+        let   llusr = LLUser("lw", "123", true, .admin, "beauty", .eyeprotect)
+        
+        
+        if  llusr.saveuser(){
+            print("true")
+        }
+        print(LLCurrentUser.shareuser().user)
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 

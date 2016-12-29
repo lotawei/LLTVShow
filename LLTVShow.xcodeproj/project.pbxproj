@@ -53,7 +53,6 @@
 		ED3DB51E1DEA8C490030B3BC = {
 			isa = PBXGroup;
 			children = (
-				EDC395941DFED926000EC348 /* 三方库 */,
 				ED3DB5481DEA8C890030B3BC /* 工具 */,
 				ED3DB5491DEA8C890030B3BC /* 扩展 */,
 				ED3DB54A1DEA8C890030B3BC /* 全局 */,
@@ -150,13 +149,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		EDC395941DFED926000EC348 /* 三方库 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "三方库";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
