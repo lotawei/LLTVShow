@@ -33,15 +33,18 @@ class LLUser: NSObject ,NSCoding{
         aCoder.encode(name, forKey:"name")
         aCoder.encode(psd, forKey:"psd")
         aCoder.encode(islogin, forKey: "login")
-        aCoder.encode(usertype, forKey: "usertype")
+        aCoder.encode(usertype.rawValue, forKey: "usertype")
         aCoder.encode(portrait, forKey: "portrait")
-        aCoder.encode(substyle, forKey: "substyle")
+        aCoder.encode(substyle.rawValue, forKey: "substyle")
    }
+    
+    
+    
     required  init?(coder aDecoder: NSCoder) {
         super.init()
         name =  aDecoder.decodeObject(forKey: "name") as!  String
         psd = aDecoder.decodeObject(forKey: "psd") as! String
-        islogin = aDecoder.decodeBool(forKey: "login")
+        islogin = aDecoder.decodeObject(forKey: "login") as! Bool!
         portrait = aDecoder.decodeObject(forKey: "portrait") as! String
         usertype = Usertype(rawValue: Int(aDecoder.decodeInt32(forKey: "usertype")))
         substyle = Substyle(rawValue: Int(aDecoder.decodeInt32(forKey: "substyle")))

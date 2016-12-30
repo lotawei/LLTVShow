@@ -23,7 +23,7 @@ class BaseViewController: UIViewController {
         if  llusr.saveuser(){
             print("true")
         }
-        print(LLCurrentUser.shareuser().user)
+        
         
         
         
