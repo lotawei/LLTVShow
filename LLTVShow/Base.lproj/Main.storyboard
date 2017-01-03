@@ -57,7 +57,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <outlet property="tabbar" destination="y6H-4Z-L3K" id="QBv-ad-3j8"/>
                         <segue destination="C1B-Hi-YnS" kind="relationship" relationship="viewControllers" id="pOp-En-DyQ"/>
                         <segue destination="Azx-Cg-An5" kind="relationship" relationship="viewControllers" id="DDa-aw-vhw"/>
                     </connections>

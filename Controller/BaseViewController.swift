@@ -16,16 +16,6 @@ class BaseViewController: UIViewController {
 
         
         
-        print(userAccountPath)
-        let   llusr = LLUser("lw", "123", true, .admin, "beauty", .eyeprotect)
-        
-        
-        if  llusr.saveuser(){
-            print("true")
-        }
-        
-        
-        
         
         
         
