@@ -19,7 +19,7 @@
 		ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */; };
-		EDC395971DFEDA8C000EC348 /* LLTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC395961DFEDA8C000EC348 /* LLTabbarController.swift */; };
+		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewextension.swift; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAnimationTabBarController.swift; sourceTree = "<group>"; };
-		EDC395961DFEDA8C000EC348 /* LLTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTabbarController.swift; sourceTree = "<group>"; };
+		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,6 @@
 				ED3DB52C1DEA8C490030B3BC /* LoginViewController.swift */,
 				ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */,
 				ED3DB5581DEA8DCD0030B3BC /* BaseNaVgationController.swift */,
-				EDC395961DFEDA8C000EC348 /* LLTabbarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */,
+				EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */,
 			);
 			path = "控制器动画";
 			sourceTree = "<group>";
@@ -239,11 +239,11 @@
 				ED3DB55B1DEA935F0030B3BC /* LLUser.swift in Sources */,
 				ED3DB52D1DEA8C490030B3BC /* LoginViewController.swift in Sources */,
 				ED3DB5591DEA8DCD0030B3BC /* BaseNaVgationController.swift in Sources */,
-				EDC395971DFEDA8C000EC348 /* LLTabbarController.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
 				ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
+				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
 			);

@@ -6,6 +6,8 @@
 //  Copyright © 2017年 lotawei. All rights reserved.
 //
 
+
+//  提供控制条动画效果
 import UIKit
 //动画协议 用于tabbar动画
 //------------------------------------------------------------------------------------------------
@@ -344,6 +346,142 @@ class RAMRightRotationAnimation : RAMRotationAnimation {
 //自定义tababrcontroller
 class LLAnimationTabBarController: UITabBarController {
 
+    var iconsView: [(icon: UIImageView, textLabel: UILabel)] = []
+    var iconsImageName:[String] = ["MyAcount_normal", "Mytv_normal"]
+    var iconsSelectedImageName:[String] = ["MyAcount_select", "Mytv_select"]
+    var shopCarIcon: UIImageView?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      
+    }
+    
   
+    
+   
+    
+    func createViewContainers() -> [String: UIView] {
+        var containersDict = [String: UIView]()
+        
+        guard let customItems = tabBar.items as? [RAMAnimatedTabBarItem] else
+        {
+            return containersDict
+        }
+        
+        for index in 0..<customItems.count {
+            let viewContainer = createViewContainer(index)
+            containersDict["container\(index)"] = viewContainer
+        }
+        
+        return containersDict
+    }
+    
+    func createViewContainer(_ index: Int) -> UIView {
+        
+        let viewWidth: CGFloat = ScreenWidth / CGFloat(tabBar.items!.count)
+        let viewHeight: CGFloat = tabBar.bounds.size.height
+        
+        let viewContainer = UIView(frame: CGRect(x: viewWidth * CGFloat(index), y: 0, width: viewWidth, height: viewHeight))
+        
+        viewContainer.backgroundColor = UIColor.clear
+        viewContainer.isUserInteractionEnabled = true
+        
+        tabBar.addSubview(viewContainer)
+        viewContainer.tag = index
+        
+        
+        
+        return viewContainer
+    }
+    
+    
+    
+    func createCustomIcons(_ containers : [String: UIView]) {
+        if let items = tabBar.items {
+            
+            for (index, item) in items.enumerated() {
+                
+                assert(item.image != nil, "add image icon in UITabBarItem")
+                
+                guard let container = containers["container\(index)"] else
+                {
+                    print("No container given")
+                    continue
+                }
+                
+                container.tag = index
+                
+                let imageW:CGFloat = 21
+                let imageX:CGFloat = (ScreenWidth / CGFloat(items.count) - imageW) * 0.5
+                let imageY:CGFloat = 8
+                let imageH:CGFloat = 21
+                let icon = UIImageView(frame: CGRect(x: imageX, y: imageY, width: imageW, height: imageH))
+                icon.image = item.image
+                icon.tintColor = UIColor.clear
+                
+                
+                // text
+                let textLabel = UILabel()
+                textLabel.frame = CGRect(x: 0, y: 32, width: ScreenWidth / CGFloat(items.count), height: 49 - 32)
+                textLabel.text = item.title
+                textLabel.backgroundColor = UIColor.clear
+                textLabel.font = UIFont.systemFont(ofSize: 10)
+                textLabel.textAlignment = NSTextAlignment.center
+                textLabel.textColor = UIColor.gray
+                textLabel.translatesAutoresizingMaskIntoConstraints = false
+                container.addSubview(icon)
+                container.addSubview(textLabel)
+                
+                
+                if let tabBarItem = tabBar.items {
+                    let textLabelWidth = tabBar.frame.size.width / CGFloat(tabBarItem.count)
+                    textLabel.bounds.size.width = textLabelWidth
+                }
+             
+                
+                let iconsAndLabels = (icon:icon, textLabel:textLabel)
+                iconsView.append(iconsAndLabels)
+                
+                
+                item.image = nil
+                item.title = ""
+                
+                if index == 0 {
+                    selectedIndex = 0
+                    selectItem(0)
+                }
+            }
+        }
+    }
+    
+    
+    //代理    bar
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+        setSelectIndex(from: selectedIndex, to: item.tag)
+    }
+    
+    func selectItem(_ Index: Int) {
+        let items = tabBar.items as! [RAMAnimatedTabBarItem]
+        let selectIcon = iconsView[Index].icon
+        selectIcon.image = UIImage(named: iconsSelectedImageName[Index])!
+        items[Index].selectedState(selectIcon, textLabel: iconsView[Index].textLabel)
+    }
+    
+    func setSelectIndex(from: Int,to: Int) {
+        
+        
+        selectedIndex = to
+        let items = tabBar.items as! [RAMAnimatedTabBarItem]
+        
+        let fromIV = iconsView[from].icon
+        fromIV.image = UIImage(named: iconsImageName[from])
+        items[from].deselectAnimation(fromIV, textLabel: iconsView[from].textLabel)
+        
+        let toIV = iconsView[to].icon
+        toIV.image = UIImage(named: iconsSelectedImageName[to])
+        items[to].playAnimation(toIV, textLabel: iconsView[to].textLabel)
+    }
+
 
 }

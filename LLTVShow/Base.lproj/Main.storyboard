@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="-300" y="-700"/>
         </scene>
-        <!--Tabbar Controller-->
+        <!--Main Tabar Controller-->
         <scene sceneID="WXn-26-7hd">
             <objects>
-                <tabBarController id="4WX-di-amH" customClass="LLTabbarController" customModule="LLTVShow" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="4WX-di-amH" customClass="LLMainTabarController" customModule="LLTVShow" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="y6H-4Z-L3K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -63,7 +63,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxG-Sg-2yy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1402" y="-873"/>
+            <point key="canvasLocation" x="-1671" y="-1155"/>
         </scene>
     </scenes>
     <resources>
