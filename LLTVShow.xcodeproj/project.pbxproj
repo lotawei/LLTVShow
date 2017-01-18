@@ -9,15 +9,24 @@
 /* Begin PBXBuildFile section */
 		ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED266E8E1DF9941F0083E31F /* Images.xcassets */; };
 		ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB52A1DEA8C490030B3BC /* AppDelegate.swift */; };
-		ED3DB52D1DEA8C490030B3BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB52C1DEA8C490030B3BC /* LoginViewController.swift */; };
 		ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3DB52E1DEA8C490030B3BC /* Main.storyboard */; };
 		ED3DB5351DEA8C490030B3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3DB5331DEA8C490030B3BC /* LaunchScreen.storyboard */; };
 		ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB5541DEA8D410030B3BC /* GlobalConfig.swift */; };
 		ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */; };
-		ED3DB5591DEA8DCD0030B3BC /* BaseNaVgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB5581DEA8DCD0030B3BC /* BaseNaVgationController.swift */; };
-		ED3DB55B1DEA935F0030B3BC /* LLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB55A1DEA935F0030B3BC /* LLUser.swift */; };
 		ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
+		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
+		ED59FB521E2EFF8100216063 /* LLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB501E2EFF8100216063 /* LLLoginViewController.xib */; };
+		ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB531E2EFFA800216063 /* String+extension.swift */; };
+		ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */; };
+		ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB551E2EFFA800216063 /* UIColor+extension.swift */; };
+		ED59FB5B1E2EFFA800216063 /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB561E2EFFA800216063 /* UIDevice+extension.swift */; };
+		ED59FB5C1E2EFFA800216063 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB571E2EFFA800216063 /* UIImage+extension.swift */; };
+		ED59FB5E1E2EFFC900216063 /* LLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB5D1E2EFFC900216063 /* LLUser.swift */; };
+		ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB5F1E2EFFD600216063 /* UIButton+extension.swift */; };
+		ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */; };
+		ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB631E2F036B00216063 /* LLLoginView.swift */; };
+		ED59FB661E2F037F00216063 /* LLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB651E2F037F00216063 /* LLLoginView.xib */; };
 		EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */; };
 		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 /* End PBXBuildFile section */
@@ -26,17 +35,26 @@
 		ED266E8E1DF9941F0083E31F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED3DB5271DEA8C490030B3BC /* LLTVShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLTVShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3DB52A1DEA8C490030B3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../LLTVShow/AppDelegate.swift; sourceTree = "<group>"; };
-		ED3DB52C1DEA8C490030B3BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LLTVShow/LoginViewController.swift; sourceTree = "<group>"; };
 		ED3DB52F1DEA8C490030B3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED3DB5341DEA8C490030B3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED3DB5361DEA8C490030B3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3DB5501DEA8D060030B3BC /* LLTVShow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLTVShow-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		ED3DB5541DEA8D410030B3BC /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		ED3DB5581DEA8DCD0030B3BC /* BaseNaVgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaVgationController.swift; sourceTree = "<group>"; };
-		ED3DB55A1DEA935F0030B3BC /* LLUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLUser.swift; sourceTree = "<group>"; };
 		ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewextension.swift; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
+		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
+		ED59FB501E2EFF8100216063 /* LLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLLoginViewController.xib; sourceTree = "<group>"; };
+		ED59FB531E2EFFA800216063 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
+		ED59FB551E2EFFA800216063 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		ED59FB561E2EFFA800216063 /* UIDevice+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		ED59FB571E2EFFA800216063 /* UIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		ED59FB5D1E2EFFC900216063 /* LLUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLUser.swift; sourceTree = "<group>"; };
+		ED59FB5F1E2EFFD600216063 /* UIButton+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
+		ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaVgationController.swift; sourceTree = "<group>"; };
+		ED59FB631E2F036B00216063 /* LLLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginView.swift; sourceTree = "<group>"; };
+		ED59FB651E2F037F00216063 /* LLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLLoginView.xib; sourceTree = "<group>"; };
 		EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAnimationTabBarController.swift; sourceTree = "<group>"; };
 		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +117,13 @@
 		ED3DB5491DEA8C890030B3BC /* 扩展 */ = {
 			isa = PBXGroup;
 			children = (
+				ED59FB5F1E2EFFD600216063 /* UIButton+extension.swift */,
 				ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */,
+				ED59FB531E2EFFA800216063 /* String+extension.swift */,
+				ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */,
+				ED59FB551E2EFFA800216063 /* UIColor+extension.swift */,
+				ED59FB561E2EFFA800216063 /* UIDevice+extension.swift */,
+				ED59FB571E2EFFA800216063 /* UIImage+extension.swift */,
 			);
 			path = "扩展";
 			sourceTree = "<group>";
@@ -124,9 +148,10 @@
 		ED3DB54C1DEA8C890030B3BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ED3DB52C1DEA8C490030B3BC /* LoginViewController.swift */,
+				ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */,
+				ED59FB501E2EFF8100216063 /* LLLoginViewController.xib */,
+				ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */,
 				ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */,
-				ED3DB5581DEA8DCD0030B3BC /* BaseNaVgationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,7 +159,7 @@
 		ED3DB54D1DEA8C890030B3BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ED3DB55A1DEA935F0030B3BC /* LLUser.swift */,
+				ED59FB5D1E2EFFC900216063 /* LLUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +174,8 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
+				ED59FB651E2F037F00216063 /* LLLoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +252,8 @@
 			files = (
 				ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */,
 				ED3DB5351DEA8C490030B3BC /* LaunchScreen.storyboard in Resources */,
+				ED59FB661E2F037F00216063 /* LLLoginView.xib in Resources */,
+				ED59FB521E2EFF8100216063 /* LLLoginViewController.xib in Resources */,
 				ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,15 +265,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3DB55B1DEA935F0030B3BC /* LLUser.swift in Sources */,
-				ED3DB52D1DEA8C490030B3BC /* LoginViewController.swift in Sources */,
-				ED3DB5591DEA8DCD0030B3BC /* BaseNaVgationController.swift in Sources */,
+				ED59FB5C1E2EFFA800216063 /* UIImage+extension.swift in Sources */,
+				ED59FB5B1E2EFFA800216063 /* UIDevice+extension.swift in Sources */,
+				ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */,
+				ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */,
+				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
+				ED59FB5E1E2EFFC900216063 /* LLUser.swift in Sources */,
+				ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
+				ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */,
 				ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */,
+				ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
 				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
+				ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */,
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,17 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
+     
+        UIApplication.shared.statusBarStyle = .lightContent
+ 
+       
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)
         window = UIWindow.init(frame: winfr)
-        
-        window?.rootViewController = LLMainTabarController()
-        
-        
-        
-        
-        
+        //1.进入程序首先判断是否有用户的信息
+        if (LLCurrentUser.currentuser.user == nil) {
+            let    rootnav = BaseNaVgationController()
+            rootnav.pushViewController(LLLoginViewController(), animated: true)
+            window?.rootViewController = rootnav
+        }
+        else{
+            window?.rootViewController = LLMainTabarController()
+        }
         window?.makeKeyAndVisible()
+        
         
         // Override point for customization after application launch.
         return true

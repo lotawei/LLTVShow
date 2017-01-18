@@ -7,19 +7,13 @@
 //
 import UIKit
 class LLCurrentUser: NSObject {
-       static  var   currentuser:LLCurrentUser!
-  
-       var    user:LLUser!
-       class   func    shareuser() -> LLCurrentUser{
-        if   currentuser == nil{
-            currentuser = LLCurrentUser()
-//             NSKeyedArchiver.archiveRootObject(userModel!, toFile:userAccountPath) //guidang
-            //解档  先拿用户
-            if NSKeyedUnarchiver.unarchiveObject(withFile:userAccountPath) != nil {
-                currentuser.user = NSKeyedUnarchiver.unarchiveObject(withFile:userAccountPath) as?  LLUser
-            }
-            return   currentuser
+    static  var   currentuser:LLCurrentUser  = LLCurrentUser()
+    var    user:LLUser!
+    override init() {
+        if NSKeyedUnarchiver.unarchiveObject(withFile:userAccountPath) != nil {
+            self.user = NSKeyedUnarchiver.unarchiveObject(withFile:userAccountPath) as?  LLUser
         }
-        return  currentuser
     }
+    
 }
+

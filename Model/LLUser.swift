@@ -7,29 +7,20 @@
 //
 import UIKit
 
+// 为其扩展一个 颜色基调类
 extension   Substyle{
-    
     func substylecolor() -> UIColor {
         switch self.rawValue {
         case 0:
             return  normalcolor
         case 1:
             return   darkcolor
-            
         case 2:
             return   eyecolor
-            
-            
         default:
-            
             return  normalcolor
         }
-        
-        
-        
-        
     }
-    
 }
 //分为普通用户,vip ,管理员(管理员用于接受反馈信息)
 enum Usertype:Int {

@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor =   LLCurrentUser.currentuser == nil  ?  normalcolor : LLCurrentUser.currentuser.user.substyle.substylecolor()
+        self.view.backgroundColor =   LLCurrentUser.currentuser.user == nil  ?  normalcolor : LLCurrentUser.currentuser.user.substyle.substylecolor()
         
         // Do any additional setup after loading the view.
     }
