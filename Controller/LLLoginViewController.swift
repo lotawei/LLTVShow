@@ -42,30 +42,16 @@ class LLLoginViewController: BaseViewController {
         
         //加载自定义的登录view
         layview()
-        
-
-        // Do any additional setup after loading the view.
     }
      func layview(){
-       let    lview = LLLoginView.newInstance()
-       view.addSubview(lview!)
-        
-        
-        
-        
-        
-        
-    
+      let    lview = LLLoginView.newInstance()
+      view = lview!
+      view.backgroundColor = UIColor.black
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        lview?.center = view.center
-        
-        
-      
-        
-        
-        
+        view.backgroundColor = lgbackcolor
     }
 
     override func didReceiveMemoryWarning() {

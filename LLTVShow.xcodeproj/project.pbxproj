@@ -27,6 +27,17 @@
 		ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */; };
 		ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB631E2F036B00216063 /* LLLoginView.swift */; };
 		ED59FB661E2F037F00216063 /* LLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB651E2F037F00216063 /* LLLoginView.xib */; };
+		ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */; };
+		ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */; };
+		ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */; };
+		ED8A9D041E2F5FEF001A2EC8 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF81E2F5FEF001A2EC8 /* IsaoTextField.swift */; };
+		ED8A9D051E2F5FEF001A2EC8 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF91E2F5FEF001A2EC8 /* JiroTextField.swift */; };
+		ED8A9D061E2F5FEF001A2EC8 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CFA1E2F5FEF001A2EC8 /* KaedeTextField.swift */; };
+		ED8A9D071E2F5FEF001A2EC8 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CFB1E2F5FEF001A2EC8 /* MadokaTextField.swift */; };
+		ED8A9D081E2F5FEF001A2EC8 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CFC1E2F5FEF001A2EC8 /* MinoruTextField.swift */; };
+		ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CFE1E2F5FEF001A2EC8 /* TextFieldsEffects.swift */; };
+		ED8A9D0A1E2F5FEF001A2EC8 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CFF1E2F5FEF001A2EC8 /* YokoTextField.swift */; };
+		ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */; };
 		EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */; };
 		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +66,18 @@
 		ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaVgationController.swift; sourceTree = "<group>"; };
 		ED59FB631E2F036B00216063 /* LLLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginView.swift; sourceTree = "<group>"; };
 		ED59FB651E2F037F00216063 /* LLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLLoginView.xib; sourceTree = "<group>"; };
+		ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8A9CF81E2F5FEF001A2EC8 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		ED8A9CF91E2F5FEF001A2EC8 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		ED8A9CFA1E2F5FEF001A2EC8 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		ED8A9CFB1E2F5FEF001A2EC8 /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		ED8A9CFC1E2F5FEF001A2EC8 /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		ED8A9CFD1E2F5FEF001A2EC8 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		ED8A9CFE1E2F5FEF001A2EC8 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		ED8A9CFF1E2F5FEF001A2EC8 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAnimationTabBarController.swift; sourceTree = "<group>"; };
 		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,10 +197,30 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED8A9CF41E2F5FEF001A2EC8 /* TextFieldEffects */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
 				ED59FB651E2F037F00216063 /* LLLoginView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ED8A9CF41E2F5FEF001A2EC8 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */,
+				ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */,
+				ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */,
+				ED8A9CF81E2F5FEF001A2EC8 /* IsaoTextField.swift */,
+				ED8A9CF91E2F5FEF001A2EC8 /* JiroTextField.swift */,
+				ED8A9CFA1E2F5FEF001A2EC8 /* KaedeTextField.swift */,
+				ED8A9CFB1E2F5FEF001A2EC8 /* MadokaTextField.swift */,
+				ED8A9CFC1E2F5FEF001A2EC8 /* MinoruTextField.swift */,
+				ED8A9CFD1E2F5FEF001A2EC8 /* TextFieldEffects.h */,
+				ED8A9CFE1E2F5FEF001A2EC8 /* TextFieldsEffects.swift */,
+				ED8A9CFF1E2F5FEF001A2EC8 /* YokoTextField.swift */,
+				ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */,
+			);
+			path = TextFieldEffects;
 			sourceTree = "<group>";
 		};
 		EDA402301E24CFAE00E00CCE /* 控制器动画 */ = {
@@ -252,6 +295,7 @@
 			files = (
 				ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */,
 				ED3DB5351DEA8C490030B3BC /* LaunchScreen.storyboard in Resources */,
+				ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */,
 				ED59FB661E2F037F00216063 /* LLLoginView.xib in Resources */,
 				ED59FB521E2EFF8100216063 /* LLLoginViewController.xib in Resources */,
 				ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */,
@@ -267,21 +311,31 @@
 			files = (
 				ED59FB5C1E2EFFA800216063 /* UIImage+extension.swift in Sources */,
 				ED59FB5B1E2EFFA800216063 /* UIDevice+extension.swift in Sources */,
+				ED8A9D061E2F5FEF001A2EC8 /* KaedeTextField.swift in Sources */,
 				ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */,
 				ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */,
 				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
+				ED8A9D071E2F5FEF001A2EC8 /* MadokaTextField.swift in Sources */,
+				ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */,
 				ED59FB5E1E2EFFC900216063 /* LLUser.swift in Sources */,
 				ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */,
+				ED8A9D081E2F5FEF001A2EC8 /* MinoruTextField.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
 				ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */,
 				ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */,
+				ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */,
 				ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
 				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
+				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
+				ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
+				ED8A9D0A1E2F5FEF001A2EC8 /* YokoTextField.swift in Sources */,
 				ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */,
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
+				ED8A9D041E2F5FEF001A2EC8 /* IsaoTextField.swift in Sources */,
+				ED8A9D051E2F5FEF001A2EC8 /* JiroTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
