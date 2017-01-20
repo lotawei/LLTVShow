@@ -14,9 +14,10 @@
 		ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB5541DEA8D410030B3BC /* GlobalConfig.swift */; };
 		ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */; };
 		ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */; };
+		ED3DC5741E31E340008CA172 /* LLRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DC5731E31E340008CA172 /* LLRegisterViewController.swift */; };
+		ED3DC5791E31F3C3008CA172 /* ZYAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3DC5771E31F3C3008CA172 /* ZYAnimationLayer.m */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
-		ED59FB521E2EFF8100216063 /* LLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB501E2EFF8100216063 /* LLLoginViewController.xib */; };
 		ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB531E2EFFA800216063 /* String+extension.swift */; };
 		ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */; };
 		ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB551E2EFFA800216063 /* UIColor+extension.swift */; };
@@ -26,7 +27,7 @@
 		ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB5F1E2EFFD600216063 /* UIButton+extension.swift */; };
 		ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */; };
 		ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB631E2F036B00216063 /* LLLoginView.swift */; };
-		ED59FB661E2F037F00216063 /* LLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB651E2F037F00216063 /* LLLoginView.xib */; };
+		ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB651E2F037F00216063 /* LLLoginViewController.xib */; };
 		ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */; };
 		ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */; };
 		ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */; };
@@ -53,9 +54,11 @@
 		ED3DB5541DEA8D410030B3BC /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ED3DB55C1DEA9D040030B3BC /* UIViewextension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewextension.swift; sourceTree = "<group>"; };
+		ED3DC5731E31E340008CA172 /* LLRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRegisterViewController.swift; sourceTree = "<group>"; };
+		ED3DC5761E31F3C3008CA172 /* ZYAnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAnimationLayer.h; sourceTree = "<group>"; };
+		ED3DC5771E31F3C3008CA172 /* ZYAnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAnimationLayer.m; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
-		ED59FB501E2EFF8100216063 /* LLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLLoginViewController.xib; sourceTree = "<group>"; };
 		ED59FB531E2EFFA800216063 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
 		ED59FB551E2EFFA800216063 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
@@ -65,7 +68,7 @@
 		ED59FB5F1E2EFFD600216063 /* UIButton+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+extension.swift"; sourceTree = "<group>"; };
 		ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaVgationController.swift; sourceTree = "<group>"; };
 		ED59FB631E2F036B00216063 /* LLLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginView.swift; sourceTree = "<group>"; };
-		ED59FB651E2F037F00216063 /* LLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLLoginView.xib; sourceTree = "<group>"; };
+		ED59FB651E2F037F00216063 /* LLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLLoginViewController.xib; path = ../View/LLLoginViewController.xib; sourceTree = "<group>"; };
 		ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -172,9 +175,10 @@
 			isa = PBXGroup;
 			children = (
 				ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */,
-				ED59FB501E2EFF8100216063 /* LLLoginViewController.xib */,
+				ED59FB651E2F037F00216063 /* LLLoginViewController.xib */,
 				ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */,
 				ED3DB5561DEA8D910030B3BC /* BaseViewController.swift */,
+				ED3DC5731E31E340008CA172 /* LLRegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,9 +201,10 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED3DC5761E31F3C3008CA172 /* ZYAnimationLayer.h */,
+				ED3DC5771E31F3C3008CA172 /* ZYAnimationLayer.m */,
 				ED8A9CF41E2F5FEF001A2EC8 /* TextFieldEffects */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
-				ED59FB651E2F037F00216063 /* LLLoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,8 +301,7 @@
 				ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */,
 				ED3DB5351DEA8C490030B3BC /* LaunchScreen.storyboard in Resources */,
 				ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */,
-				ED59FB661E2F037F00216063 /* LLLoginView.xib in Resources */,
-				ED59FB521E2EFF8100216063 /* LLLoginViewController.xib in Resources */,
+				ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */,
 				ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,10 +334,12 @@
 				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
 				ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */,
+				ED3DC5741E31E340008CA172 /* LLRegisterViewController.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
 				ED8A9D0A1E2F5FEF001A2EC8 /* YokoTextField.swift in Sources */,
 				ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */,
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
+				ED3DC5791E31F3C3008CA172 /* ZYAnimationLayer.m in Sources */,
 				ED8A9D041E2F5FEF001A2EC8 /* IsaoTextField.swift in Sources */,
 				ED8A9D051E2F5FEF001A2EC8 /* JiroTextField.swift in Sources */,
 			);

@@ -12,29 +12,20 @@ import UIKit
 
 class LLLoginView: UIView {
     @IBOutlet weak var txtlogin: TextFieldEffects!
+    @IBOutlet weak var btnregister: UIButton!
     @IBOutlet weak var txtpwd: TextFieldEffects!
     
-    @IBOutlet weak var gologin: UIButton!
-    @IBAction func goLogin(_ sender: Any) {
-        
+    @IBOutlet weak var btnlogin: UIButton!
+  
+    @IBOutlet weak var brandanimationview: UIView!
+    @IBAction func register(_ sender: Any) {
     }
-   static  func newInstance() -> LLLoginView? {
-        let nibView = Bundle.main.loadNibNamed("LLLoginView", owner: nil, options: nil);
-        if let view = nibView?.first as? LLLoginView {
-            return view
-        }
-        
-        return nil
+    @IBAction func checklogin(_ sender: Any) {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-   
-        
-    }
-    
-    
-    
-  
 
+       self.gradient(UIColor.white, endcolor: btncolor)
+    }
 
 }

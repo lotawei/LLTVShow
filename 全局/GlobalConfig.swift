@@ -30,6 +30,8 @@ let   darkcolor:UIColor = UIColor(red: 244, green: 244, blue: 244, alpha: 1.0)
 let   eyecolor:UIColor = UIColor(red: 246, green: 246, blue: 246, alpha: 1.0)
 //蓝色
 let   lgbackcolor:UIColor = UIColor(red: 6, green: 131, blue: 177, alpha: 1.0)
+//按钮 颜色
+let   btncolor:UIColor = UIColor(red: 200.0/255.0, green:250.0/255.0, blue: 253.0/255.0, alpha: 0.5)
 //用户存储路经
  let userAccountPath = "\(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,FileManager.SearchPathDomainMask.userDomainMask,true).first!)/user.data"
 
