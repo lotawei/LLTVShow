@@ -24,8 +24,9 @@ class LLLoginView: UIView {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        
 
-       self.gradient(UIColor.white, endcolor: btncolor)
+        
     }
 
 }
