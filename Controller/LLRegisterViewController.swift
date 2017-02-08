@@ -8,11 +8,14 @@
 
 import UIKit
 
-class LLRegisterViewController: UIViewController {
+class LLRegisterViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor =  normalcolor
+        
+        
         // Do any additional setup after loading the view.
     }
 

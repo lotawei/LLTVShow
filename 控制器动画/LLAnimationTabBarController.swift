@@ -62,7 +62,7 @@ class RAMAnimatedTabBarItem: UITabBarItem {
     
     var animation: RAMItemAnimation?
     
-    var textColor = UIColor.gray
+    var textColor = fontcolor
     
     func playAnimation(_ icon: UIImageView, textLabel: UILabel){
         guard let animation = animation else {

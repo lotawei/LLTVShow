@@ -100,7 +100,7 @@
     
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     //动画时间
-    pathAnimation.duration = 3.0;
+    pathAnimation.duration = 2.50;
     pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
     pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
     [animationLayer.pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];

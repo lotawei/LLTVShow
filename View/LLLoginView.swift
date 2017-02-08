@@ -19,14 +19,50 @@ class LLLoginView: UIView {
   
     @IBOutlet weak var brandanimationview: UIView!
     @IBAction func register(_ sender: Any) {
+      let   basenav  =  UIApplication.shared.delegate?.window??.rootViewController as!  BaseNaVgationController
+  
+        basenav.pushViewController(LLRegisterViewController(), animated: true)
+        
+        
     }
     @IBAction func checklogin(_ sender: Any) {
+        
+        UIApplication.shared.delegate?.window??.rootViewController =  LLMainTabarController()
+        
+       UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+        
+        
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        btnlogin.backgroundColor =  fontcolor
+        btnregister.backgroundColor = fontcolor
         
-
+        creatblur()
         
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if   !txtlogin.isExclusiveTouch{
+            txtlogin.resignFirstResponder()
+        }
+        if   !txtpwd.isExclusiveTouch{
+            txtpwd.resignFirstResponder()
+        }
+    }
+    func   creatblur(){
+        //首先创建一个模糊效果
+        let blurEffect = UIBlurEffect(style: .regular)
+        //接着创建一个承载模糊效果的视图
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        //设置模糊视图的大小（全屏）
+        blurView.frame.size = CGSize(width: self.width, height: self.height)
+        let  backimg = UIImageView(frame: blurView.frame)
+        backimg.image = #imageLiteral(resourceName: "background")
+        blurView.addSubview(backimg)
+        //添加模糊视图到页面view上（模糊视图下方都会有模糊效果）
+        self.insertSubview(blurView, at: 0)
+    }
+    
 }

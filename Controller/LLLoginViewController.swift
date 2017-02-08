@@ -31,15 +31,26 @@ class LLLoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+  
+     
         
+       
     }
- 
-    
-    override  func   viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(false)
+  
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden   =  true
         createbandanimation()
         
+    }
+    
+  
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         
+//        UINavigationBar.appearance().isHidden = false
+        self.navigationController?.isNavigationBarHidden   =  false
     }
     //创建动画
    private func createbandanimation()  {
@@ -49,12 +60,9 @@ class LLLoginViewController: BaseViewController {
         }
     }
     let   logview = self.view  as!  LLLoginView
-    ZYAnimationLayer.createAnimationLayer(with: "welcome", andRect: logview.brandanimationview.bounds, andView: logview.brandanimationview, andFont: UIFont.systemFont(ofSize: 20), andStroke: UIColor.gray)
+    ZYAnimationLayer.createAnimationLayer(with: "welcome", andRect: logview.brandanimationview.bounds, andView: logview.brandanimationview, andFont: UIFont.systemFont(ofSize: 15), andStroke: fontcolor)
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
-    }
-    
+ 
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -64,4 +72,6 @@ class LLLoginViewController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 }
