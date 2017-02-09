@@ -18,7 +18,7 @@ class BaseNaVgationController: UINavigationController {
         
     }
     
-     func setNaviBack(){
+    func setNaviBack(){
     
     let  navigationBar = UINavigationBar.appearance()
     navigationBar.tintColor = fontcolor
@@ -35,7 +35,7 @@ class BaseNaVgationController: UINavigationController {
         let offset:UIOffset = UIOffset(horizontal: -500, vertical: -500)
     
   
-    buttonItem.setBackButtonTitlePositionAdjustment(offset, for: .default)
+        buttonItem.setBackButtonTitlePositionAdjustment(offset, for: .default)
 //    [buttonItem setBackButtonTitlePositionAdjustment:offset forBarMetrics:UIBarMetricsDefault];
     
     }

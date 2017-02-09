@@ -12,12 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
      
-        UIApplication.shared.statusBarStyle = .lightContent
+      
  
+        //启动图片停留时间
+        Thread.sleep(forTimeInterval: 1.5)
+        
        
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)
         window = UIWindow.init(frame: winfr)

@@ -6,8 +6,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "cetaceaniPhoneNotification_20pt@3x.png",
       "scale" : "3x"
     },
     {
@@ -26,33 +27,38 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "cetaceaniPhoneSpootlight7_40pt@3x.png",
       "scale" : "3x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "cetaceaniPhoneApp_60pt@2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "iphone",
       "size" : "60x60",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "iphone",
-      "size" : "60x60",
       "scale" : "3x"
     },
     {
-      "idiom" : "ipad",
       "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadNotifications_20pt.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadNotifications_20pt@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadSpootlight5_29pt.png",
       "scale" : "1x"
     },
     {
@@ -66,24 +72,245 @@
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "cetaceanappLauncher_40pt@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadApp_76pt.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadApp_76pt@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadProApp_83.5pt@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "car",
+      "size" : "60x60",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "car",
+      "filename" : "cetaceaniPhoneApp_60pt@3x.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "24x24",
+      "idiom" : "watch",
+      "filename" : "cetaceanAndroidIcon_36pt@1.3x.png",
+      "scale" : "2x",
+      "role" : "notificationCenter",
+      "subtype" : "38mm"
+    },
+    {
+      "size" : "27.5x27.5",
+      "idiom" : "watch",
+      "filename" : "cetaceannotificationCenter_27.5pt@2x.png",
+      "scale" : "2x",
+      "role" : "notificationCenter",
+      "subtype" : "42mm"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "cetaceancompanion_29pt@2x.png",
+      "role" : "companionSettings",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "cetaceancompanion_29pt@3x.png",
+      "role" : "companionSettings",
+      "scale" : "3x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "watch",
+      "scale" : "2x",
+      "role" : "appLauncher",
+      "subtype" : "38mm"
+    },
+    {
+      "size" : "44x44",
+      "idiom" : "watch",
+      "filename" : "cetaceanlongLook_44pt@2x.png",
+      "scale" : "2x",
+      "role" : "longLook",
+      "subtype" : "42mm"
+    },
+    {
+      "size" : "86x86",
+      "idiom" : "watch",
+      "filename" : "cetaceanshortLook_86pt@2x.png",
+      "scale" : "2x",
+      "role" : "quickLook",
+      "subtype" : "38mm"
+    },
+    {
+      "size" : "98x98",
+      "idiom" : "watch",
+      "filename" : "cetaceanshortLook_98pt@2x.png",
+      "scale" : "2x",
+      "role" : "quickLook",
+      "subtype" : "42mm"
+    },
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacMicro_16pt.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacMicro_16pt@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacSmall_32pt.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "32x32",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacSmall_32pt@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacMedium_128pt.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacLarge_256pt.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "mac",
+      "size" : "256x256",
+      "scale" : "1x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacHuge_512pt.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "mac",
+      "size" : "512x512",
+      "scale" : "1x"
+    },
+    {
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacHuge_512pt@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadSpootlight7_40pt.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPhoneNotification_20pt@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPadSpootlight7_40pt@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "cetaceaniPhoneSpootlight7_40pt@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "role" : "notificationCenter",
+      "size" : "24x24",
+      "idiom" : "watch",
+      "filename" : "cetaceannotificationCenter_24pt@2x.png",
+      "subtype" : "38mm",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "cetaceaniPadSpootlight5_29pt@2x.png",
+      "unassigned" : true,
+      "role" : "companionSettings",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "cetaceaniPhoneSpootlight5_29pt@2x.png",
+      "unassigned" : true,
+      "role" : "companionSettings",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "watch",
+      "filename" : "cetaceaniPhoneSpootlight5_29pt@3x.png",
+      "unassigned" : true,
+      "role" : "companionSettings",
+      "scale" : "3x"
+    },
+    {
+      "size" : "128x128",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacMedium_128pt@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "256x256",
+      "idiom" : "mac",
+      "filename" : "cetaceanMacLarge_256pt@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "filename" : "cetaceanAndroidIcon_36pt.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "cetaceanAndroidIcon_36pt@2.7x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "cetaceanAndroidIcon_36pt@2x.png",
+      "unassigned" : true
     }
   ],
   "info" : {
