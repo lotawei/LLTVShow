@@ -16,8 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      
       
  
-        //启动图片停留时间
-        Thread.sleep(forTimeInterval: 1.5)
+      
         
        
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)

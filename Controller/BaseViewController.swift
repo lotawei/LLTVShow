@@ -6,6 +6,8 @@
 //  Copyright © 2016年 lotawei. All rights reserved.
 //
 
+
+//  导航条需要隐藏的    就继承 base 下个页面有跳转的需要在界面消失让导航条显示  不需要隐藏的就继承uiviewcontroller
 import UIKit
 
 class BaseViewController: UIViewController {
@@ -21,7 +23,10 @@ class BaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+          self.navigationController?.isNavigationBarHidden   =  true
+    }
 
     /*
     // MARK: - Navigation

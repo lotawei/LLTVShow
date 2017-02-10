@@ -39,7 +39,7 @@ class LLLoginViewController: BaseViewController {
   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden   =  true
+      
         createbandanimation()
         
     }
@@ -48,8 +48,6 @@ class LLLoginViewController: BaseViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-//        UINavigationBar.appearance().isHidden = false
         self.navigationController?.isNavigationBarHidden   =  false
     }
     //创建动画
