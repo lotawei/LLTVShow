@@ -30,22 +30,12 @@ class LLLoginViewController: BaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-  
-     
-        
-       
     }
   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-      
         createbandanimation()
-        
     }
-    
-  
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden   =  false

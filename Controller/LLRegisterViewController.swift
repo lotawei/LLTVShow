@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LLRegisterViewController: BaseViewController {
+class LLRegisterViewController: UIViewController {
     
   
     override func viewDidLoad() {
@@ -17,10 +17,11 @@ class LLRegisterViewController: BaseViewController {
         view.backgroundColor =  normalcolor
         
         navigationItem.title = "注册"
-    
-       
+ 
+        
         // Do any additional setup after loading the view.
     }
 
+   
 
 }

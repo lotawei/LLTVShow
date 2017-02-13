@@ -7,7 +7,18 @@
 //
 
 import UIKit
-//屏幕宽高度
+//屏幕宽高度  尺寸常用
+let kItemMargin : CGFloat = 10
+let kHeaderViewH : CGFloat = 50
+let kNormalItemW = (ScreenWidth - 3 * kItemMargin) / 2
+let kNormalItemH = kNormalItemW * 3 / 4
+let NormalCellID = "NormalCellID"
+let SearchCellID = "SearchCellID"
+let HeaderViewID = "HeaderViewID"
+
+let kStatusBarH: CGFloat = 20
+let kNavigationBarH: CGFloat = 44
+let kTabBarH: CGFloat = 49
 let   ScreenWidth = UIScreen.main.bounds.size.width
 let   ScreenHeight = UIScreen.main.bounds.size.height
 //获取app版本号及 ios 版本号

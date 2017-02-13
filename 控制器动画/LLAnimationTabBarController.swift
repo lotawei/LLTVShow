@@ -37,7 +37,7 @@ class RAMItemAnimation: NSObject, RAMItemAnimationProtocol {
     }
     
     var duration : CGFloat = 0.6
-    var textSelectedColor: UIColor = UIColor.gray
+    var textSelectedColor: UIColor = fontcolor
     var iconSelectedColor: UIColor?
     
     func playAnimation(_ icon : UIImageView, textLabel : UILabel) {
@@ -62,7 +62,7 @@ class RAMAnimatedTabBarItem: UITabBarItem {
     
     var animation: RAMItemAnimation?
     
-    var textColor = fontcolor
+    var textColor = UIColor.gray
     
     func playAnimation(_ icon: UIImageView, textLabel: UILabel){
         guard let animation = animation else {
@@ -388,9 +388,6 @@ class LLAnimationTabBarController: UITabBarController {
         
         tabBar.addSubview(viewContainer)
         viewContainer.tag = index
-        
-        
-        
         return viewContainer
     }
     
@@ -422,14 +419,23 @@ class LLAnimationTabBarController: UITabBarController {
                 
                 // text
                 let textLabel = UILabel()
+                
                 textLabel.frame = CGRect(x: 0, y: 32, width: ScreenWidth / CGFloat(items.count), height: 49 - 32)
+                
                 textLabel.text = item.title
+                
                 textLabel.backgroundColor = UIColor.clear
+                
                 textLabel.font = UIFont.systemFont(ofSize: 10)
+                
                 textLabel.textAlignment = NSTextAlignment.center
+                
                 textLabel.textColor = UIColor.gray
+                
                 textLabel.translatesAutoresizingMaskIntoConstraints = false
+                
                 container.addSubview(icon)
+                
                 container.addSubview(textLabel)
                 
                 
