@@ -13,12 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-     
-      
- 
-      
-        
-       
+
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)
         window = UIWindow.init(frame: winfr)
         //1.进入程序首先判断是否有用户的信息

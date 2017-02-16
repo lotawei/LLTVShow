@@ -5,3 +5,4 @@
 #import "TextFieldEffects.h"
 #import "ZYAnimationLayer.h"
 #import  "MJRefresh.h"
+#import "Kingfisher.h"

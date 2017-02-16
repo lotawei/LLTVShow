@@ -61,6 +61,26 @@
 		ED8A9D0A1E2F5FEF001A2EC8 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CFF1E2F5FEF001A2EC8 /* YokoTextField.swift */; };
 		ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */; };
 		EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */; };
+		EDC18AF61E55A6330026E4D2 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18ADF1E55A6330026E4D2 /* AnimatedImageView.swift */; };
+		EDC18AF71E55A6330026E4D2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE01E55A6330026E4D2 /* Box.swift */; };
+		EDC18AF81E55A6330026E4D2 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE11E55A6330026E4D2 /* CacheSerializer.swift */; };
+		EDC18AF91E55A6330026E4D2 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE21E55A6330026E4D2 /* Filter.swift */; };
+		EDC18AFA1E55A6330026E4D2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE31E55A6330026E4D2 /* Image.swift */; };
+		EDC18AFB1E55A6330026E4D2 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE41E55A6330026E4D2 /* ImageCache.swift */; };
+		EDC18AFC1E55A6330026E4D2 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE51E55A6330026E4D2 /* ImageDownloader.swift */; };
+		EDC18AFD1E55A6330026E4D2 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE61E55A6330026E4D2 /* ImagePrefetcher.swift */; };
+		EDC18AFE1E55A6330026E4D2 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE71E55A6330026E4D2 /* ImageProcessor.swift */; };
+		EDC18AFF1E55A6330026E4D2 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE81E55A6330026E4D2 /* ImageTransition.swift */; };
+		EDC18B001E55A6330026E4D2 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AE91E55A6330026E4D2 /* ImageView+Kingfisher.swift */; };
+		EDC18B011E55A6330026E4D2 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AEA1E55A6330026E4D2 /* Indicator.swift */; };
+		EDC18B021E55A6330026E4D2 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AEC1E55A6330026E4D2 /* Kingfisher.swift */; };
+		EDC18B031E55A6330026E4D2 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AED1E55A6330026E4D2 /* KingfisherManager.swift */; };
+		EDC18B041E55A6330026E4D2 /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AEE1E55A6330026E4D2 /* KingfisherOptionsInfo.swift */; };
+		EDC18B051E55A6330026E4D2 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AEF1E55A6330026E4D2 /* RequestModifier.swift */; };
+		EDC18B061E55A6330026E4D2 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF01E55A6330026E4D2 /* Resource.swift */; };
+		EDC18B071E55A6330026E4D2 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF11E55A6330026E4D2 /* String+MD5.swift */; };
+		EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF21E55A6330026E4D2 /* ThreadHelper.swift */; };
+		EDC18B091E55A6330026E4D2 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF31E55A6330026E4D2 /* UIButton+Kingfisher.swift */; };
 		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 		EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */; };
 		EDF88B3B1E4D67320034CAAF /* LLTVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */; };
@@ -146,6 +166,27 @@
 		ED8A9CFF1E2F5FEF001A2EC8 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAnimationTabBarController.swift; sourceTree = "<group>"; };
+		EDC18ADF1E55A6330026E4D2 /* AnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		EDC18AE01E55A6330026E4D2 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		EDC18AE11E55A6330026E4D2 /* CacheSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheSerializer.swift; sourceTree = "<group>"; };
+		EDC18AE21E55A6330026E4D2 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		EDC18AE31E55A6330026E4D2 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		EDC18AE41E55A6330026E4D2 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		EDC18AE51E55A6330026E4D2 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		EDC18AE61E55A6330026E4D2 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
+		EDC18AE71E55A6330026E4D2 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		EDC18AE81E55A6330026E4D2 /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		EDC18AE91E55A6330026E4D2 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		EDC18AEA1E55A6330026E4D2 /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		EDC18AEB1E55A6330026E4D2 /* Kingfisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kingfisher.h; sourceTree = "<group>"; };
+		EDC18AEC1E55A6330026E4D2 /* Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kingfisher.swift; sourceTree = "<group>"; };
+		EDC18AED1E55A6330026E4D2 /* KingfisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
+		EDC18AEE1E55A6330026E4D2 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		EDC18AEF1E55A6330026E4D2 /* RequestModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModifier.swift; sourceTree = "<group>"; };
+		EDC18AF01E55A6330026E4D2 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		EDC18AF11E55A6330026E4D2 /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		EDC18AF21E55A6330026E4D2 /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
+		EDC18AF31E55A6330026E4D2 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 		EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTVListViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +207,7 @@
 		ED3DB51E1DEA8C490030B3BC = {
 			isa = PBXGroup;
 			children = (
+				EDC18ADB1E55A6330026E4D2 /* Kingfisher */,
 				ED420D941E4C503800C0EB4E /* 下拉刷新 */,
 				ED420D801E4C500D00C0EB4E /* MJRefresh */,
 				EDA402301E24CFAE00E00CCE /* 控制器动画 */,
@@ -412,6 +454,43 @@
 			path = "控制器动画";
 			sourceTree = "<group>";
 		};
+		EDC18ADB1E55A6330026E4D2 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				EDC18ADE1E55A6330026E4D2 /* Sources */,
+			);
+			name = Kingfisher;
+			path = "下拉刷新/Kingfisher";
+			sourceTree = "<group>";
+		};
+		EDC18ADE1E55A6330026E4D2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC18ADF1E55A6330026E4D2 /* AnimatedImageView.swift */,
+				EDC18AE01E55A6330026E4D2 /* Box.swift */,
+				EDC18AE11E55A6330026E4D2 /* CacheSerializer.swift */,
+				EDC18AE21E55A6330026E4D2 /* Filter.swift */,
+				EDC18AE31E55A6330026E4D2 /* Image.swift */,
+				EDC18AE41E55A6330026E4D2 /* ImageCache.swift */,
+				EDC18AE51E55A6330026E4D2 /* ImageDownloader.swift */,
+				EDC18AE61E55A6330026E4D2 /* ImagePrefetcher.swift */,
+				EDC18AE71E55A6330026E4D2 /* ImageProcessor.swift */,
+				EDC18AE81E55A6330026E4D2 /* ImageTransition.swift */,
+				EDC18AE91E55A6330026E4D2 /* ImageView+Kingfisher.swift */,
+				EDC18AEA1E55A6330026E4D2 /* Indicator.swift */,
+				EDC18AEB1E55A6330026E4D2 /* Kingfisher.h */,
+				EDC18AEC1E55A6330026E4D2 /* Kingfisher.swift */,
+				EDC18AED1E55A6330026E4D2 /* KingfisherManager.swift */,
+				EDC18AEE1E55A6330026E4D2 /* KingfisherOptionsInfo.swift */,
+				EDC18AEF1E55A6330026E4D2 /* RequestModifier.swift */,
+				EDC18AF01E55A6330026E4D2 /* Resource.swift */,
+				EDC18AF11E55A6330026E4D2 /* String+MD5.swift */,
+				EDC18AF21E55A6330026E4D2 /* ThreadHelper.swift */,
+				EDC18AF31E55A6330026E4D2 /* UIButton+Kingfisher.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -491,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF88B3D1E4D67C50034CAAF /* LLAcountViewController.swift in Sources */,
+				EDC18AFF1E55A6330026E4D2 /* ImageTransition.swift in Sources */,
 				ED420D911E4C500E00C0EB4E /* UIScrollView+MJExtension.m in Sources */,
 				ED420D831E4C500D00C0EB4E /* MJRefreshComponent.m in Sources */,
 				ED59FB5C1E2EFFA800216063 /* UIImage+extension.swift in Sources */,
@@ -499,9 +579,14 @@
 				ED420D821E4C500D00C0EB4E /* MJRefreshBackFooter.m in Sources */,
 				ED8A9D061E2F5FEF001A2EC8 /* KaedeTextField.swift in Sources */,
 				ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */,
+				EDC18B071E55A6330026E4D2 /* String+MD5.swift in Sources */,
 				ED420D861E4C500D00C0EB4E /* MJRefreshAutoGifFooter.m in Sources */,
+				EDC18B031E55A6330026E4D2 /* KingfisherManager.swift in Sources */,
 				ED420D881E4C500D00C0EB4E /* MJRefreshAutoStateFooter.m in Sources */,
+				EDC18B061E55A6330026E4D2 /* Resource.swift in Sources */,
 				ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */,
+				EDC18B011E55A6330026E4D2 /* Indicator.swift in Sources */,
+				EDC18AF91E55A6330026E4D2 /* Filter.swift in Sources */,
 				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
 				ED8A9D071E2F5FEF001A2EC8 /* MadokaTextField.swift in Sources */,
@@ -511,34 +596,48 @@
 				ED8A9D081E2F5FEF001A2EC8 /* MinoruTextField.swift in Sources */,
 				ED420D8A1E4C500D00C0EB4E /* MJRefreshBackNormalFooter.m in Sources */,
 				ED420D8D1E4C500E00C0EB4E /* MJRefreshNormalHeader.m in Sources */,
+				EDC18AF81E55A6330026E4D2 /* CacheSerializer.swift in Sources */,
+				EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
 				ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */,
+				EDC18AFB1E55A6330026E4D2 /* ImageCache.swift in Sources */,
 				ED420D8B1E4C500D00C0EB4E /* MJRefreshBackStateFooter.m in Sources */,
 				ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */,
 				ED420D8C1E4C500D00C0EB4E /* MJRefreshGifHeader.m in Sources */,
 				ED420D871E4C500D00C0EB4E /* MJRefreshAutoNormalFooter.m in Sources */,
 				ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */,
+				EDC18AF61E55A6330026E4D2 /* AnimatedImageView.swift in Sources */,
+				EDC18B041E55A6330026E4D2 /* KingfisherOptionsInfo.swift in Sources */,
 				ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */,
+				EDC18AFA1E55A6330026E4D2 /* Image.swift in Sources */,
 				ED420D891E4C500D00C0EB4E /* MJRefreshBackGifFooter.m in Sources */,
 				ED420D531E4C4F0D00C0EB4E /* LLBaseCollectionView.swift in Sources */,
+				EDC18B021E55A6330026E4D2 /* Kingfisher.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
 				ED420D901E4C500E00C0EB4E /* MJRefreshConst.m in Sources */,
+				EDC18B001E55A6330026E4D2 /* ImageView+Kingfisher.swift in Sources */,
 				ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */,
+				EDC18AFE1E55A6330026E4D2 /* ImageProcessor.swift in Sources */,
 				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
 				ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */,
 				ED3DC5741E31E340008CA172 /* LLRegisterViewController.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
 				ED8A9D0A1E2F5FEF001A2EC8 /* YokoTextField.swift in Sources */,
+				EDC18AFC1E55A6330026E4D2 /* ImageDownloader.swift in Sources */,
 				ED420D931E4C500E00C0EB4E /* UIView+MJExtension.m in Sources */,
 				ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */,
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
 				ED3DC5791E31F3C3008CA172 /* ZYAnimationLayer.m in Sources */,
 				ED420D851E4C500D00C0EB4E /* MJRefreshHeader.m in Sources */,
 				ED420D8E1E4C500E00C0EB4E /* MJRefreshStateHeader.m in Sources */,
+				EDC18B051E55A6330026E4D2 /* RequestModifier.swift in Sources */,
 				ED8A9D041E2F5FEF001A2EC8 /* IsaoTextField.swift in Sources */,
+				EDC18AF71E55A6330026E4D2 /* Box.swift in Sources */,
+				EDC18B091E55A6330026E4D2 /* UIButton+Kingfisher.swift in Sources */,
 				ED420D921E4C500E00C0EB4E /* UIScrollView+MJRefresh.m in Sources */,
 				EDF88B3B1E4D67320034CAAF /* LLTVListViewController.swift in Sources */,
+				EDC18AFD1E55A6330026E4D2 /* ImagePrefetcher.swift in Sources */,
 				ED420D811E4C500D00C0EB4E /* MJRefreshAutoFooter.m in Sources */,
 				ED8A9D051E2F5FEF001A2EC8 /* JiroTextField.swift in Sources */,
 				ED420D841E4C500D00C0EB4E /* MJRefreshFooter.m in Sources */,
