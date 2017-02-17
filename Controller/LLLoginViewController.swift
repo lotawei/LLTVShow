@@ -40,7 +40,7 @@ class LLLoginViewController: BaseViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden   =  false
     }
-    //创建动画 默认时长  3.0
+    //创建动画 默认时长  3.0 4 
    private func createbandanimation()  {
     for lay in self.view.layer.sublayers! {
         if lay.isKind(of: ZYAnimationLayer.classForCoder()) {
