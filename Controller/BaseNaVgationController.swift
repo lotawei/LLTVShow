@@ -16,6 +16,9 @@ class BaseNaVgationController: UINavigationController {
         
         setNaviBack()
         
+        
+        
+        
     }
     
     func setNaviBack(){

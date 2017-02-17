@@ -13,7 +13,7 @@ class LLTVListViewController: BaseViewController {
     //  搜索条
     lazy   var  searchbar:UISearchBar = {
        let     searchbar = UISearchBar(frame: CGRect(x: 0, y: 20, width: ScreenWidth, height: 30))
-        
+       
         
         return   searchbar
     }()
