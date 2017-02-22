@@ -19,5 +19,24 @@ extension UIColor {
         let b = CGFloat(arc4random_uniform(256))
         return UIColor.colorWithCustom(r, g: g, b: b)
     }
+    //主题色
+    class func applicationMainColor() -> UIColor {
+        return UIColor(red: 238.0/255.0, green: 64.0/255.0, blue: 86.0/255.0, alpha:1)
+    }
+    
+    //第二主题色
+    class func applicationSecondColor() -> UIColor {
+        return UIColor.lightGrayColor()
+    }
+    
+    //警告颜色
+    class func applicationWarningColor() -> UIColor {
+        return UIColor(red: 0.1, green: 1.0, blue: 0.0, alpha: 1)
+    }
+    
+    //链接颜色
+    class func applicationLinkColor() -> UIColor {
+        return UIColor(red: 59.0/255, green: 89.0/255.0, blue: 152.0/255.0, alpha:1)
+    }
     
 }
