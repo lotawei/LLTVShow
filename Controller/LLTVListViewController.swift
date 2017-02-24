@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class LLTVListViewController: BaseViewController {
 
     //  搜索条
@@ -21,7 +22,22 @@ class LLTVListViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+        
+        request("https://httpbin.org/get", method: .get, parameters: ["foo": "bar"])
+            .responseJSON { response in
+                
+                print(response.request as Any)  // 请求对象
+                print(response.response as Any) // 响应对象
+                print(response.data as Any)     // 服务端返回的数据
+                
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                }
+                
+        }
+        
+        
         view.addSubview(searchbar)
     }
     

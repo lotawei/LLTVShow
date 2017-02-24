@@ -4,7 +4,7 @@
 //
 //  Created by lotawei on 16/11/27.
 //  Copyright © 2016年 lotawei. All rights reserved.
-//
+//  //为避免用户注册登录的情况 直接出现首页 当出现收藏,推荐的时候才提示是否需要登录
 
 import UIKit
 
@@ -16,16 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)
         window = UIWindow.init(frame: winfr)
-        //1.进入程序首先判断是否有用户的信息
-        if (LLCurrentUser.currentuser.user == nil) {
-            let    rootnav = BaseNaVgationController()
-            rootnav.pushViewController(LLLoginViewController(), animated: true)
-            window?.rootViewController = rootnav
-        }
-        else{
-            window?.rootViewController = LLMainTabarController()
-        }
+      
+      
+        window?.rootViewController = LLMainTabarController()
+       
         window?.makeKeyAndVisible()
+       
         
         
         // Override point for customization after application launch.
