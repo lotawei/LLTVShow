@@ -6,3 +6,4 @@
 #import "ZYAnimationLayer.h"
 #import  "MJRefresh.h"
 #import "Kingfisher.h"
+#import <CommonCrypto/CommonCrypto.h>

@@ -9,37 +9,43 @@
 import UIKit
 
 class LLTVListViewController: BaseViewController {
-
+    
+    
+    var   img = UIImageView(frame: CGRect(x:100,y:200,width:80,height:90))
     //  搜索条
     lazy   var  searchbar:UISearchBar = {
        let     searchbar = UISearchBar(frame: CGRect(x: 0, y: 20, width: ScreenWidth, height: 30))
        
-        //需要网络
+        
         return   searchbar
     }()
     
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(self.img)
+        let   manager = LLAuthManager.init("http://www.moretv.com.cn/img/icon/xiqu.jpg", .get, nil)
         
         
-        request("https://httpbin.org/get", method: .get, parameters: ["foo": "bar"])
-            .responseJSON { response in
-                
-                print(response.request as Any)  // 请求对象
-                print(response.response as Any) // 响应对象
-                print(response.data as Any)     // 服务端返回的数据
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                }
-                
-        }
-        
-        
-        view.addSubview(searchbar)
+       
     }
     
-   
+//    func  test(){
+//     let  sem =    DispatchSemaphore.init(value: 0)
+//        
+//     let   quene = DispatchQueue.init(label: "one")
+//        quene.async {
+//            for    i in  0...10{
+//                print(i)
+//            }
+//            sem.signal()
+//        }
+//        sem.wait()
+//        for    i in  11...21{
+//            print(i)
+//        }
+//    }
 }
+
+

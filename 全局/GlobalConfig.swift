@@ -7,6 +7,10 @@
 //
 
 import UIKit
+//
+
+
+let  tvurl="https://route.showapi.com/951-1?showapi_appid=32615&showapi_timestamp=20170224154502&showapi_sign=e80620ed9e23a51d1223dcca7032a9f9"
 //屏幕宽高度  尺寸常用
 let kItemMargin : CGFloat = 10
 let kHeaderViewH : CGFloat = 50
