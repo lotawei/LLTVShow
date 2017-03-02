@@ -25,7 +25,7 @@ class LLTVListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(self.img)
-        let   manager = LLAuthManager.init("http://www.moretv.com.cn/img/icon/xiqu.jpg", .get, nil)
+        let   manager = LLAuthManager.init("http://open.moretv.com.cn/moviesite", .get, nil)
         
         
        

@@ -28,7 +28,12 @@ private let  scret = "f33abd6c0aaa453eaf170410113ede92"
 
 class  LLAuthManager:NSObject{
     
-    var   requestdelegate:requestDataPro?
+//    以逃逸闭包的方式传出去
+    
+    
+    typealias   successblock=([String:Any]) -> Void
+    
+    
     var  cururl:URLConvertible!
     var  method:HTTPMethod?
     var  paramas:Parameters?
@@ -46,7 +51,7 @@ class  LLAuthManager:NSObject{
     override init() {
         
         super.init()
-        authentication()
+       authentication()
         
         
     }
@@ -99,11 +104,22 @@ class  LLAuthManager:NSObject{
                         .responseJSON {  (JSON) in
                             
                             let   jsondata  = JSON.result.value  as! [String:Any]
-                            
-                            
-                            
-                            
+                            print(jsondata)
+//
+//                            
+//                            
                     }
+//                                        request("http://img7.moretv.com.cn/d.ifengimg.com/w200_h150/y0.ifengimg.com/image/2013/10/31/7eeb80c2-0d43-412c-88ce-ba130ca2980b.jpg",method:tempself!.method!, parameters:["access_token":strtoken!]).responseData(completionHandler: { (data) in
+//                                            let   img   = UIImage.init(data: data.result.value!)
+//                                        })
+////                                            .responseJSON {  (JSON) in
+////                    
+////                                                let   jsondata  = JSON.result.value  as! [String:Any]
+////                                                print(jsondata)
+////                    
+////                                                
+////                                                
+////                                        }
                    
                 }
                 else{
