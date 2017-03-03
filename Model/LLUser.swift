@@ -33,9 +33,8 @@ enum   Substyle:Int {
 
 class LLUser: NSObject ,NSCoding{
     //昵称
-    var   name:String!
-    //密码
-    var   psd:String!
+    var   username:String!
+  
     //状态
     var   islogin:Bool!
     //用户类型
@@ -48,8 +47,8 @@ class LLUser: NSObject ,NSCoding{
     //用户第一次使用本app  是的话可能就要打广告了
     var   isfirst:Bool = true
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(name, forKey:"name")
-        aCoder.encode(psd, forKey:"psd")
+        aCoder.encode(username, forKey:"name")
+        
         aCoder.encode(islogin, forKey: "login")
         aCoder.encode(usertype.rawValue, forKey: "usertype")
         aCoder.encode(portrait, forKey: "portrait")
@@ -60,14 +59,14 @@ class LLUser: NSObject ,NSCoding{
     
     
     override var description: String {
-                 let properties = ["name":name, "psd":psd, "islogin":islogin, "usertype":usertype,"portrait":portrait,"substyle":substyle,"isfirsst":isfirst] as [String : Any]
+                 let properties = ["name":username, "islogin":islogin, "usertype":usertype,"portrait":portrait,"substyle":substyle,"isfirsst":isfirst] as [String : Any]
         
                  return "\(properties)"
             }
     required  init?(coder aDecoder: NSCoder) {
         super.init()
-        name =  aDecoder.decodeObject(forKey: "name") as!  String
-        psd = aDecoder.decodeObject(forKey: "psd") as! String
+        username =  aDecoder.decodeObject(forKey: "name") as!  String
+       
         islogin = aDecoder.decodeObject(forKey: "login") as! Bool!
         isfirst = aDecoder.decodeObject(forKey: "isfirst") as! Bool!
         portrait = aDecoder.decodeObject(forKey: "portrait") as! String
@@ -75,8 +74,7 @@ class LLUser: NSObject ,NSCoding{
         substyle = Substyle(rawValue: Int(aDecoder.decodeInt32(forKey: "substyle")))
     }
     init( _ name:String,_ psd:String,_ islogin:Bool,_ usertype:Usertype,_ portrait:String, _ substyle:Substyle,isfirst:Bool) {
-        self.name = name
-        self.psd = psd
+        self.username = name
         self.islogin = islogin
         self.usertype = usertype
         self.portrait = portrait

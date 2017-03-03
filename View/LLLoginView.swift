@@ -26,13 +26,18 @@ class LLLoginView: UIView {
         
         
     }
-    @IBAction func checklogin(_ sender: Any) {
+    func checklogin(_ sender: Any) {
         
       UIApplication.shared.delegate?.window??.rootViewController =  LLMainTabarController()
         
        UIApplication.shared.delegate?.window??.makeKeyAndVisible()
         
         //如果要做一个历史记录信息的可以在  登录验证完毕后 存入本地 
+        
+       
+        
+        
+        
         
         
         

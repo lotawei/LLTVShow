@@ -33,16 +33,9 @@ class BaseNaVgationController: UINavigationController {
     //返回按钮的箭头颜色
         //字体颜色
         navigationBar.titleTextAttributes = [NSFontAttributeName:UIFont.systemFont(ofSize: 18),NSForegroundColorAttributeName:fontcolor]
-
-//
         let buttonItem =  UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.classForCoder() as! UIAppearanceContainer.Type])
-        
         let offset:UIOffset = UIOffset(horizontal: -500, vertical: -500)
-    
-  
         buttonItem.setBackButtonTitlePositionAdjustment(offset, for: .default)
-
-    
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)

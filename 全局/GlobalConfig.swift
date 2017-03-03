@@ -25,6 +25,10 @@ let kNavigationBarH: CGFloat = 44
 let kTabBarH: CGFloat = 49
 let   ScreenWidth = UIScreen.main.bounds.size.width
 let   ScreenHeight = UIScreen.main.bounds.size.height
+//云数据库appkey
+let   bmobappkey  = "6ddcdd50e7d7e32e67aec881b8585e4b"
+
+
 //获取app版本号及 ios 版本号
 let infoDictionary = Bundle.main.infoDictionary
 let appDisplayName: AnyObject? = infoDictionary!["CFBundleDisplayName"] as AnyObject?

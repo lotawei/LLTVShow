@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        //  注册bmob的使用
+        
+        Bmob.register(withAppKey: bmobappkey)
+        
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)
         window = UIWindow.init(frame: winfr)
       

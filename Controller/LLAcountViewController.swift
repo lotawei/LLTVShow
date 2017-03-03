@@ -10,11 +10,28 @@ import UIKit
 
 class LLAcountViewController: BaseViewController {
 
+    var   abtn:UIButton?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+          self.abtn = UIButton()
         
-        // Do any additional setup after loading the view.
+        
+        abtn?.setTitle("登录", for:  .normal)
+        
+        view.addSubview(abtn!)
+        
+        
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        abtn!.snp.makeConstraints { (contris) in
+            
+        }
+        
+        
     }
 
   

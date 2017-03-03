@@ -17,9 +17,11 @@ class LLRegisterViewController: UIViewController {
         view.backgroundColor =  normalcolor
         
         navigationItem.title = "注册"
- 
+        let dict:NSDictionary = [NSForegroundColorAttributeName: btncolor,NSFontAttributeName : UIFont.boldSystemFont(ofSize: 17)]
+        //标题颜色
+        self.navigationController?.navigationBar.titleTextAttributes = dict as? [String : AnyObject]
         
-        // Do any additional setup after loading the view.
+        
     }
 
    
