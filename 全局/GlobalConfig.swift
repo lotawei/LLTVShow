@@ -28,6 +28,8 @@ let   ScreenHeight = UIScreen.main.bounds.size.height
 //云数据库appkey
 let   bmobappkey  = "6ddcdd50e7d7e32e67aec881b8585e4b"
 
+//全局主题变化的通知
+let   StyleNotifyChange = "StyleNotifyChange"
 
 //获取app版本号及 ios 版本号
 let infoDictionary = Bundle.main.infoDictionary

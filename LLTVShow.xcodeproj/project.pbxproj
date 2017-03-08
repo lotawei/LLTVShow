@@ -20,6 +20,7 @@
 		ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4579E81E653E4200AA95CC /* LLAuthManager.swift */; };
+		ED52AE281E6EC49D00F6C214 /* LLRegisterHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED52AE271E6EC49D00F6C214 /* LLRegisterHeadView.swift */; };
 		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
 		ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB531E2EFFA800216063 /* String+extension.swift */; };
 		ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */; };
@@ -31,6 +32,7 @@
 		ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */; };
 		ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB631E2F036B00216063 /* LLLoginView.swift */; };
 		ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB651E2F037F00216063 /* LLLoginViewController.xib */; };
+		ED741F7C1E6F9FC600CFE8BC /* LLThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED741F7B1E6F9FC600CFE8BC /* LLThemeManager.swift */; };
 		ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */; };
 		ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */; };
 		ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */; };
@@ -155,6 +157,11 @@
 		EDF1550A1E600B050001A946 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF154F71E600B050001A946 /* TaskDelegate.swift */; };
 		EDF1550B1E600B050001A946 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF154F81E600B050001A946 /* Timeline.swift */; };
 		EDF1550C1E600B050001A946 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF154F91E600B050001A946 /* Validation.swift */; };
+		EDF712C41E6FA88100555CEC /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712BE1E6FA88100555CEC /* Info-iOS.plist */; };
+		EDF712C51E6FA88100555CEC /* Info-OSX.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712BF1E6FA88100555CEC /* Info-OSX.plist */; };
+		EDF712C61E6FA88100555CEC /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712C01E6FA88100555CEC /* Info-tvOS.plist */; };
+		EDF712C71E6FA88100555CEC /* Info-watchOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712C11E6FA88100555CEC /* Info-watchOS.plist */; };
+		EDF712C81E6FA88100555CEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF712C31E6FA88100555CEC /* SwiftyJSON.swift */; };
 		EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */; };
 		EDF88B3B1E4D67320034CAAF /* LLTVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */; };
 		EDF88B3D1E4D67C50034CAAF /* LLAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3C1E4D67C50034CAAF /* LLAcountViewController.swift */; };
@@ -178,6 +185,7 @@
 		ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRefreshView.swift; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		ED4579E81E653E4200AA95CC /* LLAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLAuthManager.swift; path = "../工具库/LLAuthManager.swift"; sourceTree = "<group>"; };
+		ED52AE271E6EC49D00F6C214 /* LLRegisterHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRegisterHeadView.swift; sourceTree = "<group>"; };
 		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
 		ED59FB531E2EFFA800216063 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 		ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaVgationController.swift; sourceTree = "<group>"; };
 		ED59FB631E2F036B00216063 /* LLLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginView.swift; sourceTree = "<group>"; };
 		ED59FB651E2F037F00216063 /* LLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLLoginViewController.xib; path = ../View/LLLoginViewController.xib; sourceTree = "<group>"; };
+		ED741F7B1E6F9FC600CFE8BC /* LLThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLThemeManager.swift; sourceTree = "<group>"; };
 		ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		ED8A9CF71E2F5FEF001A2EC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -337,6 +346,12 @@
 		EDF154F71E600B050001A946 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		EDF154F81E600B050001A946 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		EDF154F91E600B050001A946 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		EDF712BE1E6FA88100555CEC /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		EDF712BF1E6FA88100555CEC /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
+		EDF712C01E6FA88100555CEC /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		EDF712C11E6FA88100555CEC /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		EDF712C21E6FA88100555CEC /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		EDF712C31E6FA88100555CEC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTVListViewController.swift; sourceTree = "<group>"; };
 		EDF88B3C1E4D67C50034CAAF /* LLAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAcountViewController.swift; sourceTree = "<group>"; };
@@ -431,6 +446,7 @@
 		ED3DB54A1DEA8C890030B3BC /* 全局 */ = {
 			isa = PBXGroup;
 			children = (
+				ED741F7B1E6F9FC600CFE8BC /* LLThemeManager.swift */,
 				ED4579E81E653E4200AA95CC /* LLAuthManager.swift */,
 				EDA058671E63DAFC0086D564 /* SweetAlert.swift */,
 				ED3DB52A1DEA8C490030B3BC /* AppDelegate.swift */,
@@ -479,6 +495,7 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED52AE271E6EC49D00F6C214 /* LLRegisterHeadView.swift */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
 				ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */,
 				ED3DC5761E31F3C3008CA172 /* ZYAnimationLayer.h */,
@@ -727,6 +744,7 @@
 		EDF154871E6004A20001A946 /* 工具库 */ = {
 			isa = PBXGroup;
 			children = (
+				EDF712BD1E6FA88100555CEC /* SwiftyJson */,
 				EDB7544A1E69478B00E2C350 /* SnapKit */,
 				EDF154E51E600B050001A946 /* Alamofire */,
 				ED420D941E4C503800C0EB4E /* 下拉刷新 */,
@@ -762,6 +780,19 @@
 			);
 			name = Alamofire;
 			path = Source;
+			sourceTree = "<group>";
+		};
+		EDF712BD1E6FA88100555CEC /* SwiftyJson */ = {
+			isa = PBXGroup;
+			children = (
+				EDF712BE1E6FA88100555CEC /* Info-iOS.plist */,
+				EDF712BF1E6FA88100555CEC /* Info-OSX.plist */,
+				EDF712C01E6FA88100555CEC /* Info-tvOS.plist */,
+				EDF712C11E6FA88100555CEC /* Info-watchOS.plist */,
+				EDF712C21E6FA88100555CEC /* SwiftyJSON.h */,
+				EDF712C31E6FA88100555CEC /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -826,10 +857,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF712C71E6FA88100555CEC /* Info-watchOS.plist in Resources */,
 				EDF154FE1E600B050001A946 /* Info.plist in Resources */,
 				EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */,
+				EDF712C51E6FA88100555CEC /* Info-OSX.plist in Resources */,
+				EDF712C41E6FA88100555CEC /* Info-iOS.plist in Resources */,
 				ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */,
 				EDF154FD1E600B050001A946 /* Info-tvOS.plist in Resources */,
+				EDF712C61E6FA88100555CEC /* Info-tvOS.plist in Resources */,
 				EDF154811E6002E20001A946 /* MJRefresh.bundle in Resources */,
 				ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */,
 				ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */,
@@ -865,6 +900,7 @@
 				EDB754841E69478B00E2C350 /* ConstraintPriority.swift in Sources */,
 				EDC18B011E55A6330026E4D2 /* Indicator.swift in Sources */,
 				EDF154FF1E600B050001A946 /* MultipartFormData.swift in Sources */,
+				ED52AE281E6EC49D00F6C214 /* LLRegisterHeadView.swift in Sources */,
 				EDC18AF91E55A6330026E4D2 /* Filter.swift in Sources */,
 				EDB754721E69478B00E2C350 /* ConstraintDescription.swift in Sources */,
 				EDF1550A1E600B050001A946 /* TaskDelegate.swift in Sources */,
@@ -909,8 +945,10 @@
 				EDB754471E69431100E2C350 /* UITextField+fixCaretPosition.swift in Sources */,
 				EDB754781E69478B00E2C350 /* ConstraintLayoutGuide.swift in Sources */,
 				EDF1550B1E600B050001A946 /* Timeline.swift in Sources */,
+				ED741F7C1E6F9FC600CFE8BC /* LLThemeManager.swift in Sources */,
 				EDF1547C1E6002E20001A946 /* MJRefreshBackNormalFooter.m in Sources */,
 				EDB7547E1E69478B00E2C350 /* ConstraintMakerExtendable.swift in Sources */,
+				EDF712C81E6FA88100555CEC /* SwiftyJSON.swift in Sources */,
 				EDB754751E69478B00E2C350 /* ConstraintInsetTarget.swift in Sources */,
 				EDC18AFA1E55A6330026E4D2 /* Image.swift in Sources */,
 				EDB7548B1E69478B00E2C350 /* Debugging.swift in Sources */,

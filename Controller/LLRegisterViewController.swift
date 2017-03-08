@@ -10,7 +10,19 @@ import UIKit
 
 class LLRegisterViewController: UIViewController {
     
-  
+    lazy var  lblname:UILabel = {
+        let  lab = UILabel()
+        lab.text = "邮箱"
+        
+        return  lab
+    }()
+    lazy var  btnregister:UIButton = {
+        let  register  = UIButton()
+        register.setTitle("发送验证", for: .normal)
+        
+        
+        return  register
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         
