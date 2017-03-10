@@ -52,7 +52,7 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="maV-i2-Dt7">
-                    <rect key="frame" x="112.5" y="20" width="150" height="150"/>
+                    <rect key="frame" x="113" y="20" width="150" height="150"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="GRN-na-JRt"/>
                         <constraint firstAttribute="height" constant="150" id="XNz-TJ-oWV"/>
@@ -87,50 +87,24 @@
                         <constraint firstAttribute="width" constant="320" id="wZa-ws-ks7"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QeB-9L-FaD">
-                    <rect key="frame" x="38" y="397" width="284" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="6qy-Yg-UT6"/>
-                        <constraint firstAttribute="width" constant="284" id="Z1L-eT-MRk"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                    <state key="normal" title="注册">
-                        <color key="titleColor" red="0.1015188206" green="0.39153362450000001" blue="0.94047124339999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected">
-                        <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornRadius">
-                            <integer key="value" value="10"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="register:" destination="iN0-l3-epB" eventType="touchUpInside" id="RG1-dt-uwV"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="aIs-Cl-W7Y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0IY-WA-PYD"/>
                 <constraint firstItem="agh-aA-Wab" firstAttribute="top" secondItem="FoP-yG-92A" secondAttribute="bottom" constant="15" id="0PA-EW-Bdc"/>
+                <constraint firstItem="NqH-gJ-gkK" firstAttribute="top" secondItem="agh-aA-Wab" secondAttribute="bottom" constant="48" id="16E-xA-c4Y"/>
                 <constraint firstItem="FoP-yG-92A" firstAttribute="top" secondItem="aIs-Cl-W7Y" secondAttribute="bottom" constant="43" id="CRs-hg-jYY"/>
                 <constraint firstItem="aIs-Cl-W7Y" firstAttribute="top" secondItem="maV-i2-Dt7" secondAttribute="bottom" constant="8" id="HnR-Kk-V2O"/>
-                <constraint firstItem="QeB-9L-FaD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-7.5" id="Mvc-CU-WVt"/>
                 <constraint firstItem="agh-aA-Wab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Q1a-me-8Qe"/>
                 <constraint firstItem="maV-i2-Dt7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="RRB-bp-UXR"/>
-                <constraint firstItem="QeB-9L-FaD" firstAttribute="top" secondItem="agh-aA-Wab" secondAttribute="bottom" constant="8" id="TFf-ap-s21"/>
                 <constraint firstItem="maV-i2-Dt7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cAA-UI-QPO"/>
                 <constraint firstItem="NqH-gJ-gkK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-7.5" id="jy2-Ky-Brh"/>
                 <constraint firstItem="FoP-yG-92A" firstAttribute="leading" secondItem="maV-i2-Dt7" secondAttribute="trailing" constant="-246.5" id="kPe-Fu-nbx"/>
                 <constraint firstItem="FoP-yG-92A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xq2-ph-Tqh"/>
-                <constraint firstItem="NqH-gJ-gkK" firstAttribute="top" secondItem="QeB-9L-FaD" secondAttribute="bottom" constant="10" id="yir-Ha-z0d"/>
             </constraints>
             <connections>
                 <outlet property="brandanimationview" destination="aIs-Cl-W7Y" id="bh6-X3-MgC"/>
                 <outlet property="btnlogin" destination="NqH-gJ-gkK" id="Und-a3-ZcD"/>
-                <outlet property="btnregister" destination="QeB-9L-FaD" id="hU3-XI-DOo"/>
                 <outlet property="txtlogin" destination="FoP-yG-92A" id="9Sa-sx-DPR"/>
                 <outlet property="txtpwd" destination="agh-aA-Wab" id="gOF-SL-FhF"/>
             </connections>

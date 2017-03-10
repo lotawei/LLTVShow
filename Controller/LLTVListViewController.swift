@@ -26,13 +26,13 @@ class LLTVListViewController: BaseViewController {
         super.viewDidLoad()
         view.addSubview(self.img)
 
-   _  = LLAuthManager("http://open.moretv.com.cn/moviesite", .get, nil) { (data) in
-         let  jsondata =  data.result.value as!  [String:Any]
-         print(jsondata)
+//   _  = LLAuthManager("http://open.moretv.com.cn/moviesite", .get, nil) { (data) in
+//         let  jsondata =  data.result.value as!  [String:Any]
+//         print(jsondata)
     }
         
        
-    }
+    
     
 //    func  test(){
 //     let  sem =    DispatchSemaphore.init(value: 0)

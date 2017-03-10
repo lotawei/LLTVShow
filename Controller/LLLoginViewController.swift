@@ -30,16 +30,25 @@ class LLLoginViewController: BaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.isHidden = false
+        view.backgroundColor = fontcolor
+        if  self.navigationController != nil{
+            
+            self.title = "登录"
+            self.tabBarController?.tabBar.isHidden =  true
+        }
     }
   
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         createbandanimation()
     }
+   
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.isNavigationBarHidden   =  false
+        self.tabBarController?.tabBar.isHidden =  false
+          self.navigationController?.navigationBar.isHidden = true
     }
     //创建动画 默认时长  3.0
    private func createbandanimation()  {

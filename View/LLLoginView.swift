@@ -12,20 +12,14 @@ import UIKit
 
 class LLLoginView: UIView {
     @IBOutlet weak var txtlogin: TextFieldEffects!
-    @IBOutlet weak var btnregister: UIButton!
+  
     @IBOutlet weak var txtpwd: TextFieldEffects!
     
     @IBOutlet weak var btnlogin: UIButton!
   
     
     @IBOutlet weak var brandanimationview: UIView!
-    @IBAction func register(_ sender: Any) {
-      let   basenav  =  UIApplication.shared.delegate?.window??.rootViewController as!  BaseNaVgationController
   
-        basenav.pushViewController(LLRegisterViewController(), animated: true)
-        
-        
-    }
     func checklogin(_ sender: Any) {
         
       UIApplication.shared.delegate?.window??.rootViewController =  LLMainTabarController()
@@ -47,7 +41,7 @@ class LLLoginView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         btnlogin.backgroundColor =  fontcolor
-        btnregister.backgroundColor = fontcolor
+     
         
         creatblur()
         

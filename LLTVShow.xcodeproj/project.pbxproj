@@ -20,7 +20,6 @@
 		ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4579E81E653E4200AA95CC /* LLAuthManager.swift */; };
-		ED52AE281E6EC49D00F6C214 /* LLRegisterHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED52AE271E6EC49D00F6C214 /* LLRegisterHeadView.swift */; };
 		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
 		ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB531E2EFFA800216063 /* String+extension.swift */; };
 		ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */; };
@@ -117,6 +116,24 @@
 		EDC18B071E55A6330026E4D2 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF11E55A6330026E4D2 /* String+MD5.swift */; };
 		EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF21E55A6330026E4D2 /* ThreadHelper.swift */; };
 		EDC18B091E55A6330026E4D2 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC18AF31E55A6330026E4D2 /* UIButton+Kingfisher.swift */; };
+		EDD3C2491E728B9F005E43D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2351E728B9F005E43D8 /* Info.plist */; };
+		EDD3C24A1E728B9F005E43D8 /* LTCharacterDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2361E728B9F005E43D8 /* LTCharacterDiffResult.swift */; };
+		EDD3C24B1E728B9F005E43D8 /* LTCharacterLimbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2371E728B9F005E43D8 /* LTCharacterLimbo.swift */; };
+		EDD3C24C1E728B9F005E43D8 /* LTEasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2381E728B9F005E43D8 /* LTEasing.swift */; };
+		EDD3C24D1E728B9F005E43D8 /* LTEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2391E728B9F005E43D8 /* LTEmitterView.swift */; };
+		EDD3C24E1E728B9F005E43D8 /* LTMorphingEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C23A1E728B9F005E43D8 /* LTMorphingEffect.swift */; };
+		EDD3C24F1E728B9F005E43D8 /* LTMorphingLabel+Anvil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C23B1E728B9F005E43D8 /* LTMorphingLabel+Anvil.swift */; };
+		EDD3C2501E728B9F005E43D8 /* LTMorphingLabel+Burn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C23C1E728B9F005E43D8 /* LTMorphingLabel+Burn.swift */; };
+		EDD3C2511E728B9F005E43D8 /* LTMorphingLabel+Evaporate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C23D1E728B9F005E43D8 /* LTMorphingLabel+Evaporate.swift */; };
+		EDD3C2521E728B9F005E43D8 /* LTMorphingLabel+Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C23E1E728B9F005E43D8 /* LTMorphingLabel+Fall.swift */; };
+		EDD3C2531E728B9F005E43D8 /* LTMorphingLabel+Pixelate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C23F1E728B9F005E43D8 /* LTMorphingLabel+Pixelate.swift */; };
+		EDD3C2541E728B9F005E43D8 /* LTMorphingLabel+Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2401E728B9F005E43D8 /* LTMorphingLabel+Sparkle.swift */; };
+		EDD3C2551E728B9F005E43D8 /* LTMorphingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2421E728B9F005E43D8 /* LTMorphingLabel.swift */; };
+		EDD3C2561E728B9F005E43D8 /* LTStringDiffResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD3C2431E728B9F005E43D8 /* LTStringDiffResult.swift */; };
+		EDD3C2571E728B9F005E43D8 /* Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2451E728B9F005E43D8 /* Fire.png */; };
+		EDD3C2581E728B9F005E43D8 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2461E728B9F005E43D8 /* Fragment.png */; };
+		EDD3C2591E728B9F005E43D8 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2471E728B9F005E43D8 /* Smoke.png */; };
+		EDD3C25A1E728B9F005E43D8 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2481E728B9F005E43D8 /* Sparkle.png */; };
 		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 		EDF154731E6002E20001A946 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF154471E6002E20001A946 /* MJRefreshAutoFooter.m */; };
 		EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF154491E6002E20001A946 /* MJRefreshBackFooter.m */; };
@@ -185,7 +202,6 @@
 		ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRefreshView.swift; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		ED4579E81E653E4200AA95CC /* LLAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLAuthManager.swift; path = "../工具库/LLAuthManager.swift"; sourceTree = "<group>"; };
-		ED52AE271E6EC49D00F6C214 /* LLRegisterHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRegisterHeadView.swift; sourceTree = "<group>"; };
 		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
 		ED59FB531E2EFFA800216063 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
@@ -285,6 +301,25 @@
 		EDC18AF11E55A6330026E4D2 /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		EDC18AF21E55A6330026E4D2 /* ThreadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadHelper.swift; sourceTree = "<group>"; };
 		EDC18AF31E55A6330026E4D2 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		EDD3C2351E728B9F005E43D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDD3C2361E728B9F005E43D8 /* LTCharacterDiffResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCharacterDiffResult.swift; sourceTree = "<group>"; };
+		EDD3C2371E728B9F005E43D8 /* LTCharacterLimbo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTCharacterLimbo.swift; sourceTree = "<group>"; };
+		EDD3C2381E728B9F005E43D8 /* LTEasing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTEasing.swift; sourceTree = "<group>"; };
+		EDD3C2391E728B9F005E43D8 /* LTEmitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTEmitterView.swift; sourceTree = "<group>"; };
+		EDD3C23A1E728B9F005E43D8 /* LTMorphingEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTMorphingEffect.swift; sourceTree = "<group>"; };
+		EDD3C23B1E728B9F005E43D8 /* LTMorphingLabel+Anvil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Anvil.swift"; sourceTree = "<group>"; };
+		EDD3C23C1E728B9F005E43D8 /* LTMorphingLabel+Burn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Burn.swift"; sourceTree = "<group>"; };
+		EDD3C23D1E728B9F005E43D8 /* LTMorphingLabel+Evaporate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Evaporate.swift"; sourceTree = "<group>"; };
+		EDD3C23E1E728B9F005E43D8 /* LTMorphingLabel+Fall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Fall.swift"; sourceTree = "<group>"; };
+		EDD3C23F1E728B9F005E43D8 /* LTMorphingLabel+Pixelate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Pixelate.swift"; sourceTree = "<group>"; };
+		EDD3C2401E728B9F005E43D8 /* LTMorphingLabel+Sparkle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LTMorphingLabel+Sparkle.swift"; sourceTree = "<group>"; };
+		EDD3C2411E728B9F005E43D8 /* LTMorphingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTMorphingLabel.h; sourceTree = "<group>"; };
+		EDD3C2421E728B9F005E43D8 /* LTMorphingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTMorphingLabel.swift; sourceTree = "<group>"; };
+		EDD3C2431E728B9F005E43D8 /* LTStringDiffResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTStringDiffResult.swift; sourceTree = "<group>"; };
+		EDD3C2451E728B9F005E43D8 /* Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fire.png; sourceTree = "<group>"; };
+		EDD3C2461E728B9F005E43D8 /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fragment.png; sourceTree = "<group>"; };
+		EDD3C2471E728B9F005E43D8 /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoke.png; sourceTree = "<group>"; };
+		EDD3C2481E728B9F005E43D8 /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparkle.png; sourceTree = "<group>"; };
 		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 		EDF154461E6002E20001A946 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		EDF154471E6002E20001A946 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -495,7 +530,7 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ED52AE271E6EC49D00F6C214 /* LLRegisterHeadView.swift */,
+				EDD3C2341E728B9F005E43D8 /* LTMorphingLabel */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
 				ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */,
 				ED3DC5761E31F3C3008CA172 /* ZYAnimationLayer.h */,
@@ -643,6 +678,40 @@
 				EDC18AF31E55A6330026E4D2 /* UIButton+Kingfisher.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDD3C2341E728B9F005E43D8 /* LTMorphingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EDD3C2351E728B9F005E43D8 /* Info.plist */,
+				EDD3C2361E728B9F005E43D8 /* LTCharacterDiffResult.swift */,
+				EDD3C2371E728B9F005E43D8 /* LTCharacterLimbo.swift */,
+				EDD3C2381E728B9F005E43D8 /* LTEasing.swift */,
+				EDD3C2391E728B9F005E43D8 /* LTEmitterView.swift */,
+				EDD3C23A1E728B9F005E43D8 /* LTMorphingEffect.swift */,
+				EDD3C23B1E728B9F005E43D8 /* LTMorphingLabel+Anvil.swift */,
+				EDD3C23C1E728B9F005E43D8 /* LTMorphingLabel+Burn.swift */,
+				EDD3C23D1E728B9F005E43D8 /* LTMorphingLabel+Evaporate.swift */,
+				EDD3C23E1E728B9F005E43D8 /* LTMorphingLabel+Fall.swift */,
+				EDD3C23F1E728B9F005E43D8 /* LTMorphingLabel+Pixelate.swift */,
+				EDD3C2401E728B9F005E43D8 /* LTMorphingLabel+Sparkle.swift */,
+				EDD3C2411E728B9F005E43D8 /* LTMorphingLabel.h */,
+				EDD3C2421E728B9F005E43D8 /* LTMorphingLabel.swift */,
+				EDD3C2431E728B9F005E43D8 /* LTStringDiffResult.swift */,
+				EDD3C2441E728B9F005E43D8 /* Particles */,
+			);
+			path = LTMorphingLabel;
+			sourceTree = "<group>";
+		};
+		EDD3C2441E728B9F005E43D8 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				EDD3C2451E728B9F005E43D8 /* Fire.png */,
+				EDD3C2461E728B9F005E43D8 /* Fragment.png */,
+				EDD3C2471E728B9F005E43D8 /* Smoke.png */,
+				EDD3C2481E728B9F005E43D8 /* Sparkle.png */,
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 		EDF154441E6002E20001A946 /* MJRefresh */ = {
@@ -857,17 +926,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD3C25A1E728B9F005E43D8 /* Sparkle.png in Resources */,
 				EDF712C71E6FA88100555CEC /* Info-watchOS.plist in Resources */,
 				EDF154FE1E600B050001A946 /* Info.plist in Resources */,
 				EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */,
+				EDD3C2581E728B9F005E43D8 /* Fragment.png in Resources */,
 				EDF712C51E6FA88100555CEC /* Info-OSX.plist in Resources */,
 				EDF712C41E6FA88100555CEC /* Info-iOS.plist in Resources */,
 				ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */,
+				EDD3C2491E728B9F005E43D8 /* Info.plist in Resources */,
 				EDF154FD1E600B050001A946 /* Info-tvOS.plist in Resources */,
 				EDF712C61E6FA88100555CEC /* Info-tvOS.plist in Resources */,
 				EDF154811E6002E20001A946 /* MJRefresh.bundle in Resources */,
 				ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */,
 				ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */,
+				EDD3C2591E728B9F005E43D8 /* Smoke.png in Resources */,
+				EDD3C2571E728B9F005E43D8 /* Fire.png in Resources */,
 				EDB7548C1E69478B00E2C350 /* Info.plist in Resources */,
 				ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */,
 			);
@@ -886,6 +960,7 @@
 				ED59FB5C1E2EFFA800216063 /* UIImage+extension.swift in Sources */,
 				ED59FB5B1E2EFFA800216063 /* UIDevice+extension.swift in Sources */,
 				ED420D511E4C4E7300C0EB4E /* LLBaseTableView.swift in Sources */,
+				EDD3C2561E728B9F005E43D8 /* LTStringDiffResult.swift in Sources */,
 				EDF155091E600B050001A946 /* SessionManager.swift in Sources */,
 				EDF154751E6002E20001A946 /* MJRefreshComponent.m in Sources */,
 				ED8A9D061E2F5FEF001A2EC8 /* KaedeTextField.swift in Sources */,
@@ -900,7 +975,6 @@
 				EDB754841E69478B00E2C350 /* ConstraintPriority.swift in Sources */,
 				EDC18B011E55A6330026E4D2 /* Indicator.swift in Sources */,
 				EDF154FF1E600B050001A946 /* MultipartFormData.swift in Sources */,
-				ED52AE281E6EC49D00F6C214 /* LLRegisterHeadView.swift in Sources */,
 				EDC18AF91E55A6330026E4D2 /* Filter.swift in Sources */,
 				EDB754721E69478B00E2C350 /* ConstraintDescription.swift in Sources */,
 				EDF1550A1E600B050001A946 /* TaskDelegate.swift in Sources */,
@@ -916,9 +990,11 @@
 				ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */,
 				ED8A9D081E2F5FEF001A2EC8 /* MinoruTextField.swift in Sources */,
 				EDB7547F1E69478B00E2C350 /* ConstraintMakerFinalizable.swift in Sources */,
+				EDD3C24C1E728B9F005E43D8 /* LTEasing.swift in Sources */,
 				EDC18AF81E55A6330026E4D2 /* CacheSerializer.swift in Sources */,
 				EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
+				EDD3C2501E728B9F005E43D8 /* LTMorphingLabel+Burn.swift in Sources */,
 				ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */,
 				EDC18AFB1E55A6330026E4D2 /* ImageCache.swift in Sources */,
 				EDF155041E600B050001A946 /* Response.swift in Sources */,
@@ -931,10 +1007,14 @@
 				EDC18AF61E55A6330026E4D2 /* AnimatedImageView.swift in Sources */,
 				EDF154FB1E600B050001A946 /* Alamofire.swift in Sources */,
 				ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */,
+				EDD3C2511E728B9F005E43D8 /* LTMorphingLabel+Evaporate.swift in Sources */,
 				EDB754771E69478B00E2C350 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				EDF155011E600B050001A946 /* Notifications.swift in Sources */,
 				EDC18B041E55A6330026E4D2 /* KingfisherOptionsInfo.swift in Sources */,
 				EDF154861E6002E20001A946 /* UIView+MJExtension.m in Sources */,
+				EDD3C2541E728B9F005E43D8 /* LTMorphingLabel+Sparkle.swift in Sources */,
+				EDD3C24F1E728B9F005E43D8 /* LTMorphingLabel+Anvil.swift in Sources */,
+				EDD3C24D1E728B9F005E43D8 /* LTEmitterView.swift in Sources */,
 				EDB7548E1E69478B00E2C350 /* LayoutConstraintItem.swift in Sources */,
 				ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */,
 				EDB7546E1E69478B00E2C350 /* Constraint.swift in Sources */,
@@ -944,6 +1024,7 @@
 				EDB754861E69478B00E2C350 /* ConstraintRelatableTarget.swift in Sources */,
 				EDB754471E69431100E2C350 /* UITextField+fixCaretPosition.swift in Sources */,
 				EDB754781E69478B00E2C350 /* ConstraintLayoutGuide.swift in Sources */,
+				EDD3C2531E728B9F005E43D8 /* LTMorphingLabel+Pixelate.swift in Sources */,
 				EDF1550B1E600B050001A946 /* Timeline.swift in Sources */,
 				ED741F7C1E6F9FC600CFE8BC /* LLThemeManager.swift in Sources */,
 				EDF1547C1E6002E20001A946 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -958,6 +1039,7 @@
 				EDF1547D1E6002E20001A946 /* MJRefreshBackStateFooter.m in Sources */,
 				EDF154831E6002E20001A946 /* NSBundle+MJRefresh.m in Sources */,
 				EDF155051E600B050001A946 /* ResponseSerialization.swift in Sources */,
+				EDD3C24B1E728B9F005E43D8 /* LTCharacterLimbo.swift in Sources */,
 				EDB754701E69478B00E2C350 /* ConstraintConfig.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
 				EDB754791E69478B00E2C350 /* ConstraintLayoutGuideDSL.swift in Sources */,
@@ -971,8 +1053,11 @@
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
 				EDB754851E69478B00E2C350 /* ConstraintPriorityTarget.swift in Sources */,
 				EDF154801E6002E20001A946 /* MJRefreshStateHeader.m in Sources */,
+				EDD3C2521E728B9F005E43D8 /* LTMorphingLabel+Fall.swift in Sources */,
 				ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */,
 				ED3DC5741E31E340008CA172 /* LLRegisterViewController.swift in Sources */,
+				EDD3C24E1E728B9F005E43D8 /* LTMorphingEffect.swift in Sources */,
+				EDD3C2551E728B9F005E43D8 /* LTMorphingLabel.swift in Sources */,
 				EDB754831E69478B00E2C350 /* ConstraintOffsetTarget.swift in Sources */,
 				EDF155071E600B050001A946 /* ServerTrustPolicy.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
@@ -995,6 +1080,7 @@
 				ED8A9D041E2F5FEF001A2EC8 /* IsaoTextField.swift in Sources */,
 				EDB754811E69478B00E2C350 /* ConstraintMakerRelatable.swift in Sources */,
 				EDC18AF71E55A6330026E4D2 /* Box.swift in Sources */,
+				EDD3C24A1E728B9F005E43D8 /* LTCharacterDiffResult.swift in Sources */,
 				EDC18B091E55A6330026E4D2 /* UIButton+Kingfisher.swift in Sources */,
 				EDF155001E600B050001A946 /* NetworkReachabilityManager.swift in Sources */,
 				EDF154841E6002E20001A946 /* UIScrollView+MJExtension.m in Sources */,
