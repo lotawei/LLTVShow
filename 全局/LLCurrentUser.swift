@@ -12,8 +12,12 @@ class LLCurrentUser: NSObject {
     override init() {
         if NSKeyedUnarchiver.unarchiveObject(withFile:userAccountPath) != nil {
             self.user = NSKeyedUnarchiver.unarchiveObject(withFile:userAccountPath) as?  LLUser
+            
+          
         }
     }
+    
+   
     
 }
 

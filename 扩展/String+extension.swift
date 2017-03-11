@@ -47,4 +47,44 @@ extension String {
                       result[8], result[9], result[10], result[11],
                       result[12], result[13], result[14], result[15])
     }
+    // 邮箱验证
+    
+    
+    
+}
+extension UITextField{
+    
+   
+    
+    
+    func validate(value: String) -> Bool{
+        
+        let predicate = NSPredicate(format: " SELF MATCHES %@" , value)
+        
+        return predicate.evaluate(with: self.text)
+        
+    }
+    
+    
+    func validateEmail() -> Bool{
+        
+        return self.validate( value: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9,-]+\\.[A-Za-z]{2,6}")
+        
+    }
+    
+    
+    func validatePhoneNumer() -> Bool{
+        
+        return self.validate(value:"^\\d{11}$")
+        
+    }
+    
+    
+    func validatePassword() -> Bool {
+        
+        return self.validate(value: "^[A-Z0-9a-z]{6,18}")
+        
+    }
+    
+    
 }

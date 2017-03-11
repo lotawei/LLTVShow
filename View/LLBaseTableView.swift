@@ -16,7 +16,7 @@ class LLBaseTableView: UITableView {
         delaysContentTouches = false
         canCancelContentTouches = true
         separatorStyle = .none
-        
+        showsVerticalScrollIndicator = false
         let wrapView = subviews.first
         
         if wrapView != nil && NSStringFromClass((wrapView?.classForCoder)!).hasPrefix("WrapperView") {
