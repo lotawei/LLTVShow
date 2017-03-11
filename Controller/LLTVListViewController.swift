@@ -25,13 +25,14 @@ class LLTVListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(self.img)
-
+        
+  
 //   _  = LLAuthManager("http://open.moretv.com.cn/moviesite", .get, nil) { (data) in
 //         let  jsondata =  data.result.value as!  [String:Any]
 //         print(jsondata)
     }
         
-       
+  
     
     
 //    func  test(){

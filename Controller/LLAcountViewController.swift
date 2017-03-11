@@ -26,7 +26,7 @@ class LLAcountViewController: BaseViewController {
        btn.backgroundColor = fontcolor
         btn.setTitle("登录", for: .normal)
         btn.addTarget(self, action: #selector(LLAcountViewController.login), for: .touchUpInside)
-    
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 11)
      return  btn
    }()
     //
@@ -35,7 +35,7 @@ class LLAcountViewController: BaseViewController {
         abtn.backgroundColor = fontcolor
         abtn.setTitle("注册", for: .normal)
         abtn.addTarget(self, action: #selector(LLAcountViewController.register), for: .touchUpInside)
-        
+          abtn.titleLabel?.font = UIFont.systemFont(ofSize: 11)
         return  abtn
     }()
     
@@ -112,29 +112,30 @@ class LLAcountViewController: BaseViewController {
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
+        self.portraitimg.clipsToBounds = true
+        self.portraitimg.layer.cornerRadius = 40
         
    
         self.btnlogin.snp.makeConstraints { (maker) in
             maker.width.equalTo(80)
             maker.height.equalTo(30)
-            maker.bottom.equalTo(-15)
-            maker.left.equalTo((ScreenWidth - 160 - 20 )/2.0)
+            maker.bottom.equalTo(-10)
+            maker.left.equalTo((ScreenWidth - 240)/2.0)
             
         }
         
         
         self.portraitimg.snp.makeConstraints { (maker) in
-            maker.width.equalTo(75)
-            maker.height.equalTo(75)
+            maker.width.equalTo(80)
+            maker.height.equalTo(80)
             maker.centerX.equalTo(headview)
             maker.top.equalTo(25)
         }
         self.btnregister.snp.makeConstraints { (maker) in
             maker.width.equalTo(80)
             maker.height.equalTo(30)
-            maker.bottom.equalTo(-15)
-             maker.right.equalTo(-(ScreenWidth - 160 - 80 )/2.0)
+            maker.bottom.equalTo(-10)
+             maker.right.equalTo(-(ScreenWidth - 240 )/2.0)
         }
         self.headview.snp.makeConstraints { (maker) in
             maker.top.equalTo(0)
@@ -145,7 +146,7 @@ class LLAcountViewController: BaseViewController {
             maker.centerX.equalTo(headview)
             maker.width.equalTo(80)
             maker.height.equalTo(30)
-            maker.bottom.equalTo(-15)
+            maker.bottom.equalTo(-10)
 
         }
         
@@ -198,7 +199,9 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    // 页面跳转回调用
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        
         updateview()
     }
 }

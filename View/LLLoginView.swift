@@ -18,17 +18,70 @@ class LLLoginView: UIView {
     @IBOutlet weak var btnlogin: UIButton!
   
     
+    
+    
     @IBOutlet weak var brandanimationview: UIView!
   
     func checklogin(_ sender: Any) {
         
-      UIApplication.shared.delegate?.window??.rootViewController =  LLMainTabarController()
+          var   valid  =  false
+         if   txtlogin.text == " "{
+            _ = SweetAlert().showAlert("输入的用户名不能为空！")
+            return
+        }
+        if  txtpwd.text == " "{
+            _ = SweetAlert().showAlert("请输入密码")
+            return
+        }
+        valid  =  true
         
-       UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+        let   username = txtlogin.text
+        let   pwd = txtpwd.text
         
-        //如果要做一个历史记录信息的可以在  登录验证完毕后 存入本地 
+        if   valid {
+            
+         
+         serverauthrizon(username!,pwd!)
+    
+        }
         
         
+        
+        
+        
+        
+        
+        
+    }
+    
+    // requestusers
+   
+    func  serverauthrizon(_ name:String , _ pwd:String)  {
+        
+        BmobUser.loginWithUsername(inBackground: name, password: pwd) { (user, err) in
+            
+            if   err != nil{
+                _ = SweetAlert().showAlert("登录失败")
+                
+            }
+            
+            if    user !=  nil{
+                let     curuser = user! as  BmobUser
+               
+                
+                let     locuser  = LLUser.init(curuser.username, .normal,"default", Substyle.normal, isfirst: "no")
+                if  (locuser.saveuser()){
+                
+                 _ = SweetAlert().showAlert("登录成功！")
+                 UIApplication.shared.delegate?.window??.rootViewController = LLMainTabarController()
+                 UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+                }
+                
+                
+            }
+            
+            
+        }
         
         
         
@@ -63,5 +116,19 @@ class LLLoginView: UIView {
         //添加模糊视图到页面view上（模糊视图下方都会有模糊效果）
         self.insertSubview(blurView, at: 0)
     }
+    
+}
+extension   LLLoginView:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if   !txtlogin.isExclusiveTouch{
+            txtlogin.resignFirstResponder()
+        }
+        if   !txtpwd.isExclusiveTouch{
+            txtpwd.resignFirstResponder()
+        }
+        return  true
+    }
+    
+    
     
 }

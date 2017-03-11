@@ -194,7 +194,7 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         valid  = true
         anewuser?.saveInBackground { (success, err) in
             if  err != nil{
-              _ =  SweetAlert().showAlert("\(err)")
+              _ =  SweetAlert().showAlert("注册出现问题")
             }
             if   success{
               _ =  SweetAlert().showAlert("注册成功")
@@ -205,7 +205,7 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         
         if   valid{
         // 将其用户信息存起来
-        let   auser = LLUser(randomusername, txtpwd.text!, Usertype.normal, "defaultpotrait", Substyle.normal, isfirst: "no", eamil!)
+        let   auser = LLUser(randomusername, Usertype.normal, "defaultpotrait", Substyle.normal, isfirst: "no")
         _ =  auser.saveuser()
         }
     }
