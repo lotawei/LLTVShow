@@ -71,8 +71,6 @@ class LLLoginView: UIView {
                 
                 let     locuser  = LLUser.init(curuser.username, .normal,"default", Substyle.normal, isfirst: "no")
                 if  (locuser.saveuser()){
-                
-                 _ = SweetAlert().showAlert("登录成功！")
                  UIApplication.shared.delegate?.window??.rootViewController = LLMainTabarController()
                  UIApplication.shared.delegate?.window??.makeKeyAndVisible()
                 }

@@ -173,6 +173,8 @@ class LLAcountViewController: BaseViewController {
         
     }
     func  logout(){
+        LLCurrentUser.currentuser.user.cleanuser()
+        updateview()
         
     }
    

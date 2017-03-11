@@ -89,8 +89,26 @@ class LLUser: NSObject ,NSCoding{
 extension   LLUser{
     //    存储用户信息
     func  saveuser() ->  Bool{
+        let   result = NSKeyedArchiver.archiveRootObject(self, toFile:userAccountPath)
+        if    result {
+            LLCurrentUser.currentuser.user =  self
+        }
         
-        return  NSKeyedArchiver.archiveRootObject(self, toFile:userAccountPath)
+        
+        
+        return result
+    }
+    //  清理用户信息
+    func   cleanuser()  {
+        
+        if(FileManager.default.fileExists(atPath:userAccountPath)){
+            // 删除
+            try! FileManager.default.removeItem(atPath: userAccountPath)
+        }
+        
+        LLCurrentUser.currentuser.user =  nil
+
+      
     }
     
 }
