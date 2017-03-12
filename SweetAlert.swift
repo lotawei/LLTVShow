@@ -40,7 +40,8 @@ open class SweetAlert: UIViewController {
         super.init(nibName: nil, bundle: nil)
         self.view.frame = UIScreen.main.bounds
         self.view.autoresizingMask = [UIViewAutoresizing.flexibleHeight, UIViewAutoresizing.flexibleWidth]
-        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:kBakcgroundTansperancy)
+//        self.view.backgroundColor = UIColor(red:0, green:0, blue:0, alpha:kBakcgroundTansperancy)
+         self.view.backgroundColor = UIColor.gray
         self.view.addSubview(contentView)
         
         //Retaining itself strongly so can exist without strong refrence
@@ -59,7 +60,7 @@ open class SweetAlert: UIViewController {
         contentView.addSubview(titleLabel)
         contentView.addSubview(subTitleTextView)
         contentView.backgroundColor = UIColor.colorFromRGB(0xFFFFFF)
-        contentView.layer.borderColor = UIColor.colorFromRGB(0xCCCCCC).cgColor
+        contentView.layer.borderColor = fontcolor.cgColor
         view.addSubview(contentView)
     }
 

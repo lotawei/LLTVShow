@@ -31,6 +31,7 @@
 		ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */; };
 		ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB631E2F036B00216063 /* LLLoginView.swift */; };
 		ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED59FB651E2F037F00216063 /* LLLoginViewController.xib */; };
+		ED6487A41E752057009673E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6487A31E752057009673E7 /* AVFoundation.framework */; };
 		ED741F7C1E6F9FC600CFE8BC /* LLThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED741F7B1E6F9FC600CFE8BC /* LLThemeManager.swift */; };
 		ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */; };
 		ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */; };
@@ -213,6 +214,7 @@
 		ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaVgationController.swift; sourceTree = "<group>"; };
 		ED59FB631E2F036B00216063 /* LLLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginView.swift; sourceTree = "<group>"; };
 		ED59FB651E2F037F00216063 /* LLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLLoginViewController.xib; path = ../View/LLLoginViewController.xib; sourceTree = "<group>"; };
+		ED6487A31E752057009673E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ED741F7B1E6F9FC600CFE8BC /* LLThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLThemeManager.swift; sourceTree = "<group>"; };
 		ED8A9CF51E2F5FEF001A2EC8 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		ED8A9CF61E2F5FEF001A2EC8 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6487A41E752057009673E7 /* AVFoundation.framework in Frameworks */,
 				EDB754911E694F2900E2C350 /* Photos.framework in Frameworks */,
 				EDB754411E69115500E2C350 /* CoreLocation.framework in Frameworks */,
 				EDB7543F1E69114D00E2C350 /* Security.framework in Frameworks */,
@@ -584,6 +587,7 @@
 		EDB754291E6910F800E2C350 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED6487A31E752057009673E7 /* AVFoundation.framework */,
 				EDB754901E694F2900E2C350 /* Photos.framework */,
 				EDB754401E69115500E2C350 /* CoreLocation.framework */,
 				EDB7543E1E69114D00E2C350 /* Security.framework */,

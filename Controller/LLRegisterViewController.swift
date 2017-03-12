@@ -205,7 +205,7 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         
         if   valid{
         // 将其用户信息存起来
-        let   auser = LLUser(randomusername, Usertype.normal, "default", Substyle.normal, isfirst: "yes")
+        let   auser = LLUser(randomusername, Usertype.normal, "\(randomusername)_por.png", Substyle.normal, isfirst: "yes")
                _ =  auser.saveuser()
         }
     }

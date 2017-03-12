@@ -36,7 +36,7 @@ class LLUser: NSObject ,NSCoding{
     var   username:String!
     //用户类型
     var   usertype:Usertype!
-    //用户头像
+    //用户头像 路径
     var   portrait:String!
     //主题类型
     var   substyle:Substyle!
@@ -95,9 +95,25 @@ extension   LLUser{
         }
         
         LLCurrentUser.currentuser.user =  nil
-
-      
+        
     }
+    
+    //  在用户设置头像时更改路径
+    func changeportrait(path:String)  {
+         self.portrait = path
+    }
+    //  扩展一个方法 判断用户是否设置了头像
+    
+    func alreadysetportrait() -> Bool {
+        if   self.portrait == "default" || self.portrait == "flat" {
+            
+            
+            return   false
+        }
+     
+        return   true
+    }
+    
     
 }
 
