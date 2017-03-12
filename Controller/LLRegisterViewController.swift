@@ -205,8 +205,8 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         
         if   valid{
         // 将其用户信息存起来
-        let   auser = LLUser(randomusername, Usertype.normal, "defaultpotrait", Substyle.normal, isfirst: "no")
-        _ =  auser.saveuser()
+        let   auser = LLUser(randomusername, Usertype.normal, "default", Substyle.normal, isfirst: "yes")
+               _ =  auser.saveuser()
         }
     }
    
@@ -235,9 +235,6 @@ extension  LLRegisterViewController:UITextFieldDelegate{
         }
         return  true
     }
-    
-    
-    
 }
 
 

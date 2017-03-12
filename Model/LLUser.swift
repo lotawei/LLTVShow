@@ -24,37 +24,29 @@ extension   Substyle{
 }
 //分为普通用户,vip ,管理员(管理员用于接受反馈信息)
 enum Usertype:Int {
-    case normal,vip, admin
+    case normal,vip, admin  //服务器对应 0 1 2
 }
 //主题类型
 enum   Substyle:Int {
-    case normal,dark, eyeprotect //正常,黑夜,护眼
+    case normal,dark, eyeprotect //正常,黑夜,护眼 0 1 2
 }
 
 class LLUser: NSObject ,NSCoding{
     //昵称
     var   username:String!
-  
-  
     //用户类型
     var   usertype:Usertype!
     //用户头像
     var   portrait:String!
     //主题类型
     var   substyle:Substyle!
-   
-    
-    
     //用户第一次使用本app  是的话可能就要打广告了
     var   isfirst:String!
     func encode(with aCoder: NSCoder) {
         aCoder.encode(username, forKey:"name")
-      
-        
         aCoder.encode(usertype.rawValue, forKey: "usertype")
         aCoder.encode(portrait, forKey: "portrait")
         aCoder.encode(substyle.rawValue, forKey: "substyle")
-       
         aCoder.encode(isfirst, forKey: "isfirst")
    }
     
@@ -79,10 +71,6 @@ class LLUser: NSObject ,NSCoding{
         self.portrait = portrait
         self.substyle = substyle
         self.isfirst = isfirst
-       
-      
-        
-        
     }
 }
 //扩展一个归档

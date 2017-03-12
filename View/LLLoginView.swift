@@ -61,18 +61,29 @@ class LLLoginView: UIView {
         BmobUser.loginWithUsername(inBackground: name, password: pwd) { (user, err) in
             
             if   err != nil{
-                _ = SweetAlert().showAlert("登录失败")
+                _  = SweetAlert().showAlert("登录失败")
                 
             }
             
             if    user !=  nil{
-                let     curuser = user! as  BmobUser
-               
-                
-                let     locuser  = LLUser.init(curuser.username, .normal,"default", Substyle.normal, isfirst: "no")
+                 let     curuser = user! as  BmobObject
+                 let    name = curuser.object(forKey: "username") as! String
+                 let    portrait = curuser.object(forKey: "portrait") as! String
+                 let    usertype = curuser.object(forKey: "usertype") as! Int
+                 let    substyle = curuser.object(forKey: "substyle") as! Int
+                let     locuser  = LLUser.init(name , Usertype(rawValue: usertype)! ,portrait, Substyle(rawValue: substyle)!, isfirst: "no")
                 if  (locuser.saveuser()){
-                 UIApplication.shared.delegate?.window??.rootViewController = LLMainTabarController()
-                 UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+                 //  分权限管理的话   是管理员 直有一个界面
+                    if  locuser.usertype.rawValue == Usertype.admin.rawValue {
+                        RootviewController = BaseViewController()
+                        UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+                    }
+                    else{
+                    
+                         RootviewController = LLMainTabarController()
+                         UIApplication.shared.delegate?.window??.makeKeyAndVisible()
+                    }
+                    
                 }
                 
                 

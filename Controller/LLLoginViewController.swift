@@ -33,7 +33,6 @@ class LLLoginViewController: BaseViewController {
         self.navigationController?.navigationBar.isHidden = false
         view.backgroundColor = fontcolor
         if  self.navigationController != nil{
-            
             self.title = "登录"
             self.tabBarController?.tabBar.isHidden =  true
         }

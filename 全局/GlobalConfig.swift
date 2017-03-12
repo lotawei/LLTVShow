@@ -42,6 +42,11 @@ let identifierNumber = UIDevice.current.identifierForVendor   //设备 udid
 let systemName = UIDevice.current.systemName   //设备名称
 let model = UIDevice.current.model   //设备型号
 let localizedModel = UIDevice.current.localizedModel   //设备区域化型号
+//
+var     RootviewController = UIApplication.shared.delegate?.window??.rootViewController
+
+
+
 
 //整个app颜色基调
 let   normalcolor:UIColor = UIColor(red: 244, green: 244, blue: 244, alpha: 1.0)
