@@ -47,7 +47,44 @@ extension String {
                       result[8], result[9], result[10], result[11],
                       result[12], result[13], result[14], result[15])
     }
-    // 邮箱验证
+    
+    // 转为kb g mb 
+    static func transformedValue(_ value:AnyObject) -> String {
+    var    multiplyFactor = 0
+    var convertedValue = value.doubleValue
+        
+        let   tokens = ["字节","KB","MB"]
+        while (convertedValue! > Double(1024.0)){
+        
+//            convertedValue /=  Double(1024.0)
+            convertedValue  =  convertedValue!  / Double(1024)
+        
+            multiplyFactor += 1
+            
+            }
+        return "\(String.init(format:"%0.2f",convertedValue!))\(tokens[multiplyFactor])"
+    }
+    
+//    int multiplyFactor = 0;﻿
+//    
+//    ﻿
+//    
+//    NSArray *tokens = [NSArray arrayWithObjects:@"bytes",@"KB",@"MB",@"GB",@"TB",@“PB”, @“EB”, @“ZB”, @“YB”,nil];﻿
+//    
+//    ﻿
+//    
+//    while (convertedValue > 1024) {﻿
+//    
+//    convertedValue /= 1024;﻿
+//    
+//    multiplyFactor++;﻿
+//    
+//    }﻿
+//    
+//    ﻿
+//    
+//    return [NSString stringWithFormat:@"%4.2f %@",convertedValue, [tokens objectAtIndex:multiplyFactor]];﻿
+//
     
     
     
