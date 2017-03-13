@@ -67,6 +67,27 @@ var   fontcolor:UIColor =  UIColor(red: 171.0/255.0, green:129.0/255.0, blue: 59
  let userCachePath = "\(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!)/"
 
 
+//列表 中 的通知  object  发的字符串
+
+let   LLPOSTmsg = "我的消息"
+let   LLPOSTLevelUpVip =  "升级会员"
+let   LLPOSTIntersting = "猜你喜欢"
+let   LLPOSTSubstyle = "主题皮肤"
+let   LLPOSDarkStyle = "夜间模式"
+let   LLPOSLightStyle = "正常模式"
+let   LLPOSTShare = "分享"
+let   LLPOSTClean = "清理缓存"
+let   LLPOSTAbout = "关于"
+//
+
+// 制定通知
+
+let notificationName =  "notifystyle"
+let notificationSelect =  "notifyselect"
+let   NOTIfyCenter = NotificationCenter.default
+
+//
+
 
 
 

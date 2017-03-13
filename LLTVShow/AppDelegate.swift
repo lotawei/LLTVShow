@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               print(userAccountPath)
         //  注册bmob的使用
         
+        
+        
+        
         Bmob.register(withAppKey: bmobappkey)
         
         let   winfr = CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight)

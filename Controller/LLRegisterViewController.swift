@@ -48,7 +48,7 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         alab.delegate = self
         
         alab.textColor = fontcolor
-        alab.morphingEffect = .sparkle
+        alab.morphingEffect = .burn
         alab.text = "重复"
         
         
@@ -57,6 +57,7 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
     //邮箱
     lazy  var  txtemail:YoshikoTextField = {
         let   field = YoshikoTextField()
+       
         field.borderStyle = .roundedRect
         field.tag = 1001
         field.delegate = self
@@ -125,44 +126,44 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         self.lblname.snp.makeConstraints { (maker) in
             maker.left.equalTo(al)
             maker.width.equalTo(80)
-            maker.height.equalTo(30)
+            maker.height.equalTo(40)
             maker.top.equalTo(30)
         }
         self.lblpwd.snp.makeConstraints { (maker) in
             maker.left.equalTo(al)
             maker.width.equalTo(80)
-            maker.height.equalTo(30)
-            maker.top.equalTo(70)
+            maker.height.equalTo(40)
+            maker.top.equalTo(80)
         }
         self.lblepwd.snp.makeConstraints { (maker) in
             maker.left.equalTo(al)
             maker.width.equalTo(80)
-            maker.height.equalTo(30)
-            maker.top.equalTo(110)
+            maker.height.equalTo(40)
+            maker.top.equalTo(130)
         }
         self.txtemail.snp.makeConstraints { (maker) in
             maker.left.equalTo(iptl)
             maker.width.equalTo(180)
-            maker.height.equalTo(30)
+            maker.height.equalTo(40)
             maker.top.equalTo(30)
         }
         self.txtpwd.snp.makeConstraints { (maker) in
             maker.left.equalTo(iptl)
             maker.width.equalTo(180)
-            maker.height.equalTo(30)
-            maker.top.equalTo(70)
+            maker.height.equalTo(40)
+            maker.top.equalTo(80)
         }
         self.txtepwd.snp.makeConstraints { (maker) in
             maker.left.equalTo(iptl)
             maker.width.equalTo(180)
-            maker.height.equalTo(30)
-            maker.top.equalTo(110)
+            maker.height.equalTo(40)
+            maker.top.equalTo(130)
         }
         self.btnregister.snp.makeConstraints { (maker) in
             maker.centerX.equalTo(view)
             maker.width.equalTo(180)
             maker.height.equalTo(30)
-            maker.top.equalTo(180)
+            maker.top.equalTo(200)
         }
         
         

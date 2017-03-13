@@ -18,6 +18,10 @@
 		ED420D511E4C4E7300C0EB4E /* LLBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */; };
 		ED420D531E4C4F0D00C0EB4E /* LLBaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */; };
 		ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */; };
+		ED4356D21E76557400D5C0B8 /* LLUerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */; };
+		ED4356D41E765F9200D5C0B8 /* LLUerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */; };
+		ED4356D91E767A2300D5C0B8 /* LLAccoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */; };
+		ED4356DA1E767A2300D5C0B8 /* LLAccoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4579E81E653E4200AA95CC /* LLAuthManager.swift */; };
 		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
@@ -201,6 +205,10 @@
 		ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLBaseTableView.swift; sourceTree = "<group>"; };
 		ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLBaseCollectionView.swift; sourceTree = "<group>"; };
 		ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRefreshView.swift; sourceTree = "<group>"; };
+		ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLUerInfoView.xib; path = ../Controller/LLUerInfoView.xib; sourceTree = "<group>"; };
+		ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLUerInfoView.swift; path = ../Controller/LLUerInfoView.swift; sourceTree = "<group>"; };
+		ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAccoutCell.swift; sourceTree = "<group>"; };
+		ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLAccoutCell.xib; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		ED4579E81E653E4200AA95CC /* LLAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLAuthManager.swift; path = "../工具库/LLAuthManager.swift"; sourceTree = "<group>"; };
 		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
@@ -533,6 +541,8 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */,
+				ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */,
 				EDD3C2341E728B9F005E43D8 /* LTMorphingLabel */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
 				ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */,
@@ -540,6 +550,8 @@
 				ED3DC5771E31F3C3008CA172 /* ZYAnimationLayer.m */,
 				ED8A9CF41E2F5FEF001A2EC8 /* TextFieldEffects */,
 				ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */,
+				ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */,
+				ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -930,6 +942,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4356DA1E767A2300D5C0B8 /* LLAccoutCell.xib in Resources */,
+				ED4356D21E76557400D5C0B8 /* LLUerInfoView.xib in Resources */,
 				EDD3C25A1E728B9F005E43D8 /* Sparkle.png in Resources */,
 				EDF712C71E6FA88100555CEC /* Info-watchOS.plist in Resources */,
 				EDF154FE1E600B050001A946 /* Info.plist in Resources */,
@@ -983,6 +997,7 @@
 				EDB754721E69478B00E2C350 /* ConstraintDescription.swift in Sources */,
 				EDF1550A1E600B050001A946 /* TaskDelegate.swift in Sources */,
 				EDF155061E600B050001A946 /* Result.swift in Sources */,
+				ED4356D41E765F9200D5C0B8 /* LLUerInfoView.swift in Sources */,
 				EDF1547A1E6002E20001A946 /* MJRefreshAutoStateFooter.m in Sources */,
 				EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */,
 				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
@@ -1084,6 +1099,7 @@
 				ED8A9D041E2F5FEF001A2EC8 /* IsaoTextField.swift in Sources */,
 				EDB754811E69478B00E2C350 /* ConstraintMakerRelatable.swift in Sources */,
 				EDC18AF71E55A6330026E4D2 /* Box.swift in Sources */,
+				ED4356D91E767A2300D5C0B8 /* LLAccoutCell.swift in Sources */,
 				EDD3C24A1E728B9F005E43D8 /* LTCharacterDiffResult.swift in Sources */,
 				EDC18B091E55A6330026E4D2 /* UIButton+Kingfisher.swift in Sources */,
 				EDF155001E600B050001A946 /* NetworkReachabilityManager.swift in Sources */,
