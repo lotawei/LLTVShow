@@ -64,7 +64,9 @@ var   fontcolor:UIColor =  UIColor(red: 171.0/255.0, green:129.0/255.0, blue: 59
 //用户存储路经
  let userAccountPath = "\(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,FileManager.SearchPathDomainMask.userDomainMask,true).first!)/user.data"
 //用户缓存路径 包括 头像图片资源 和 收藏影视 路径
- let userCachePath = "\(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!)/"
+ let userCachePath = "\(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first!)/"
+
+//
 
 
 //列表 中 的通知  object  发的字符串

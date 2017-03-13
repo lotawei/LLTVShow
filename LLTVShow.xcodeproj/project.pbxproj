@@ -22,6 +22,7 @@
 		ED4356D41E765F9200D5C0B8 /* LLUerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */; };
 		ED4356D91E767A2300D5C0B8 /* LLAccoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */; };
 		ED4356DA1E767A2300D5C0B8 /* LLAccoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */; };
+		ED4356FE1E76BF3000D5C0B8 /* LLTVCollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356FD1E76BF3000D5C0B8 /* LLTVCollectionList.swift */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4579E81E653E4200AA95CC /* LLAuthManager.swift */; };
 		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
@@ -209,6 +210,7 @@
 		ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLUerInfoView.swift; path = ../Controller/LLUerInfoView.swift; sourceTree = "<group>"; };
 		ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAccoutCell.swift; sourceTree = "<group>"; };
 		ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLAccoutCell.xib; sourceTree = "<group>"; };
+		ED4356FD1E76BF3000D5C0B8 /* LLTVCollectionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTVCollectionList.swift; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		ED4579E81E653E4200AA95CC /* LLAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLAuthManager.swift; path = "../工具库/LLAuthManager.swift"; sourceTree = "<group>"; };
 		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 				ED3DB52A1DEA8C490030B3BC /* AppDelegate.swift */,
 				ED3DB5541DEA8D410030B3BC /* GlobalConfig.swift */,
 				ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */,
+				ED4356FD1E76BF3000D5C0B8 /* LLTVCollectionList.swift */,
 			);
 			path = "全局";
 			sourceTree = "<group>";
@@ -1001,6 +1004,7 @@
 				EDF1547A1E6002E20001A946 /* MJRefreshAutoStateFooter.m in Sources */,
 				EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */,
 				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
+				ED4356FE1E76BF3000D5C0B8 /* LLTVCollectionList.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
 				ED8A9D071E2F5FEF001A2EC8 /* MadokaTextField.swift in Sources */,
 				ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */,

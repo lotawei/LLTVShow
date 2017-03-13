@@ -34,7 +34,75 @@ class BaseViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden   =  false
         
     }
-   
+ 
+    
+    func cleancahe()  {
+//         取出cache文件夹路径
+        let cachePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first
+        let testpath  = cachePath?.appending("/test.data")
+        print(cachePath)
+        let files = FileManager.default.subpaths(atPath:cachePath!)
+        
+        //  为了测试呢 就随便写点东西
+        let   astrdata = "呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的呵呵呵呵呵呵呵呵呵我是测试的"
+        let    data = astrdata.data(using: .utf8)
+       
+        try!  data?.write(to: URL(fileURLWithPath: testpath!))
+    
+        
+        
+        var big = Double();
+//         快速枚举取出所有文件名
+            for p in files!{
+            // 把文件名拼接到路径中
+            let path = cachePath!.appendingFormat("/\(p)")
+                if  path != userAccountPath {
+            // 取出文件属性
+            let floder = try! FileManager.default.attributesOfItem(atPath: path)
+            // 用元组取出文件大小属性
+            for (abc,bcd) in floder {
+            // 只去出文件大小进行拼接
+            if abc == FileAttributeKey.size{
+              big += (bcd as AnyObject).doubleValue
+            }
+            }
+            }
+        }
+         let message = String(format: "%.2f", "\(big/(1024*1024))M缓存")
+        SweetAlert().showAlert("确定要删除?", subTitle: message, style: AlertStyle.warning, buttonTitle:"取消", buttonColor:btncolor , otherButtonTitle:  "删除", otherButtonColor: btncolor) { (isOtherButton) -> Void in
+            if isOtherButton == true {
+                
+                
+            }
+            else {
+                for p in files!{
+                                // 拼接路径
+                                let path = cachePath!.appendingFormat("/\(p)")
+                                if  path != userAccountPath {
+                                // 判断是否可以删除
+                                if(FileManager.default.fileExists(atPath:path)){
+                                    // 删除
+                                    do{
+                                    try FileManager.default.removeItem(atPath: path)
+                                     _ =   SweetAlert().showAlert("Deleted!", subTitle: "清理成功", style: AlertStyle.success)
+                                    }catch{
+                                        
+                                    }
+                                }
+                            }
+                }
+
+                
+            
+            }
+        }
+        
+
+        
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -44,5 +112,6 @@ class BaseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

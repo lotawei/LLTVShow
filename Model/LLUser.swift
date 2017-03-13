@@ -100,7 +100,9 @@ extension   LLUser{
     
     //  在用户设置头像时更改路径
     func changeportrait(path:String)  {
+        if  path != ""{
          self.portrait = path
+        }
     }
     //  扩展一个方法 判断用户是否设置了头像
     

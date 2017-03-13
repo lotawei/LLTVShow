@@ -130,7 +130,7 @@ class LLAcountViewController: BaseViewController {
         
         for a in cells {
             let cell: UITableViewCell = a as UITableViewCell
-            UIView.animate(withDuration: 1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.05 * Double(index), usingSpringWithDamping: 1.5, initialSpringVelocity: 0, options: [], animations: {
                 cell.transform = CGAffineTransform(translationX: 0, y: 0);
             }, completion: nil)
             index += 1
@@ -411,7 +411,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
     }
     func imagePickerController( _ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         // 拿到此图片 需要 存入本地
-        let   userpath = userCachePath.appending("\(LLCurrentUser.currentuser.user.username)_por.png")
+        var   userpath = userCachePath.appending("\(LLCurrentUser.currentuser.user.username)_por.png")
         let   imgdata = UIImageJPEGRepresentation(image, 0.5)
         //  写入时先将本地头像清理了
         if(FileManager.default.fileExists(atPath:userpath)){
@@ -425,7 +425,8 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
             _ = LLCurrentUser.currentuser.user.saveuser()
             
         }catch {
-            print(error)
+            //  将 path 至诚 空
+            userpath = ""
         }
         self.dismiss(animated: true, completion: nil)
         
@@ -453,7 +454,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
             _  = SweetAlert().showAlert(str)
              break;
         case "清理缓存":
-            _  = SweetAlert().showAlert(str)
+             cleancahe()
              break;
         case "关于":
             _  = SweetAlert().showAlert(str)
