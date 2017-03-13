@@ -439,16 +439,31 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
         switch str {
         case "我的消息":
             _  = SweetAlert().showAlert(str)
+            break;
         case "升级会员":
             _  = SweetAlert().showAlert(str)
+             break;
         case "主题皮肤":
             _  = SweetAlert().showAlert(str)
+             break;
+        case "猜你喜欢":
+            _  = SweetAlert().showAlert(str)
+            break;
         case "分享":
             _  = SweetAlert().showAlert(str)
+             break;
         case "清理缓存":
             _  = SweetAlert().showAlert(str)
+             break;
         case "关于":
             _  = SweetAlert().showAlert(str)
+             break;
+        case LLPOSDarkStyle:
+            _  = SweetAlert().showAlert(LLPOSDarkStyle)
+            break;
+        case LLPOSLightStyle:
+            _  = SweetAlert().showAlert(LLPOSLightStyle)
+            break;
         default:
             _  = SweetAlert().showAlert("nil")
         }
@@ -469,6 +484,10 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
         if  str == "主题皮肤"{
             
             return LLPOSTSubstyle
+        }
+        if  str == "猜你喜欢"{
+            
+            return LLPOSTIntersting
         }
         if  str == "分享"{
             
