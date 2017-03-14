@@ -60,6 +60,9 @@ class RAMItemAnimation: NSObject, RAMItemAnimationProtocol {
 //方式一
 class RAMAnimatedTabBarItem: UITabBarItem {
     
+   
+    
+    
     var animation: RAMItemAnimation?
     
     var textColor = UIColor.gray
@@ -432,7 +435,8 @@ class LLAnimationTabBarController: UITabBarController {
                 
                 textLabel.textColor = UIColor.gray
                 
-                textLabel.translatesAutoresizingMaskIntoConstraints = false
+//                textLabel.translatesAutoresizingMaskIntoConstraints = false
+               
                 
                 container.addSubview(icon)
                 

@@ -17,10 +17,23 @@ class LLLoginView: UIView {
     
     @IBOutlet weak var btnlogin: UIButton!
   
-    
+     let  activityIndicatorView  = NVActivityIndicatorView(frame: CGRect.zero, type: .semiCircleSpin, color: fontcolor, padding: 1)
     
     
     @IBOutlet weak var brandanimationview: UIView!
+    
+    
+  
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        activityIndicatorView.frame = CGRect(x: (ScreenWidth - 100 )/2.0 , y: 0, width: 100, height: 40)
+        
+        
+    }
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.addSubview(self.activityIndicatorView)
+    }
   
     func checklogin(_ sender: Any) {
         
@@ -46,26 +59,25 @@ class LLLoginView: UIView {
         }
         
         
-        
-        
-        
-        
-        
-        
     }
+    
     
     // requestusers
    
     func  serverauthrizon(_ name:String , _ pwd:String)  {
-        
+        activityIndicatorView.startAnimating()
+        weak  var   tmp = self
         BmobUser.loginWithUsername(inBackground: name, password: pwd) { (user, err) in
+            tmp?.activityIndicatorView.stopAnimating()
             
             if   err != nil{
+               
                 _  = SweetAlert().showAlert("登录失败")
                 
             }
             
             if    user !=  nil{
+                
                  let     curuser = user! as  BmobObject
                  let    name = curuser.object(forKey: "username") as! String
                  let    portrait = curuser.object(forKey: "portrait") as! String
@@ -75,12 +87,12 @@ class LLLoginView: UIView {
                 if  (locuser.saveuser()){
                  //  分权限管理的话   是管理员 直有一个界面
                     if  locuser.usertype.rawValue == Usertype.admin.rawValue {
-                        RootviewController = BaseViewController()
+                        UIApplication.shared.delegate?.window??.rootViewController = BaseViewController()
                         UIApplication.shared.delegate?.window??.makeKeyAndVisible()
                     }
                     else{
                     
-                         RootviewController = LLMainTabarController()
+                        UIApplication.shared.delegate?.window??.rootViewController  = LLMainTabarController()
                          UIApplication.shared.delegate?.window??.makeKeyAndVisible()
                     }
                     

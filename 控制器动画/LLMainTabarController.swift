@@ -16,8 +16,8 @@ class LLMainTabarController: LLAnimationTabBarController,UITabBarControllerDeleg
     }
     func buildMainTabarChildViewController()  {
         
-        tabBarControllerAddChildViewController(LLTVListViewController() , title: "直播视频", imagename: "MyAcount_normal", selectimagename: "MyAcount_select", tag: 0)
-        tabBarControllerAddChildViewController(LLAcountViewController() , title: "我的", imagename: "Mytv_normal", selectimagename: "Mytv_select", tag: 1)
+        tabBarControllerAddChildViewController(LLTVListViewController() , title: "直播视频", imagename: "Mytv_normal", selectimagename: "Mytv_select", tag: 0)
+        tabBarControllerAddChildViewController(LLAcountViewController() , title: "我的", imagename: "MyAcount_normal", selectimagename: "MyAcount_select", tag: 1)
        
         
         

@@ -51,6 +51,44 @@
 		ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */; };
 		EDA058681E63DAFC0086D564 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA058671E63DAFC0086D564 /* SweetAlert.swift */; };
 		EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */; };
+		EDAAFF631E778A5800EC8865 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF3C1E778A5800EC8865 /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		EDAAFF641E778A5800EC8865 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF3D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		EDAAFF651E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF3E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		EDAAFF661E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF3F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		EDAAFF671E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF401E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		EDAAFF681E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF411E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		EDAAFF691E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF421E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		EDAAFF6A1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF431E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		EDAAFF6B1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF441E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
+		EDAAFF6C1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF451E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		EDAAFF6D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF461E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		EDAAFF6E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF471E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		EDAAFF6F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF481E778A5800EC8865 /* NVActivityIndicatorAnimationBallScale.swift */; };
+		EDAAFF701E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF491E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		EDAAFF711E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF4A1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
+		EDAAFF721E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF4B1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		EDAAFF731E778A5800EC8865 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF4C1E778A5800EC8865 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		EDAAFF741E778A5800EC8865 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF4D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		EDAAFF751E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF4E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		EDAAFF761E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF4F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		EDAAFF771E778A5800EC8865 /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF501E778A5800EC8865 /* NVActivityIndicatorAnimationBlank.swift */; };
+		EDAAFF781E778A5800EC8865 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF511E778A5800EC8865 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		EDAAFF791E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF521E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift */; };
+		EDAAFF7A1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF531E778A5800EC8865 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
+		EDAAFF7B1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF541E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		EDAAFF7C1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF551E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		EDAAFF7D1E778A5800EC8865 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF561E778A5800EC8865 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		EDAAFF7E1E778A5800EC8865 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF571E778A5800EC8865 /* NVActivityIndicatorAnimationOrbit.swift */; };
+		EDAAFF7F1E778A5800EC8865 /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF581E778A5800EC8865 /* NVActivityIndicatorAnimationPacman.swift */; };
+		EDAAFF801E778A5800EC8865 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF591E778A5800EC8865 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		EDAAFF811E778A5800EC8865 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF5A1E778A5800EC8865 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		EDAAFF821E778A5900EC8865 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF5B1E778A5800EC8865 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		EDAAFF831E778A5900EC8865 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDAAFF5C1E778A5800EC8865 /* Info.plist */; };
+		EDAAFF841E778A5900EC8865 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF5D1E778A5800EC8865 /* NVActivityIndicatorAnimationDelegate.swift */; };
+		EDAAFF851E778A5900EC8865 /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF5E1E778A5800EC8865 /* NVActivityIndicatorPresenter.swift */; };
+		EDAAFF861E778A5900EC8865 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF5F1E778A5800EC8865 /* NVActivityIndicatorShape.swift */; };
+		EDAAFF871E778A5900EC8865 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF611E778A5800EC8865 /* NVActivityIndicatorView.swift */; };
+		EDAAFF881E778A5900EC8865 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF621E778A5800EC8865 /* NVActivityIndicatorViewable.swift */; };
 		EDB754281E6910B100E2C350 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB754271E6910B100E2C350 /* BmobSDK.framework */; };
 		EDB7542B1E6910F800E2C350 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB7542A1E6910F800E2C350 /* libc++.tbd */; };
 		EDB7542E1E69110200E2C350 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB7542C1E69110200E2C350 /* libsqlite3.0.tbd */; };
@@ -240,6 +278,45 @@
 		ED8A9D001E2F5FEF001A2EC8 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		EDA058671E63DAFC0086D564 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SweetAlert.swift; path = ../SweetAlert.swift; sourceTree = "<group>"; };
 		EDA402311E24D00C00E00CCE /* LLAnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAnimationTabBarController.swift; sourceTree = "<group>"; };
+		EDAAFF3C1E778A5800EC8865 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		EDAAFF3D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		EDAAFF3E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		EDAAFF3F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		EDAAFF401E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		EDAAFF411E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		EDAAFF421E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		EDAAFF431E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		EDAAFF441E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		EDAAFF451E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		EDAAFF461E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		EDAAFF471E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		EDAAFF481E778A5800EC8865 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		EDAAFF491E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		EDAAFF4A1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		EDAAFF4B1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		EDAAFF4C1E778A5800EC8865 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		EDAAFF4D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		EDAAFF4E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		EDAAFF4F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		EDAAFF501E778A5800EC8865 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		EDAAFF511E778A5800EC8865 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		EDAAFF521E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		EDAAFF531E778A5800EC8865 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		EDAAFF541E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		EDAAFF551E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		EDAAFF561E778A5800EC8865 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		EDAAFF571E778A5800EC8865 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		EDAAFF581E778A5800EC8865 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		EDAAFF591E778A5800EC8865 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		EDAAFF5A1E778A5800EC8865 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		EDAAFF5B1E778A5800EC8865 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		EDAAFF5C1E778A5800EC8865 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAAFF5D1E778A5800EC8865 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		EDAAFF5E1E778A5800EC8865 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		EDAAFF5F1E778A5800EC8865 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		EDAAFF601E778A5800EC8865 /* NVActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVActivityIndicatorView.h; sourceTree = "<group>"; };
+		EDAAFF611E778A5800EC8865 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		EDAAFF621E778A5800EC8865 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
 		EDB754271E6910B100E2C350 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 		EDB7542A1E6910F800E2C350 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		EDB7542C1E69110200E2C350 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -433,6 +510,7 @@
 		ED3DB51E1DEA8C490030B3BC = {
 			isa = PBXGroup;
 			children = (
+				EDAAFF391E778A4B00EC8865 /* 加载动画指示 */,
 				EDB754271E6910B100E2C350 /* BmobSDK.framework */,
 				EDF154871E6004A20001A946 /* 工具库 */,
 				EDA402301E24CFAE00E00CCE /* 控制器动画 */,
@@ -544,17 +622,17 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */,
 				ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */,
 				ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */,
-				EDD3C2341E728B9F005E43D8 /* LTMorphingLabel */,
+				ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */,
+				ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
 				ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */,
+				EDD3C2341E728B9F005E43D8 /* LTMorphingLabel */,
 				ED3DC5761E31F3C3008CA172 /* ZYAnimationLayer.h */,
 				ED3DC5771E31F3C3008CA172 /* ZYAnimationLayer.m */,
 				ED8A9CF41E2F5FEF001A2EC8 /* TextFieldEffects */,
-				ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */,
-				ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */,
-				ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -597,6 +675,68 @@
 				EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */,
 			);
 			path = "控制器动画";
+			sourceTree = "<group>";
+		};
+		EDAAFF391E778A4B00EC8865 /* 加载动画指示 */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAFF3A1E778A5800EC8865 /* NVActivityIndicatorView */,
+			);
+			path = "加载动画指示";
+			sourceTree = "<group>";
+		};
+		EDAAFF3A1E778A5800EC8865 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAFF3B1E778A5800EC8865 /* Animations */,
+				EDAAFF5C1E778A5800EC8865 /* Info.plist */,
+				EDAAFF5D1E778A5800EC8865 /* NVActivityIndicatorAnimationDelegate.swift */,
+				EDAAFF5E1E778A5800EC8865 /* NVActivityIndicatorPresenter.swift */,
+				EDAAFF5F1E778A5800EC8865 /* NVActivityIndicatorShape.swift */,
+				EDAAFF601E778A5800EC8865 /* NVActivityIndicatorView.h */,
+				EDAAFF611E778A5800EC8865 /* NVActivityIndicatorView.swift */,
+				EDAAFF621E778A5800EC8865 /* NVActivityIndicatorViewable.swift */,
+			);
+			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		EDAAFF3B1E778A5800EC8865 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				EDAAFF3C1E778A5800EC8865 /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				EDAAFF3D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				EDAAFF3E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				EDAAFF3F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				EDAAFF401E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				EDAAFF411E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				EDAAFF421E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				EDAAFF431E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulse.swift */,
+				EDAAFF441E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				EDAAFF451E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				EDAAFF461E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotate.swift */,
+				EDAAFF471E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				EDAAFF481E778A5800EC8865 /* NVActivityIndicatorAnimationBallScale.swift */,
+				EDAAFF491E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				EDAAFF4A1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				EDAAFF4B1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				EDAAFF4C1E778A5800EC8865 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				EDAAFF4D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				EDAAFF4E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				EDAAFF4F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				EDAAFF501E778A5800EC8865 /* NVActivityIndicatorAnimationBlank.swift */,
+				EDAAFF511E778A5800EC8865 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				EDAAFF521E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift */,
+				EDAAFF531E778A5800EC8865 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				EDAAFF541E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				EDAAFF551E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				EDAAFF561E778A5800EC8865 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				EDAAFF571E778A5800EC8865 /* NVActivityIndicatorAnimationOrbit.swift */,
+				EDAAFF581E778A5800EC8865 /* NVActivityIndicatorAnimationPacman.swift */,
+				EDAAFF591E778A5800EC8865 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				EDAAFF5A1E778A5800EC8865 /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				EDAAFF5B1E778A5800EC8865 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		EDB754291E6910F800E2C350 /* Frameworks */ = {
@@ -965,6 +1105,7 @@
 				EDD3C2571E728B9F005E43D8 /* Fire.png in Resources */,
 				EDB7548C1E69478B00E2C350 /* Info.plist in Resources */,
 				ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */,
+				EDAAFF831E778A5900EC8865 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -978,6 +1119,7 @@
 				EDF88B3D1E4D67C50034CAAF /* LLAcountViewController.swift in Sources */,
 				EDC18AFF1E55A6330026E4D2 /* ImageTransition.swift in Sources */,
 				EDB754871E69478B00E2C350 /* ConstraintRelation.swift in Sources */,
+				EDAAFF661E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
 				ED59FB5C1E2EFFA800216063 /* UIImage+extension.swift in Sources */,
 				ED59FB5B1E2EFFA800216063 /* UIDevice+extension.swift in Sources */,
 				ED420D511E4C4E7300C0EB4E /* LLBaseTableView.swift in Sources */,
@@ -988,27 +1130,34 @@
 				EDF154781E6002E20001A946 /* MJRefreshAutoGifFooter.m in Sources */,
 				ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */,
 				EDC18B071E55A6330026E4D2 /* String+MD5.swift in Sources */,
+				EDAAFF861E778A5900EC8865 /* NVActivityIndicatorShape.swift in Sources */,
 				EDF1547F1E6002E20001A946 /* MJRefreshNormalHeader.m in Sources */,
 				EDC18B031E55A6330026E4D2 /* KingfisherManager.swift in Sources */,
 				EDC18B061E55A6330026E4D2 /* Resource.swift in Sources */,
 				EDF154731E6002E20001A946 /* MJRefreshAutoFooter.m in Sources */,
+				EDAAFF651E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */,
 				EDB754841E69478B00E2C350 /* ConstraintPriority.swift in Sources */,
 				EDC18B011E55A6330026E4D2 /* Indicator.swift in Sources */,
 				EDF154FF1E600B050001A946 /* MultipartFormData.swift in Sources */,
+				EDAAFF7B1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
 				EDC18AF91E55A6330026E4D2 /* Filter.swift in Sources */,
+				EDAAFF751E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
 				EDB754721E69478B00E2C350 /* ConstraintDescription.swift in Sources */,
 				EDF1550A1E600B050001A946 /* TaskDelegate.swift in Sources */,
 				EDF155061E600B050001A946 /* Result.swift in Sources */,
 				ED4356D41E765F9200D5C0B8 /* LLUerInfoView.swift in Sources */,
 				EDF1547A1E6002E20001A946 /* MJRefreshAutoStateFooter.m in Sources */,
 				EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */,
+				EDAAFF6D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
 				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
 				ED4356FE1E76BF3000D5C0B8 /* LLTVCollectionList.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
 				ED8A9D071E2F5FEF001A2EC8 /* MadokaTextField.swift in Sources */,
 				ED8A9D011E2F5FEF001A2EC8 /* AkiraTextField.swift in Sources */,
 				EDB754821E69478B00E2C350 /* ConstraintMultiplierTarget.swift in Sources */,
+				EDAAFF761E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				EDAAFF681E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
 				ED59FB5E1E2EFFC900216063 /* LLUser.swift in Sources */,
 				ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */,
 				ED8A9D081E2F5FEF001A2EC8 /* MinoruTextField.swift in Sources */,
@@ -1016,18 +1165,26 @@
 				EDD3C24C1E728B9F005E43D8 /* LTEasing.swift in Sources */,
 				EDC18AF81E55A6330026E4D2 /* CacheSerializer.swift in Sources */,
 				EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */,
+				EDAAFF791E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
 				EDD3C2501E728B9F005E43D8 /* LTMorphingLabel+Burn.swift in Sources */,
 				ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */,
 				EDC18AFB1E55A6330026E4D2 /* ImageCache.swift in Sources */,
 				EDF155041E600B050001A946 /* Response.swift in Sources */,
 				ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */,
+				EDAAFF6F1E778A5800EC8865 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
 				ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */,
+				EDAAFF811E778A5800EC8865 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				EDAAFF721E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
 				EDF154791E6002E20001A946 /* MJRefreshAutoNormalFooter.m in Sources */,
 				EDF155081E600B050001A946 /* SessionDelegate.swift in Sources */,
+				EDAAFF641E778A5800EC8865 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				EDAAFF691E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
 				EDB754731E69478B00E2C350 /* ConstraintDSL.swift in Sources */,
 				EDF154771E6002E20001A946 /* MJRefreshHeader.m in Sources */,
+				EDAAFF6E1E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
 				EDC18AF61E55A6330026E4D2 /* AnimatedImageView.swift in Sources */,
+				EDAAFF7C1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
 				EDF154FB1E600B050001A946 /* Alamofire.swift in Sources */,
 				ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */,
 				EDD3C2511E728B9F005E43D8 /* LTMorphingLabel+Evaporate.swift in Sources */,
@@ -1036,13 +1193,16 @@
 				EDC18B041E55A6330026E4D2 /* KingfisherOptionsInfo.swift in Sources */,
 				EDF154861E6002E20001A946 /* UIView+MJExtension.m in Sources */,
 				EDD3C2541E728B9F005E43D8 /* LTMorphingLabel+Sparkle.swift in Sources */,
+				EDAAFF871E778A5900EC8865 /* NVActivityIndicatorView.swift in Sources */,
 				EDD3C24F1E728B9F005E43D8 /* LTMorphingLabel+Anvil.swift in Sources */,
 				EDD3C24D1E728B9F005E43D8 /* LTEmitterView.swift in Sources */,
 				EDB7548E1E69478B00E2C350 /* LayoutConstraintItem.swift in Sources */,
 				ED59FB641E2F036B00216063 /* LLLoginView.swift in Sources */,
 				EDB7546E1E69478B00E2C350 /* Constraint.swift in Sources */,
 				EDF155021E600B050001A946 /* ParameterEncoding.swift in Sources */,
+				EDAAFF841E778A5900EC8865 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
 				EDB7547B1E69478B00E2C350 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				EDAAFF741E778A5800EC8865 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
 				EDF155031E600B050001A946 /* Request.swift in Sources */,
 				EDB754861E69478B00E2C350 /* ConstraintRelatableTarget.swift in Sources */,
 				EDB754471E69431100E2C350 /* UITextField+fixCaretPosition.swift in Sources */,
@@ -1057,8 +1217,10 @@
 				EDC18AFA1E55A6330026E4D2 /* Image.swift in Sources */,
 				EDB7548B1E69478B00E2C350 /* Debugging.swift in Sources */,
 				EDB7548D1E69478B00E2C350 /* LayoutConstraint.swift in Sources */,
+				EDAAFF851E778A5900EC8865 /* NVActivityIndicatorPresenter.swift in Sources */,
 				ED420D531E4C4F0D00C0EB4E /* LLBaseCollectionView.swift in Sources */,
 				EDC18B021E55A6330026E4D2 /* Kingfisher.swift in Sources */,
+				EDAAFF801E778A5800EC8865 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
 				EDF1547D1E6002E20001A946 /* MJRefreshBackStateFooter.m in Sources */,
 				EDF154831E6002E20001A946 /* NSBundle+MJRefresh.m in Sources */,
 				EDF155051E600B050001A946 /* ResponseSerialization.swift in Sources */,
@@ -1066,37 +1228,50 @@
 				EDB754701E69478B00E2C350 /* ConstraintConfig.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
 				EDB754791E69478B00E2C350 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				EDAAFF7E1E778A5800EC8865 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
 				EDB754881E69478B00E2C350 /* ConstraintView+Extensions.swift in Sources */,
 				EDF1550C1E600B050001A946 /* Validation.swift in Sources */,
 				EDC18B001E55A6330026E4D2 /* ImageView+Kingfisher.swift in Sources */,
 				EDB754761E69478B00E2C350 /* ConstraintItem.swift in Sources */,
+				EDAAFF6A1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
+				EDAAFF6C1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
 				ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */,
 				EDC18AFE1E55A6330026E4D2 /* ImageProcessor.swift in Sources */,
+				EDAAFF701E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
 				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
 				EDB754851E69478B00E2C350 /* ConstraintPriorityTarget.swift in Sources */,
 				EDF154801E6002E20001A946 /* MJRefreshStateHeader.m in Sources */,
 				EDD3C2521E728B9F005E43D8 /* LTMorphingLabel+Fall.swift in Sources */,
 				ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */,
+				EDAAFF771E778A5800EC8865 /* NVActivityIndicatorAnimationBlank.swift in Sources */,
 				ED3DC5741E31E340008CA172 /* LLRegisterViewController.swift in Sources */,
 				EDD3C24E1E728B9F005E43D8 /* LTMorphingEffect.swift in Sources */,
 				EDD3C2551E728B9F005E43D8 /* LTMorphingLabel.swift in Sources */,
 				EDB754831E69478B00E2C350 /* ConstraintOffsetTarget.swift in Sources */,
+				EDAAFF821E778A5900EC8865 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				EDAAFF881E778A5900EC8865 /* NVActivityIndicatorViewable.swift in Sources */,
 				EDF155071E600B050001A946 /* ServerTrustPolicy.swift in Sources */,
+				EDAAFF6B1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				EDAAFF711E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
 				ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */,
 				EDB7547C1E69478B00E2C350 /* ConstraintMaker.swift in Sources */,
+				EDAAFF731E778A5800EC8865 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
 				EDB7548F1E69478B00E2C350 /* UILayoutSupport+Extensions.swift in Sources */,
 				EDF154821E6002E20001A946 /* MJRefreshConst.m in Sources */,
+				EDAAFF781E778A5800EC8865 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				EDF1547B1E6002E20001A946 /* MJRefreshBackGifFooter.m in Sources */,
 				EDB754891E69478B00E2C350 /* ConstraintView.swift in Sources */,
 				EDA058681E63DAFC0086D564 /* SweetAlert.swift in Sources */,
 				ED8A9D0A1E2F5FEF001A2EC8 /* YokoTextField.swift in Sources */,
+				EDAAFF7A1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
 				EDC18AFC1E55A6330026E4D2 /* ImageDownloader.swift in Sources */,
 				EDB7548A1E69478B00E2C350 /* ConstraintViewDSL.swift in Sources */,
 				EDF1547E1E6002E20001A946 /* MJRefreshGifHeader.m in Sources */,
 				ED59FB621E2F00BF00216063 /* BaseNaVgationController.swift in Sources */,
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
 				EDB7547D1E69478B00E2C350 /* ConstraintMakerEditable.swift in Sources */,
+				EDAAFF671E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
 				ED3DC5791E31F3C3008CA172 /* ZYAnimationLayer.m in Sources */,
 				EDC18B051E55A6330026E4D2 /* RequestModifier.swift in Sources */,
 				EDF154761E6002E20001A946 /* MJRefreshFooter.m in Sources */,
@@ -1109,12 +1284,15 @@
 				EDF155001E600B050001A946 /* NetworkReachabilityManager.swift in Sources */,
 				EDF154841E6002E20001A946 /* UIScrollView+MJExtension.m in Sources */,
 				EDF154FA1E600B050001A946 /* AFError.swift in Sources */,
+				EDAAFF7D1E778A5800EC8865 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
 				EDB754711E69478B00E2C350 /* ConstraintConstantTarget.swift in Sources */,
 				EDB754461E69431100E2C350 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
 				EDB754451E69431100E2C350 /* SkyFloatingLabelTextField.swift in Sources */,
 				EDB7547A1E69478B00E2C350 /* ConstraintLayoutSupport.swift in Sources */,
 				EDF154851E6002E20001A946 /* UIScrollView+MJRefresh.m in Sources */,
+				EDAAFF7F1E778A5800EC8865 /* NVActivityIndicatorAnimationPacman.swift in Sources */,
 				EDB754741E69478B00E2C350 /* ConstraintInsets.swift in Sources */,
+				EDAAFF631E778A5800EC8865 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
 				EDF154FC1E600B050001A946 /* DispatchQueue+Alamofire.swift in Sources */,
 				EDB7546F1E69478B00E2C350 /* ConstraintAttributes.swift in Sources */,
 				EDB754801E69478B00E2C350 /* ConstraintMakerPriortizable.swift in Sources */,

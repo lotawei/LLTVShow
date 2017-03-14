@@ -36,7 +36,7 @@ class LLUser: NSObject ,NSCoding{
     var   username:String!
     //用户类型
     var   usertype:Usertype!
-    //用户头像 路径
+    //用户头像 自定义的话存的就是路径 未自定义就是 asset 的图片
     var   portrait:String!
     //主题类型
     var   substyle:Substyle!

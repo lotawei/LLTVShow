@@ -11,7 +11,7 @@ import AVFoundation
 import Photos
 //  这里  使用 列表模拟数据
 class LLAcountViewController: BaseViewController {
-    var sourceType = UIImagePickerControllerSourceType.photoLibrary
+    var sourceType:UIImagePickerControllerSourceType!
     let   mainscrollerview:UIScrollView! = nil
     // 数据  暂时先自己构建吧
     let   accoutlistdata: NSMutableArray = {
@@ -55,7 +55,9 @@ class LLAcountViewController: BaseViewController {
     }()
     
     
-    let   headview:UIView = UIView()
+    lazy var   headview:UIView = {
+        return   UIView()
+    }()
     //
     lazy var   btnlogin:UIButton = {
         let  btn = UIButton()
@@ -279,7 +281,10 @@ class LLAcountViewController: BaseViewController {
             return
         }
         
+
+    
         
+//        
         let   alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "相册", style: .default, handler: {(action) in
@@ -293,12 +298,23 @@ class LLAcountViewController: BaseViewController {
             }
         }))
         alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "相机", style: .default, handler: { (action) in
+            if(self.cameraPermissions() == true){
+                  self.sourceType  = UIImagePickerControllerSourceType.camera
+
+                  self.open()
+            }else{
+                _  = SweetAlert().showAlert("请到通用－>隐私设置允许访问相机")
+                
+                
+            }
+        }))
         alert.addAction(UIAlertAction(title: "软件提供", style: .default, handler: { (action) in
             
         }))
         
         self.present(alert, animated: true, completion: nil)
-      
+       
         
     }
    
@@ -400,7 +416,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
     
     // 页面跳转回调用
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        
+       
         updateview()
     }
     
@@ -410,6 +426,9 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
         self.dismiss(animated: true, completion: nil)
     }
     func imagePickerController( _ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        
+       
+        
         // 拿到此图片 需要 存入本地
         var   userpath = userCachePath.appending("\(LLCurrentUser.currentuser.user.username)_por.png")
         let   imgdata = UIImageJPEGRepresentation(image, 0.5)
@@ -428,6 +447,8 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
             //  将 path 至诚 空
             userpath = ""
         }
+        
+        
         self.dismiss(animated: true, completion: nil)
         
     }
