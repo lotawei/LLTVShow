@@ -38,7 +38,9 @@ class BaseNaVgationController: UINavigationController {
         buttonItem.setBackButtonTitlePositionAdjustment(offset, for: .default)
     }
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillDisappear(animated)
+        
+        
         navigationBar.setBackgroundImage(nil, for: .default)
         navigationBar.shadowImage = nil
 //        [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -56,6 +58,9 @@ class BaseNaVgationController: UINavigationController {
         
         
     }
+    
+   
+    
     // 半透明背景
     func imagewithcolor(color:UIColor) -> UIImage {
         let  rect =  CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)

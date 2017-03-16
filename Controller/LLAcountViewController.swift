@@ -269,6 +269,7 @@ class LLAcountViewController: BaseViewController {
     }
     func  logout(){
         LLCurrentUser.currentuser.user.cleanuser()
+        //  主要是 更新的是 头部  以及 夜间模式的开关
         updateview()
         
     }

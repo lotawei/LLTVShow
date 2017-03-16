@@ -226,6 +226,7 @@
 		EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */; };
 		EDF88B3B1E4D67320034CAAF /* LLTVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */; };
 		EDF88B3D1E4D67C50034CAAF /* LLAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3C1E4D67C50034CAAF /* LLAcountViewController.swift */; };
+		EDFB12D21E797605007A2D70 /* LLSelctAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB12D11E797605007A2D70 /* LLSelctAddressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -479,6 +480,7 @@
 		EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTVListViewController.swift; sourceTree = "<group>"; };
 		EDF88B3C1E4D67C50034CAAF /* LLAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAcountViewController.swift; sourceTree = "<group>"; };
+		EDFB12D11E797605007A2D70 /* LLSelctAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLSelctAddressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -593,6 +595,7 @@
 		ED3DB54C1DEA8C890030B3BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EDFB12D11E797605007A2D70 /* LLSelctAddressViewController.swift */,
 				ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */,
 				ED59FB651E2F037F00216063 /* LLLoginViewController.xib */,
 				ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */,
@@ -1165,6 +1168,7 @@
 				EDD3C24C1E728B9F005E43D8 /* LTEasing.swift in Sources */,
 				EDC18AF81E55A6330026E4D2 /* CacheSerializer.swift in Sources */,
 				EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */,
+				EDFB12D21E797605007A2D70 /* LLSelctAddressViewController.swift in Sources */,
 				EDAAFF791E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
 				EDD3C2501E728B9F005E43D8 /* LTMorphingLabel+Burn.swift in Sources */,
