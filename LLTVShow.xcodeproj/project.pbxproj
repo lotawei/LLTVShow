@@ -18,6 +18,16 @@
 		ED420D511E4C4E7300C0EB4E /* LLBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */; };
 		ED420D531E4C4F0D00C0EB4E /* LLBaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */; };
 		ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */; };
+		ED42B68D1E7A6098008FCCF3 /* LLContenCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B68C1E7A6098008FCCF3 /* LLContenCategory.swift */; };
+		ED42B6901E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ED42B68F1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m */; };
+		ED42B6CF1E7A6DD8008FCCF3 /* HeaderShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6C51E7A6DD8008FCCF3 /* HeaderShadowView.swift */; };
+		ED42B6D01E7A6DD8008FCCF3 /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6C61E7A6DD8008FCCF3 /* StickyHeaderView.swift */; };
+		ED42B6D11E7A6DD8008FCCF3 /* UIEdgeInsets+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6C81E7A6DD8008FCCF3 /* UIEdgeInsets+Equatable.swift */; };
+		ED42B6D21E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6C91E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift */; };
+		ED42B6D31E7A6DD8008FCCF3 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6CB1E7A6DD8008FCCF3 /* MenuCell.swift */; };
+		ED42B6D41E7A6DD8008FCCF3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6CC1E7A6DD8008FCCF3 /* MenuItem.swift */; };
+		ED42B6D51E7A6DD8008FCCF3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6CD1E7A6DD8008FCCF3 /* MenuView.swift */; };
+		ED42B6D61E7A6DD8008FCCF3 /* MenuViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED42B6CE1E7A6DD8008FCCF3 /* MenuViewDelegate.swift */; };
 		ED4356D21E76557400D5C0B8 /* LLUerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */; };
 		ED4356D41E765F9200D5C0B8 /* LLUerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */; };
 		ED4356D91E767A2300D5C0B8 /* LLAccoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */; };
@@ -245,6 +255,17 @@
 		ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLBaseTableView.swift; sourceTree = "<group>"; };
 		ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLBaseCollectionView.swift; sourceTree = "<group>"; };
 		ED420D951E4C504F00C0EB4E /* LLRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRefreshView.swift; sourceTree = "<group>"; };
+		ED42B68C1E7A6098008FCCF3 /* LLContenCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLContenCategory.swift; sourceTree = "<group>"; };
+		ED42B68E1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		ED42B68F1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		ED42B6C51E7A6DD8008FCCF3 /* HeaderShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderShadowView.swift; sourceTree = "<group>"; };
+		ED42B6C61E7A6DD8008FCCF3 /* StickyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
+		ED42B6C81E7A6DD8008FCCF3 /* UIEdgeInsets+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Equatable.swift"; sourceTree = "<group>"; };
+		ED42B6C91E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+NormalizedContentOffset.swift"; sourceTree = "<group>"; };
+		ED42B6CB1E7A6DD8008FCCF3 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		ED42B6CC1E7A6DD8008FCCF3 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		ED42B6CD1E7A6DD8008FCCF3 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		ED42B6CE1E7A6DD8008FCCF3 /* MenuViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewDelegate.swift; sourceTree = "<group>"; };
 		ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLUerInfoView.xib; path = ../Controller/LLUerInfoView.xib; sourceTree = "<group>"; };
 		ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLUerInfoView.swift; path = ../Controller/LLUerInfoView.swift; sourceTree = "<group>"; };
 		ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAccoutCell.swift; sourceTree = "<group>"; };
@@ -522,7 +543,6 @@
 				ED3DB54B1DEA8C890030B3BC /* 资源 */,
 				ED3DB54C1DEA8C890030B3BC /* Controller */,
 				ED3DB54D1DEA8C890030B3BC /* Model */,
-				ED3DB54E1DEA8C890030B3BC /* Otherframe */,
 				ED3DB54F1DEA8C890030B3BC /* View */,
 				ED3DB5291DEA8C490030B3BC /* LLTVShow */,
 				ED3DB5281DEA8C490030B3BC /* Products */,
@@ -611,15 +631,9 @@
 			isa = PBXGroup;
 			children = (
 				ED59FB5D1E2EFFC900216063 /* LLUser.swift */,
+				ED42B68C1E7A6098008FCCF3 /* LLContenCategory.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		ED3DB54E1DEA8C890030B3BC /* Otherframe */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Otherframe;
 			sourceTree = "<group>";
 		};
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
@@ -647,6 +661,45 @@
 			);
 			name = "下拉刷新";
 			path = "../下拉刷新";
+			sourceTree = "<group>";
+		};
+		ED42B6C31E7A6DD8008FCCF3 /* Persei */ = {
+			isa = PBXGroup;
+			children = (
+				ED42B6C41E7A6DD8008FCCF3 /* Core */,
+				ED42B6C71E7A6DD8008FCCF3 /* Extension */,
+				ED42B6CA1E7A6DD8008FCCF3 /* Menu */,
+			);
+			path = Persei;
+			sourceTree = "<group>";
+		};
+		ED42B6C41E7A6DD8008FCCF3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ED42B6C51E7A6DD8008FCCF3 /* HeaderShadowView.swift */,
+				ED42B6C61E7A6DD8008FCCF3 /* StickyHeaderView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ED42B6C71E7A6DD8008FCCF3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED42B6C81E7A6DD8008FCCF3 /* UIEdgeInsets+Equatable.swift */,
+				ED42B6C91E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED42B6CA1E7A6DD8008FCCF3 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				ED42B6CB1E7A6DD8008FCCF3 /* MenuCell.swift */,
+				ED42B6CC1E7A6DD8008FCCF3 /* MenuItem.swift */,
+				ED42B6CD1E7A6DD8008FCCF3 /* MenuView.swift */,
+				ED42B6CE1E7A6DD8008FCCF3 /* MenuViewDelegate.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		ED8A9CF41E2F5FEF001A2EC8 /* TextFieldEffects */ = {
@@ -975,6 +1028,9 @@
 		EDF154871E6004A20001A946 /* 工具库 */ = {
 			isa = PBXGroup;
 			children = (
+				ED42B68E1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.h */,
+				ED42B68F1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m */,
+				ED42B6C31E7A6DD8008FCCF3 /* Persei */,
 				EDF712BD1E6FA88100555CEC /* SwiftyJson */,
 				EDB7544A1E69478B00E2C350 /* SnapKit */,
 				EDF154E51E600B050001A946 /* Alamofire */,
@@ -1127,10 +1183,13 @@
 				ED59FB5B1E2EFFA800216063 /* UIDevice+extension.swift in Sources */,
 				ED420D511E4C4E7300C0EB4E /* LLBaseTableView.swift in Sources */,
 				EDD3C2561E728B9F005E43D8 /* LTStringDiffResult.swift in Sources */,
+				ED42B6D01E7A6DD8008FCCF3 /* StickyHeaderView.swift in Sources */,
 				EDF155091E600B050001A946 /* SessionManager.swift in Sources */,
+				ED42B68D1E7A6098008FCCF3 /* LLContenCategory.swift in Sources */,
 				EDF154751E6002E20001A946 /* MJRefreshComponent.m in Sources */,
 				ED8A9D061E2F5FEF001A2EC8 /* KaedeTextField.swift in Sources */,
 				EDF154781E6002E20001A946 /* MJRefreshAutoGifFooter.m in Sources */,
+				ED42B6CF1E7A6DD8008FCCF3 /* HeaderShadowView.swift in Sources */,
 				ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */,
 				EDC18B071E55A6330026E4D2 /* String+MD5.swift in Sources */,
 				EDAAFF861E778A5900EC8865 /* NVActivityIndicatorShape.swift in Sources */,
@@ -1142,6 +1201,7 @@
 				ED59FB5A1E2EFFA800216063 /* UIColor+extension.swift in Sources */,
 				EDB754841E69478B00E2C350 /* ConstraintPriority.swift in Sources */,
 				EDC18B011E55A6330026E4D2 /* Indicator.swift in Sources */,
+				ED42B6D61E7A6DD8008FCCF3 /* MenuViewDelegate.swift in Sources */,
 				EDF154FF1E600B050001A946 /* MultipartFormData.swift in Sources */,
 				EDAAFF7B1E778A5800EC8865 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
 				EDC18AF91E55A6330026E4D2 /* Filter.swift in Sources */,
@@ -1242,11 +1302,15 @@
 				ED420D961E4C504F00C0EB4E /* LLRefreshView.swift in Sources */,
 				EDC18AFE1E55A6330026E4D2 /* ImageProcessor.swift in Sources */,
 				EDAAFF701E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				ED42B6901E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m in Sources */,
 				EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */,
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
+				ED42B6D31E7A6DD8008FCCF3 /* MenuCell.swift in Sources */,
 				EDB754851E69478B00E2C350 /* ConstraintPriorityTarget.swift in Sources */,
 				EDF154801E6002E20001A946 /* MJRefreshStateHeader.m in Sources */,
+				ED42B6D21E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift in Sources */,
 				EDD3C2521E728B9F005E43D8 /* LTMorphingLabel+Fall.swift in Sources */,
+				ED42B6D51E7A6DD8008FCCF3 /* MenuView.swift in Sources */,
 				ED8A9D091E2F5FEF001A2EC8 /* TextFieldsEffects.swift in Sources */,
 				EDAAFF771E778A5800EC8865 /* NVActivityIndicatorAnimationBlank.swift in Sources */,
 				ED3DC5741E31E340008CA172 /* LLRegisterViewController.swift in Sources */,
@@ -1254,6 +1318,7 @@
 				EDD3C2551E728B9F005E43D8 /* LTMorphingLabel.swift in Sources */,
 				EDB754831E69478B00E2C350 /* ConstraintOffsetTarget.swift in Sources */,
 				EDAAFF821E778A5900EC8865 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				ED42B6D41E7A6DD8008FCCF3 /* MenuItem.swift in Sources */,
 				EDAAFF881E778A5900EC8865 /* NVActivityIndicatorViewable.swift in Sources */,
 				EDF155071E600B050001A946 /* ServerTrustPolicy.swift in Sources */,
 				EDAAFF6B1E778A5800EC8865 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
@@ -1262,6 +1327,7 @@
 				EDB7547C1E69478B00E2C350 /* ConstraintMaker.swift in Sources */,
 				EDAAFF731E778A5800EC8865 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
 				EDB7548F1E69478B00E2C350 /* UILayoutSupport+Extensions.swift in Sources */,
+				ED42B6D11E7A6DD8008FCCF3 /* UIEdgeInsets+Equatable.swift in Sources */,
 				EDF154821E6002E20001A946 /* MJRefreshConst.m in Sources */,
 				EDAAFF781E778A5800EC8865 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				EDF1547B1E6002E20001A946 /* MJRefreshBackGifFooter.m in Sources */,

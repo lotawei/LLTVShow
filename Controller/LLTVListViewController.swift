@@ -11,7 +11,7 @@ import UIKit
 class LLTVListViewController: BaseViewController {
     
     
-    var   img = UIImageView(frame: CGRect(x:100,y:200,width:80,height:90))
+    // 左边扫一扫  中间  搜索
     //  搜索条
     lazy   var  searchbar:UISearchBar = {
        let     searchbar = UISearchBar(frame: CGRect.zero)
@@ -21,11 +21,8 @@ class LLTVListViewController: BaseViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(self.img)
-//   _  = LLAuthManager("http://open.moretv.com.cn/moviesite", .get, nil) { (data) in
-//         let  jsondata =  data.result.value as!  [String:Any]
-//         print(jsondata)
-//        }
+        
+        
     }
         
      override func viewWillDisappear(_ animated: Bool) {

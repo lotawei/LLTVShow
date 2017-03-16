@@ -64,27 +64,12 @@ extension String {
             }
         return "\(String.init(format:"%0.2f",convertedValue!))\(tokens[multiplyFactor])"
     }
+    //因为服务器后台的关系暂时先采用这种方式吧
+    func   tranimgurl() -> String{
+        
+        return  self
+    }
     
-//    int multiplyFactor = 0;﻿
-//    
-//    ﻿
-//    
-//    NSArray *tokens = [NSArray arrayWithObjects:@"bytes",@"KB",@"MB",@"GB",@"TB",@“PB”, @“EB”, @“ZB”, @“YB”,nil];﻿
-//    
-//    ﻿
-//    
-//    while (convertedValue > 1024) {﻿
-//    
-//    convertedValue /= 1024;﻿
-//    
-//    multiplyFactor++;﻿
-//    
-//    }﻿
-//    
-//    ﻿
-//    
-//    return [NSString stringWithFormat:@"%4.2f %@",convertedValue, [tokens objectAtIndex:multiplyFactor]];﻿
-//
     
     
     

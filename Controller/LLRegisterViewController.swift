@@ -83,6 +83,7 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
     }()
     lazy var  btnregister:UIButton = {
         let  register  = UIButton()
+        register.showsTouchWhenHighlighted = true
         register.setTitle("快速注册", for: .normal)
         register.backgroundColor = fontcolor
         register.addTarget(self, action: #selector(LLRegisterViewController.register), for: .touchUpInside)
