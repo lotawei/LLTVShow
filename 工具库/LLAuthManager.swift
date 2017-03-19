@@ -24,20 +24,13 @@ private let Authcodeurl = "http://open.moretv.com.cn/authorize"
 private let Tokenurl = "http://open.moretv.com.cn/get_access_token"
 private let  appid = "6989a62a22ad4677d14e3159228d5348"
 private let  scret = "f33abd6c0aaa453eaf170410113ede92"
-
-
 class  LLAuthManager:NSObject{
     
 //    以逃逸闭包的方式传出去
-    
-    
     typealias   datablock=(_ data:DataResponse<Any>) -> Void
-    
-    
     var  cururl:URLConvertible!
     var  method:HTTPMethod?
     var  paramas:Parameters?
-
     //构造时必须要传参
     convenience  init(_ url:URLConvertible,_ method:HTTPMethod? ,_ paramas:Parameters?, datablock:datablock?) {
         self.init()
@@ -96,7 +89,7 @@ class  LLAuthManager:NSObject{
                         }
                     }
                     else{
-                        _ =  SweetAlert().showAlert("发生异常")
+                        _ =  SweetAlert().showAlert("你可能需要设置允许数据")
                     }
             }
 

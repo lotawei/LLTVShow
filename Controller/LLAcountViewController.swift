@@ -94,6 +94,9 @@ class LLAcountViewController: BaseViewController {
         logout.titleLabel?.font = UIFont.systemFont(ofSize: 11)
         logout.backgroundColor = fontcolor
         logout.addTarget(self, action: #selector(LLAcountViewController.logout), for: .touchUpInside)
+        
+        BmobUser.logout()
+        
         return  logout
     }()
     

@@ -64,13 +64,9 @@ extension String {
             }
         return "\(String.init(format:"%0.2f",convertedValue!))\(tokens[multiplyFactor])"
     }
-    //因为服务器后台的关系暂时先采用这种方式吧
-    func   tranimgurl() -> String{
-        
-        return  self
-    }
-    
-    
+   
+ 
+
     
     
 }
@@ -80,15 +76,16 @@ extension UITextField{
     
     
     func validate(value: String) -> Bool{
-        
+        let  whitespace = NSCharacterSet.whitespaces
         let predicate = NSPredicate(format: " SELF MATCHES %@" , value)
         
-        return predicate.evaluate(with: self.text)
+        return predicate.evaluate(with: self.text?.trimmingCharacters(in: whitespace))
         
     }
     
     
     func validateEmail() -> Bool{
+        
         
         return self.validate( value: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9,-]+\\.[A-Za-z]{2,6}")
         

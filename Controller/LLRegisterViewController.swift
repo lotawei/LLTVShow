@@ -194,21 +194,33 @@ class LLRegisterViewController: BaseViewController ,LTMorphingLabelDelegate {
         anewuser?.setObject(randomusername, forKey: "username")
         anewuser?.setObject(eamil, forKey: "email")
         anewuser?.setObject(pwd, forKey: "password")
+        anewuser?.setObject(0, forKey: "usertype")
+         anewuser?.setObject(0, forKey: "stylenumber")
+         anewuser?.setObject("default", forKey: "portrait")
+        
         valid  = true
         anewuser?.saveInBackground { (success, err) in
-            if  err != nil{
-              _ =  SweetAlert().showAlert("注册出现问题")
+            if let err  = err as?  NSError{
+                if  err.code == 203{
+              _ =  SweetAlert().showAlert("该邮箱已经被注册！")
+                    
+                }
+                else{
+                    _ =  SweetAlert().showAlert("注册失败")
+                }
+                return
             }
             if   success{
               _ =  SweetAlert().showAlert("注册成功")
-                
+                weak  var  tmpself = self
+               _ = tmpself?.navigationController?.popViewController(animated: true)
             }
             
         }
         
         if   valid{
         // 将其用户信息存起来
-        let   auser = LLUser(randomusername, Usertype.normal, "\(randomusername)_por.png", Substyle.normal, isfirst: "yes")
+        let   auser = LLUser(randomusername, Usertype.normal, "default", Substyle.normal, isfirst: "yes")
                _ =  auser.saveuser()
         }
     }

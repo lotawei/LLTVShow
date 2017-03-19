@@ -21,7 +21,7 @@ class LLLoginView: UIView {
     
     
     @IBOutlet weak var brandanimationview: UIView!
-    
+    private   var   isemail = false
     
   
     override func layoutSubviews() {
@@ -38,7 +38,7 @@ class LLLoginView: UIView {
     func checklogin(_ sender: Any) {
         
           var   valid  =  false
-         if   txtlogin.text == " "{
+         if   txtlogin.text == " " {
             _ = SweetAlert().showAlert("输入的用户名不能为空！")
             return
         }
@@ -46,7 +46,11 @@ class LLLoginView: UIView {
             _ = SweetAlert().showAlert("请输入密码")
             return
         }
+        if   !txtlogin.validateEmail(){
+            isemail  =  true
+        }
         valid  =  true
+        
         
         let   username = txtlogin.text
         let   pwd = txtpwd.text
