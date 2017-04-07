@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1F2B0D1E974A4000C6B08A /* LLWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1F2B0C1E974A4000C6B08A /* LLWeatherInfo.swift */; };
 		ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED266E8E1DF9941F0083E31F /* Images.xcassets */; };
 		ED3DB52B1DEA8C490030B3BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DB52A1DEA8C490030B3BC /* AppDelegate.swift */; };
 		ED3DB5301DEA8C490030B3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3DB52E1DEA8C490030B3BC /* Main.storyboard */; };
@@ -188,6 +189,7 @@
 		EDD3C2581E728B9F005E43D8 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2461E728B9F005E43D8 /* Fragment.png */; };
 		EDD3C2591E728B9F005E43D8 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2471E728B9F005E43D8 /* Smoke.png */; };
 		EDD3C25A1E728B9F005E43D8 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2481E728B9F005E43D8 /* Sparkle.png */; };
+		EDD813AF1E9692E300A9D6B2 /* LLContegeryRecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD813AE1E9692E300A9D6B2 /* LLContegeryRecItem.swift */; };
 		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 		EDF154731E6002E20001A946 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF154471E6002E20001A946 /* MJRefreshAutoFooter.m */; };
 		EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF154491E6002E20001A946 /* MJRefreshBackFooter.m */; };
@@ -228,18 +230,13 @@
 		EDF1550A1E600B050001A946 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF154F71E600B050001A946 /* TaskDelegate.swift */; };
 		EDF1550B1E600B050001A946 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF154F81E600B050001A946 /* Timeline.swift */; };
 		EDF1550C1E600B050001A946 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF154F91E600B050001A946 /* Validation.swift */; };
-		EDF712C41E6FA88100555CEC /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712BE1E6FA88100555CEC /* Info-iOS.plist */; };
-		EDF712C51E6FA88100555CEC /* Info-OSX.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712BF1E6FA88100555CEC /* Info-OSX.plist */; };
-		EDF712C61E6FA88100555CEC /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712C01E6FA88100555CEC /* Info-tvOS.plist */; };
-		EDF712C71E6FA88100555CEC /* Info-watchOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDF712C11E6FA88100555CEC /* Info-watchOS.plist */; };
-		EDF712C81E6FA88100555CEC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF712C31E6FA88100555CEC /* SwiftyJSON.swift */; };
 		EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */; };
 		EDF88B3B1E4D67320034CAAF /* LLTVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */; };
 		EDF88B3D1E4D67C50034CAAF /* LLAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF88B3C1E4D67C50034CAAF /* LLAcountViewController.swift */; };
-		EDFB12D21E797605007A2D70 /* LLSelctAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFB12D11E797605007A2D70 /* LLSelctAddressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED1F2B0C1E974A4000C6B08A /* LLWeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLWeatherInfo.swift; sourceTree = "<group>"; };
 		ED266E8E1DF9941F0083E31F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED3DB5271DEA8C490030B3BC /* LLTVShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLTVShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3DB52A1DEA8C490030B3BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../LLTVShow/AppDelegate.swift; sourceTree = "<group>"; };
@@ -431,6 +428,7 @@
 		EDD3C2461E728B9F005E43D8 /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fragment.png; sourceTree = "<group>"; };
 		EDD3C2471E728B9F005E43D8 /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoke.png; sourceTree = "<group>"; };
 		EDD3C2481E728B9F005E43D8 /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparkle.png; sourceTree = "<group>"; };
+		EDD813AE1E9692E300A9D6B2 /* LLContegeryRecItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLContegeryRecItem.swift; sourceTree = "<group>"; };
 		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 		EDF154461E6002E20001A946 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		EDF154471E6002E20001A946 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -492,16 +490,9 @@
 		EDF154F71E600B050001A946 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		EDF154F81E600B050001A946 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		EDF154F91E600B050001A946 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		EDF712BE1E6FA88100555CEC /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		EDF712BF1E6FA88100555CEC /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
-		EDF712C01E6FA88100555CEC /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		EDF712C11E6FA88100555CEC /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		EDF712C21E6FA88100555CEC /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
-		EDF712C31E6FA88100555CEC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EDF88B3A1E4D67320034CAAF /* LLTVListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTVListViewController.swift; sourceTree = "<group>"; };
 		EDF88B3C1E4D67C50034CAAF /* LLAcountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLAcountViewController.swift; sourceTree = "<group>"; };
-		EDFB12D11E797605007A2D70 /* LLSelctAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLSelctAddressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -615,7 +606,6 @@
 		ED3DB54C1DEA8C890030B3BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EDFB12D11E797605007A2D70 /* LLSelctAddressViewController.swift */,
 				ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */,
 				ED59FB651E2F037F00216063 /* LLLoginViewController.xib */,
 				ED59FB611E2F00BF00216063 /* BaseNaVgationController.swift */,
@@ -632,6 +622,8 @@
 			children = (
 				ED59FB5D1E2EFFC900216063 /* LLUser.swift */,
 				ED42B68C1E7A6098008FCCF3 /* LLContenCategory.swift */,
+				EDD813AE1E9692E300A9D6B2 /* LLContegeryRecItem.swift */,
+				ED1F2B0C1E974A4000C6B08A /* LLWeatherInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -640,10 +632,10 @@
 			isa = PBXGroup;
 			children = (
 				ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */,
-				ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */,
 				ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */,
-				ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */,
+				ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */,
 				ED4356D71E767A2300D5C0B8 /* LLAccoutCell.swift */,
+				ED4356D81E767A2300D5C0B8 /* LLAccoutCell.xib */,
 				ED59FB631E2F036B00216063 /* LLLoginView.swift */,
 				ED420D501E4C4E7300C0EB4E /* LLBaseTableView.swift */,
 				EDD3C2341E728B9F005E43D8 /* LTMorphingLabel */,
@@ -1031,7 +1023,6 @@
 				ED42B68E1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.h */,
 				ED42B68F1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m */,
 				ED42B6C31E7A6DD8008FCCF3 /* Persei */,
-				EDF712BD1E6FA88100555CEC /* SwiftyJson */,
 				EDB7544A1E69478B00E2C350 /* SnapKit */,
 				EDF154E51E600B050001A946 /* Alamofire */,
 				ED420D941E4C503800C0EB4E /* 下拉刷新 */,
@@ -1067,19 +1058,6 @@
 			);
 			name = Alamofire;
 			path = Source;
-			sourceTree = "<group>";
-		};
-		EDF712BD1E6FA88100555CEC /* SwiftyJson */ = {
-			isa = PBXGroup;
-			children = (
-				EDF712BE1E6FA88100555CEC /* Info-iOS.plist */,
-				EDF712BF1E6FA88100555CEC /* Info-OSX.plist */,
-				EDF712C01E6FA88100555CEC /* Info-tvOS.plist */,
-				EDF712C11E6FA88100555CEC /* Info-watchOS.plist */,
-				EDF712C21E6FA88100555CEC /* SwiftyJSON.h */,
-				EDF712C31E6FA88100555CEC /* SwiftyJSON.swift */,
-			);
-			path = SwiftyJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1147,16 +1125,12 @@
 				ED4356DA1E767A2300D5C0B8 /* LLAccoutCell.xib in Resources */,
 				ED4356D21E76557400D5C0B8 /* LLUerInfoView.xib in Resources */,
 				EDD3C25A1E728B9F005E43D8 /* Sparkle.png in Resources */,
-				EDF712C71E6FA88100555CEC /* Info-watchOS.plist in Resources */,
 				EDF154FE1E600B050001A946 /* Info.plist in Resources */,
 				EDF88B391E4D62AF0034CAAF /* Launch Screen.storyboard in Resources */,
 				EDD3C2581E728B9F005E43D8 /* Fragment.png in Resources */,
-				EDF712C51E6FA88100555CEC /* Info-OSX.plist in Resources */,
-				EDF712C41E6FA88100555CEC /* Info-iOS.plist in Resources */,
 				ED266E8F1DF9941F0083E31F /* Images.xcassets in Resources */,
 				EDD3C2491E728B9F005E43D8 /* Info.plist in Resources */,
 				EDF154FD1E600B050001A946 /* Info-tvOS.plist in Resources */,
-				EDF712C61E6FA88100555CEC /* Info-tvOS.plist in Resources */,
 				EDF154811E6002E20001A946 /* MJRefresh.bundle in Resources */,
 				ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */,
 				ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */,
@@ -1222,13 +1196,13 @@
 				EDAAFF761E778A5800EC8865 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
 				EDAAFF681E778A5800EC8865 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
 				ED59FB5E1E2EFFC900216063 /* LLUser.swift in Sources */,
+				ED1F2B0D1E974A4000C6B08A /* LLWeatherInfo.swift in Sources */,
 				ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */,
 				ED8A9D081E2F5FEF001A2EC8 /* MinoruTextField.swift in Sources */,
 				EDB7547F1E69478B00E2C350 /* ConstraintMakerFinalizable.swift in Sources */,
 				EDD3C24C1E728B9F005E43D8 /* LTEasing.swift in Sources */,
 				EDC18AF81E55A6330026E4D2 /* CacheSerializer.swift in Sources */,
 				EDC18B081E55A6330026E4D2 /* ThreadHelper.swift in Sources */,
-				EDFB12D21E797605007A2D70 /* LLSelctAddressViewController.swift in Sources */,
 				EDAAFF791E778A5800EC8865 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
 				ED3DB5571DEA8D910030B3BC /* BaseViewController.swift in Sources */,
 				EDD3C2501E728B9F005E43D8 /* LTMorphingLabel+Burn.swift in Sources */,
@@ -1276,7 +1250,6 @@
 				ED741F7C1E6F9FC600CFE8BC /* LLThemeManager.swift in Sources */,
 				EDF1547C1E6002E20001A946 /* MJRefreshBackNormalFooter.m in Sources */,
 				EDB7547E1E69478B00E2C350 /* ConstraintMakerExtendable.swift in Sources */,
-				EDF712C81E6FA88100555CEC /* SwiftyJSON.swift in Sources */,
 				EDB754751E69478B00E2C350 /* ConstraintInsetTarget.swift in Sources */,
 				EDC18AFA1E55A6330026E4D2 /* Image.swift in Sources */,
 				EDB7548B1E69478B00E2C350 /* Debugging.swift in Sources */,
@@ -1307,6 +1280,7 @@
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
 				ED42B6D31E7A6DD8008FCCF3 /* MenuCell.swift in Sources */,
 				EDB754851E69478B00E2C350 /* ConstraintPriorityTarget.swift in Sources */,
+				EDD813AF1E9692E300A9D6B2 /* LLContegeryRecItem.swift in Sources */,
 				EDF154801E6002E20001A946 /* MJRefreshStateHeader.m in Sources */,
 				ED42B6D21E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift in Sources */,
 				EDD3C2521E728B9F005E43D8 /* LTMorphingLabel+Fall.swift in Sources */,
@@ -1487,13 +1461,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ZHT99R3SEW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/工具",
 				);
 				INFOPLIST_FILE = LLTVShow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lw.cn.LLTVShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1509,13 +1485,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ZHT99R3SEW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/工具",
 				);
 				INFOPLIST_FILE = LLTVShow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lw.cn.LLTVShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";

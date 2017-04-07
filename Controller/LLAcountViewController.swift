@@ -64,7 +64,7 @@ class LLAcountViewController: BaseViewController {
         btn.backgroundColor = fontcolor
         btn.setTitle("登录", for: .normal)
         btn.addTarget(self, action: #selector(LLAcountViewController.login), for: .touchUpInside)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 11)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         return  btn
     }()
     //
@@ -73,7 +73,7 @@ class LLAcountViewController: BaseViewController {
         abtn.backgroundColor = fontcolor
         abtn.setTitle("注册", for: .normal)
         abtn.addTarget(self, action: #selector(LLAcountViewController.register), for: .touchUpInside)
-        abtn.titleLabel?.font = UIFont.systemFont(ofSize: 11)
+        abtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         return  abtn
     }()
     
@@ -163,7 +163,6 @@ class LLAcountViewController: BaseViewController {
         else  if  auser == nil {
             porimg  =  UIImage(named: "default")
         }
-            
         else{
             porimg  =  UIImage(named: (auser?.portrait)!)
         }
@@ -184,7 +183,7 @@ class LLAcountViewController: BaseViewController {
     func initialview(){
         self.navigationController?.navigationBar.isHidden = true
         view.addSubview(headview)
-        headview.backgroundColor = UIColor.gray
+        headview.backgroundColor = UIColor.init(colorLiteralRed: 244/255.0, green: 244.0/255.0, blue: 244.0/255.0, alpha: 0.5)
         headview.addSubview(self.btnlogin)
         headview.addSubview(self.btnregister)
         headview.addSubview(self.portraitimg)
@@ -201,14 +200,14 @@ class LLAcountViewController: BaseViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         self.portraitimg.clipsToBounds = true
-        self.portraitimg.layer.cornerRadius = 40
+        self.portraitimg.layer.cornerRadius = 30
         
         
         self.btnlogin.snp.makeConstraints { (maker) in
             maker.width.equalTo(80)
             maker.height.equalTo(30)
-            maker.bottom.equalTo(-60)
-            maker.left.equalTo((ScreenWidth - 240)/2.0)
+            maker.bottom.equalTo(-70)
+            maker.left.equalTo((ScreenWidth - 200)/2.0)
             
         }
         self.infoview.snp.makeConstraints { (maker) in
@@ -219,16 +218,16 @@ class LLAcountViewController: BaseViewController {
         }
         
         self.portraitimg.snp.makeConstraints { (maker) in
-            maker.width.equalTo(80)
-            maker.height.equalTo(80)
+            maker.width.equalTo(60)
+            maker.height.equalTo(60)
             maker.centerX.equalTo(headview)
             maker.top.equalTo(25)
         }
         self.btnregister.snp.makeConstraints { (maker) in
             maker.width.equalTo(80)
             maker.height.equalTo(30)
-            maker.bottom.equalTo(-60)
-            maker.right.equalTo(-(ScreenWidth - 240 )/2.0)
+            maker.bottom.equalTo(-70)
+            maker.right.equalTo(-(ScreenWidth - 200 )/2.0)
         }
         self.headview.snp.makeConstraints { (maker) in
             maker.top.equalTo(0)
@@ -239,7 +238,7 @@ class LLAcountViewController: BaseViewController {
             maker.centerX.equalTo(headview)
             maker.width.equalTo(80)
             maker.height.equalTo(30)
-            maker.bottom.equalTo(-60)
+            maker.bottom.equalTo(-70)
             
         }
         self.tableview.snp.makeConstraints { (maker) in
@@ -352,14 +351,6 @@ class LLAcountViewController: BaseViewController {
             return true
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
     //移除通知
     
     deinit {
@@ -458,7 +449,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
     }
     
     func  selectindexitem(index:Int){
-        print(index)
+        
     }
     func  getnotify(_ notify:Notification){
          let  str  =  notify.object  as!  String

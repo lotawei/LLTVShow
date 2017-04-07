@@ -10,20 +10,27 @@ import UIKit
 
 class LLTVListViewController: BaseViewController {
     
+  
     
-    // 左边扫一扫  中间  搜索
-    //  搜索条
-    lazy   var  searchbar:UISearchBar = {
-       let     searchbar = UISearchBar(frame: CGRect.zero)
-       
-        
-        return   searchbar
-    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    // MARK:- Action
+    // MARK: 扫一扫和搜索Action
+    func leftItemClick() {
         
     }
+    
+    func rightItemClick() {
+        // 搜索
+        
+    }
+    
+    func titleViewClick() {
+        
+    }
+
         
      override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -32,23 +39,6 @@ class LLTVListViewController: BaseViewController {
         }
     }
 }
-    
-    
-//    func  test(){
-//     let  sem =    DispatchSemaphore.init(value: 0)
-//        
-//     let   quene = DispatchQueue.init(label: "one")
-//        quene.async {
-//            for    i in  0...10{
-//                print(i)
-//            }
-//            sem.signal()
-//        }
-//        sem.wait()
-//        for    i in  11...21{
-//            print(i)
-//        }
-//    }
 
 
 

@@ -89,16 +89,10 @@ class BaseViewController: UIViewController {
                                 }
                             }
                 }
-
-                
             
             }
         }
-        
 
-        
-        
-        
     }
     
     /*

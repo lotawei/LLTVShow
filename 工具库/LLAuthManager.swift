@@ -63,6 +63,7 @@ class  LLAuthManager:NSObject{
                                             
                                             request(tempself!.cururl,method:tempself!.method!, parameters:["access_token":strtoken!])
                                                 .responseJSON {  (JSON) in
+                                                    print("认证成功")
                                                     
                                                     datablock!(JSON)
                                                     

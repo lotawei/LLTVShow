@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               print(userAccountPath)
         //  注册bmob的使用
         
-        
+//        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
         
         
         Bmob.register(withAppKey: bmobappkey)

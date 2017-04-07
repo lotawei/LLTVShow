@@ -71,10 +71,7 @@ extension String {
     
 }
 extension UITextField{
-    
-   
-    
-    
+
     func validate(value: String) -> Bool{
         let  whitespace = NSCharacterSet.whitespaces
         let predicate = NSPredicate(format: " SELF MATCHES %@" , value)

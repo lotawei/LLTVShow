@@ -30,7 +30,6 @@ enum Usertype:Int {
 enum   Substyle:Int {
     case normal,dark, eyeprotect //正常,黑夜,护眼 0 1 2
 }
-
 class LLUser: NSObject ,NSCoding{
     //昵称
     var   username:String!

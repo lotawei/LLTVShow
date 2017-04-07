@@ -10,7 +10,16 @@
 // 主要管理的主题的类 单例
 import UIKit
 
-class LLThemeManager: NSObject {
+//  改变的时候  通过 themanager 来更改 所有的 style
 
+
+
+
+
+class LLThemeManager: NSObject {
+    
+    
+    
+    
     
 }
