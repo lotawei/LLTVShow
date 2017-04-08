@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftyJSON
+
 class LLContenCategory: NSObject {
     // {
 //    "status": "200",
@@ -22,16 +22,11 @@ class LLContenCategory: NSObject {
 //   }
 //
     
-    func   display() -> String{
-        
-        
-        return   "\(title):\(code)"
-        
-    }
+   
     
     
     typealias CategoryResult = (_ categories:[LLContenCategory]?) ->  Void
-    var   iconurl:String!
+    var   iconurl:String = ""
     var   code:String!
     var  link_data:String!
     var   title:String!
@@ -41,7 +36,7 @@ class LLContenCategory: NSObject {
             self.iconurl = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491497438224&di=b0262eeb0e6d93c2e664a2012da041fc&imgtype=0&src=http%3A%2F%2Fbbs.fevte.com%2Fdata%2Fattachment%2Fforum%2F201403%2F31%2F155419ta744mxemnmmwle7.jpg"
             break;
         case "电视剧":
-             self.iconurl = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1749387359,4232746365&fm=23&gp=0.jpg"
+             self.iconurl = "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1491646722&di=a725343a137d7c3fce10aec37c6503cc&src=http://z.k1982.com/design_img/201307/20130723184653233.jpg"
              break;
         case  "综艺":
              self.iconurl = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491497357257&di=072046ea07680ecff5e579575b2c321a&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F60%2F99%2F52Z58PICb8u_1024.jpg"
@@ -86,11 +81,13 @@ class LLContenCategory: NSObject {
             let   dic = ar.dictionary
             let   categery = LLContenCategory()
             categery.code = dic?["code"]?.string
-            categery.iconurl = dic?["icon"]?.string
+          
             categery.link_data = dic?["link_data"]?.string
             categery.title = dic?["title"]?.string
             categery.changeicon()
             categeries.append(categery)
+            
+            
         }
         
         result(categeries)

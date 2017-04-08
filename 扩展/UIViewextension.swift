@@ -188,6 +188,33 @@ extension  UIView{
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
     
+    func cubeAnimate() {
+        let virtualTargetView = self
+        // 复制UIView，作为底面
+        let viewCopy = UILabel(frame: virtualTargetView.frame)
+        viewCopy.alpha = 0
+       
+       
+     
+       
+        viewCopy.backgroundColor = UIColor.clear
+        // 设置底面UIView的初始位置和高度
+        viewCopy.transform = CGAffineTransform(scaleX: 1.0, y: 0.1).concatenating(CGAffineTransform(translationX: 1.0, y: viewCopy.frame.height / 2))
+        self.addSubview(viewCopy)
+        UIView.animate(withDuration: 0.5, animations: {
+            // 执行UIView和UIViewCopy的动画
+            virtualTargetView.transform = CGAffineTransform(scaleX: 1.0, y: 0.1).concatenating(CGAffineTransform(translationX: 1.0, y: -virtualTargetView.frame.height / 2))
+            virtualTargetView.alpha = 0
+            viewCopy.alpha = 1
+           
+        }, completion: { _ in
+            // 当动画执行完毕后，将UIViewCopy的信息赋值给UIView，并还原UIView的状态，即与UIViewCopy相同的状态，然后移除UIViewCopy
+            virtualTargetView.alpha = 1
+           
+            
+            viewCopy.removeFromSuperview()
+        })
     
+    }
     
 }

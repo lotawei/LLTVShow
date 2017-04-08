@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SwiftyJSON
+
 class LLWeatherInfo: NSObject {
     
     typealias WeatherBlock  = (_ result:LLWeatherInfo) -> Void

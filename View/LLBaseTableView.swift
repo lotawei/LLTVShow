@@ -13,6 +13,9 @@ class LLBaseTableView: UITableView {
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
         
+        
+        bounces = false
+        
         delaysContentTouches = false
         canCancelContentTouches = true
         separatorStyle = .none

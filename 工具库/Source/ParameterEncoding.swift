@@ -164,7 +164,7 @@ public struct URLEncoding: ParameterEncoding {
                 components += queryComponents(fromKey: "\(key)[]", value: value)
             }
         } else if let value = value as? NSNumber {
-            if value.isBool {
+            if value.boolValue {
                 components.append((escape(key), escape((value.boolValue ? "1" : "0"))))
             } else {
                 components.append((escape(key), escape("\(value)")))

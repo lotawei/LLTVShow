@@ -36,6 +36,9 @@
 		ED4356FE1E76BF3000D5C0B8 /* LLTVCollectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4356FD1E76BF3000D5C0B8 /* LLTVCollectionList.swift */; };
 		ED441D501E02812C00B84AD4 /* LLCurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */; };
 		ED4579E91E653E4200AA95CC /* LLAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4579E81E653E4200AA95CC /* LLAuthManager.swift */; };
+		ED4DA7EE1E98C3600079FCD4 /* LLCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA7ED1E98C3600079FCD4 /* LLCategoryCell.swift */; };
+		ED4DA7F21E98C8390079FCD4 /* LLMovieItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA7F11E98C8390079FCD4 /* LLMovieItemCell.swift */; };
+		ED4DA8071E98D32C0079FCD4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DA8061E98D32C0079FCD4 /* SwiftyJSON.swift */; };
 		ED59FB511E2EFF8100216063 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */; };
 		ED59FB581E2EFFA800216063 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB531E2EFFA800216063 /* String+extension.swift */; };
 		ED59FB591E2EFFA800216063 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */; };
@@ -270,6 +273,9 @@
 		ED4356FD1E76BF3000D5C0B8 /* LLTVCollectionList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTVCollectionList.swift; sourceTree = "<group>"; };
 		ED441D4F1E02812C00B84AD4 /* LLCurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCurrentUser.swift; sourceTree = "<group>"; };
 		ED4579E81E653E4200AA95CC /* LLAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LLAuthManager.swift; path = "../工具库/LLAuthManager.swift"; sourceTree = "<group>"; };
+		ED4DA7ED1E98C3600079FCD4 /* LLCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCategoryCell.swift; sourceTree = "<group>"; };
+		ED4DA7F11E98C8390079FCD4 /* LLMovieItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMovieItemCell.swift; sourceTree = "<group>"; };
+		ED4DA8061E98D32C0079FCD4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		ED59FB4F1E2EFF8100216063 /* LLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
 		ED59FB531E2EFFA800216063 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		ED59FB541E2EFFA800216063 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
@@ -528,10 +534,8 @@
 				EDB754271E6910B100E2C350 /* BmobSDK.framework */,
 				EDF154871E6004A20001A946 /* 工具库 */,
 				EDA402301E24CFAE00E00CCE /* 控制器动画 */,
-				ED3DB5481DEA8C890030B3BC /* 工具 */,
 				ED3DB5491DEA8C890030B3BC /* 扩展 */,
 				ED3DB54A1DEA8C890030B3BC /* 全局 */,
-				ED3DB54B1DEA8C890030B3BC /* 资源 */,
 				ED3DB54C1DEA8C890030B3BC /* Controller */,
 				ED3DB54D1DEA8C890030B3BC /* Model */,
 				ED3DB54F1DEA8C890030B3BC /* View */,
@@ -559,13 +563,6 @@
 				EDF88B381E4D62AF0034CAAF /* Launch Screen.storyboard */,
 			);
 			path = LLTVShow;
-			sourceTree = "<group>";
-		};
-		ED3DB5481DEA8C890030B3BC /* 工具 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "工具";
 			sourceTree = "<group>";
 		};
 		ED3DB5491DEA8C890030B3BC /* 扩展 */ = {
@@ -596,13 +593,6 @@
 			path = "全局";
 			sourceTree = "<group>";
 		};
-		ED3DB54B1DEA8C890030B3BC /* 资源 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "资源";
-			sourceTree = "<group>";
-		};
 		ED3DB54C1DEA8C890030B3BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +621,8 @@
 		ED3DB54F1DEA8C890030B3BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED4DA7ED1E98C3600079FCD4 /* LLCategoryCell.swift */,
+				ED4DA7F11E98C8390079FCD4 /* LLMovieItemCell.swift */,
 				ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */,
 				ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */,
 				ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */,
@@ -1020,6 +1012,7 @@
 		EDF154871E6004A20001A946 /* 工具库 */ = {
 			isa = PBXGroup;
 			children = (
+				ED4DA8061E98D32C0079FCD4 /* SwiftyJSON.swift */,
 				ED42B68E1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.h */,
 				ED42B68F1E7A6296008FCCF3 /* UIScrollView+EmptyDataSet.m */,
 				ED42B6C31E7A6DD8008FCCF3 /* Persei */,
@@ -1188,6 +1181,7 @@
 				EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */,
 				EDAAFF6D1E778A5800EC8865 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
 				ED59FB601E2EFFD600216063 /* UIButton+extension.swift in Sources */,
+				ED4DA7F21E98C8390079FCD4 /* LLMovieItemCell.swift in Sources */,
 				ED4356FE1E76BF3000D5C0B8 /* LLTVCollectionList.swift in Sources */,
 				EDA402321E24D00C00E00CCE /* LLAnimationTabBarController.swift in Sources */,
 				ED8A9D071E2F5FEF001A2EC8 /* MadokaTextField.swift in Sources */,
@@ -1263,6 +1257,7 @@
 				EDF155051E600B050001A946 /* ResponseSerialization.swift in Sources */,
 				EDD3C24B1E728B9F005E43D8 /* LTCharacterLimbo.swift in Sources */,
 				EDB754701E69478B00E2C350 /* ConstraintConfig.swift in Sources */,
+				ED4DA7EE1E98C3600079FCD4 /* LLCategoryCell.swift in Sources */,
 				ED3DB55D1DEA9D040030B3BC /* UIViewextension.swift in Sources */,
 				EDB754791E69478B00E2C350 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				EDAAFF7E1E778A5800EC8865 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
@@ -1316,6 +1311,7 @@
 				ED3DB5551DEA8D410030B3BC /* GlobalConfig.swift in Sources */,
 				EDB7547D1E69478B00E2C350 /* ConstraintMakerEditable.swift in Sources */,
 				EDAAFF671E778A5800EC8865 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				ED4DA8071E98D32C0079FCD4 /* SwiftyJSON.swift in Sources */,
 				ED3DC5791E31F3C3008CA172 /* ZYAnimationLayer.m in Sources */,
 				EDC18B051E55A6330026E4D2 /* RequestModifier.swift in Sources */,
 				EDF154761E6002E20001A946 /* MJRefreshFooter.m in Sources */,
@@ -1467,6 +1463,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/工具",
+					"$(PROJECT_DIR)/加载动画指示/工具",
 				);
 				INFOPLIST_FILE = LLTVShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -1491,6 +1488,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/工具",
+					"$(PROJECT_DIR)/加载动画指示/工具",
 				);
 				INFOPLIST_FILE = LLTVShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
