@@ -11,6 +11,10 @@ import UIKit
 
 
 let  tvurl="https://route.showapi.com/951-1?showapi_appid=32615&showapi_timestamp=20170224154502&showapi_sign=e80620ed9e23a51d1223dcca7032a9f9"
+
+
+// open电视猫
+let  opentvurl  = "http://open.moretv.com.cn/moviesite"
 //屏幕宽高度  尺寸常用
 let kItemMargin : CGFloat = 10
 let kHeaderViewH : CGFloat = 50
@@ -48,7 +52,7 @@ let localizedModel = UIDevice.current.localizedModel   //设备区域化型号
 
 
 //整个app颜色基调
-let   normalcolor:UIColor = UIColor(red: 244, green: 244, blue: 244, alpha: 1.0)
+let   normalcolor:UIColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
 //黑夜模式
 let   darkcolor:UIColor = UIColor(red: 244, green: 244, blue: 244, alpha: 1.0)
 //护眼模式
@@ -59,6 +63,12 @@ var   lgbackcolor:UIColor = UIColor(red: 6/255.0, green: 131/255.0, blue: 177/25
 var   btncolor:UIColor = UIColor(red: 200.0/255.0, green:250.0/255.0, blue: 253.0/255.0, alpha: 0.5)
 //字体颜色
 var   fontcolor:UIColor =  UIColor(red: 171.0/255.0, green:129.0/255.0, blue: 59.0/255.0, alpha: 0.8)
+
+//
+
+let   collectionbackcolor = UIColor(red: 0.0/255.0, green:0.0/255.0, blue: 0.0/255.0, alpha: 0.2)
+
+
 
 //用户存储路经
  let userAccountPath = "\(NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory,FileManager.SearchPathDomainMask.userDomainMask,true).first!)/user.data"

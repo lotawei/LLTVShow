@@ -90,7 +90,7 @@ class  LLAuthManager:NSObject{
                         }
                     }
                     else{
-                        _ =  SweetAlert().showAlert("你可能需要设置允许数据")
+                        _ =  SweetAlert().showAlert("你可能需要检查网络或设置允许数据")
                     }
             }
 

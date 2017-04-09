@@ -8,7 +8,27 @@
 
 import Foundation
 extension String {
-    
+    func StringToFloat()->(CGFloat){
+        
+        
+        let string = self
+        
+        var cgFloat: CGFloat = 0
+        
+        
+        
+        
+        if let doubleValue = Double(string)
+            
+        {
+            
+            cgFloat = CGFloat(doubleValue)
+            
+        }
+        
+        return cgFloat
+        
+    }
     /// 清除字符串小数点末尾的0
     func cleanDecimalPointZear() -> String {
         
@@ -101,6 +121,6 @@ extension UITextField{
         return self.validate(value: "^[A-Z0-9a-z]{6,18}")
         
     }
-    
+  
     
 }

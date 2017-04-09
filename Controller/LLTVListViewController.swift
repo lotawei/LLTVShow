@@ -11,51 +11,85 @@ import UIKit
 class LLTVListViewController: BaseViewController {
     
   
-    var    tableview:LLBaseTableView!
-    var    tabdata:[LLContenCategory] = [LLContenCategory]()
+  fileprivate  var    tableview:LLBaseTableView!
+  fileprivate  var    tabdata:[LLContenCategory] = [LLContenCategory]()
     
     
+    lazy var refreshHeadView:LLRefreshView = {
+        let refreshHeadView = LLRefreshView(refreshingTarget: self, refreshingAction: #selector(LLTVListViewController.headRefresh))
+        
+        
+        return refreshHeadView!
+    }()
+      func  headRefresh(){
+        
+        
+        weak var  tmp = self
+      
+      
+        var   finish = false
+        
+        _ =  LLAuthManager.init(opentvurl, .get, nil, datablock: { (data) in
+            if  data.result.error != nil {
+                
+                 tmp?.tableview.mj_header.endRefreshing()
+                
+            }
+            else{
+            LLContenCategory.GetContenCategory(data, { (categories) in
+                tmp?.tabdata = categories!
+                
+                finish = true
+                if  finish {
+                 tmp?.tableview.mj_header.endRefreshing()
+                 tmp?.tableview.reloadData()
+                    
+                    
+                }
+            })
+            }
+            
+            
+            
+        })
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        edgesForExtendedLayout = .top
+        automaticallyAdjustsScrollViewInsets = false
         
         tableview = LLBaseTableView(frame: CGRect.zero, style: .plain)
         tableview.delegate = self
         tableview.dataSource = self
+//        let refreshHeadView = LLRefreshView(refreshingTarget: self, refreshingAction: "headRefresh")
+        self.refreshHeadView.gifView?.frame = CGRect(x:0, y:30, width:100, height:100)
+        tableview.mj_header = self.refreshHeadView
         
         
         tableview.register(LLCategoryCell.self,
                             forCellReuseIdentifier:"myCell")
         view.addSubview(tableview!)
         
-        weak var  tmp = self
-        _ =  LLAuthManager.init("http://open.moretv.com.cn/moviesite", .get, nil, datablock: { (data) in
-            LLContenCategory.GetContenCategory(data, { (categories) in
-                 tmp?.tabdata = categories!
-                
-                
-                 tmp?.tableview.reloadData()
-            })
-            
-            
-            
-            
-        })
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        headRefresh()
+    }
+    
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
       
         tableview.snp.makeConstraints { (maker) in
             maker.width.equalTo(ScreenWidth)
-            maker.height.equalTo(ScreenHeight - 49)
+            maker.height.equalTo(ScreenHeight - kTabBarH - kNavigationBarH - kStatusBarH)
             maker.left.equalTo(0)
             maker.top.equalTo(0)
         }
-        
-        
-        
+       
     }
     
     // MARK:- Action
@@ -94,6 +128,9 @@ extension LLTVListViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let  cellid = "cell"
+        
+        
+        
         let   category = tabdata[indexPath.row]
         
         var   cell = tableview.dequeueReusableCell(withIdentifier: cellid) as?  LLCategoryCell
@@ -111,9 +148,14 @@ extension LLTVListViewController:UITableViewDelegate,UITableViewDataSource{
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return   120
+        return   ScreenWidth +  90
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         
+        
+        
+        
+    }
     
 }
 

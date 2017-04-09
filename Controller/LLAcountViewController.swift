@@ -131,18 +131,16 @@ class LLAcountViewController: BaseViewController {
             cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
         }
         
-     
+        var index = 0
         
         for a in cells {
             let cell: UITableViewCell = a as UITableViewCell
-            UIView.animate(withDuration: 0.5, delay:0, usingSpringWithDamping: 2.5, initialSpringVelocity: 0, options: [], animations: {
+            UIView.animate(withDuration: 0.25, delay: 0.05 * Double(index), usingSpringWithDamping: 0.1, initialSpringVelocity: 0.5, options: [], animations: {
                 cell.transform = CGAffineTransform(translationX: 0, y: 0);
             }, completion: nil)
-           
+            index += 1
         }
     }
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateview()

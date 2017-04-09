@@ -59,6 +59,11 @@ class LLContenCategory: NSObject {
         case  "音乐":
             self.iconurl = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491497706943&di=3faa7fa973e9aa19b11fe19d8750ae53&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F14%2F86%2F05%2F81B58PICpvI_1024.jpg"
             break;
+            
+        case  "直播":
+            self.iconurl = "http://img.25pp.com/uploadfile/soft/images/2015/0724/20150724031211421.jpg@140w_140h"
+               self.title = "直播"
+            break;
         default:
             self.title = "其他"
             self.iconurl = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492092471&di=297a66ebe07ab99bd4d6435df04df630&imgtype=jpg&er=1&src=http%3A%2F%2Fimg1.qq.com%2Fjoke%2Fpics%2F12712%2F12712548.jpg"

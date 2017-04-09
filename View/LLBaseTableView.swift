@@ -14,7 +14,7 @@ class LLBaseTableView: UITableView {
         super.init(frame: frame, style: style)
         
         
-        bounces = false
+     
         
         delaysContentTouches = false
         canCancelContentTouches = true

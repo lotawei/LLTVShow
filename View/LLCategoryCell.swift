@@ -14,9 +14,12 @@ import UIKit
 class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource
 {
     
-    let   leftpadding:CGFloat = 15.0
+    let   leftpadding:CGFloat = 5
     
-    var   curcategry:LLContenCategory!  //  名称 图片
+    lazy  var   curcategry:LLContenCategory = {
+         let   cur = LLContenCategory()
+        return cur
+    }()//  名称 图片
     
     
      lazy   var   categoryimg:UIImageView! =  {
@@ -28,7 +31,7 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
         
        let  lab = UILabel()
       
-        lab.font = UIFont.systemFont(ofSize: 16)
+        lab.font = UIFont.systemFont(ofSize: 14)
         lab.textAlignment = .left
         lab.textColor = fontcolor
         
@@ -39,9 +42,24 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     }()
     
     //封面图片集合列表
-    var collectionView: LLBaseCollectionView!
+    lazy var collectionView: LLBaseCollectionView = {
+        let  layout  = LLCollectionViewLayout()
+        layout.scrollDirection = .horizontal
+        
+        layout.itemSize = CGSize(width: ScreenWidth, height: ScreenWidth)
+        let      collectionView = LLBaseCollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = UIColor.white
+        collectionView.bounces = false
+        collectionView.showsHorizontalScrollIndicator = false
+
+        return collectionView
+    }()
     
-    
+    // 所有items
+    lazy var   recitems:[LLCategoryRecItem] = {
+         let   items =  [LLCategoryRecItem]()
+        return  items
+    }()
     
     
     //封面数据
@@ -54,21 +72,50 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
         
         contentView.addSubview(self.categoryimg)
         contentView.addSubview(self.categorytitle)
+        //二级视图
         
+     
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+
+        self.collectionView.register(LLMovieItemCell.self, forCellWithReuseIdentifier: "cell")
+        contentView.addSubview(collectionView)
         
     }
     func setcategory(_ category:LLContenCategory){
         
-          curcategry = category
+          self.curcategry = category
         
        
-        //设置collectionView的代理
-//        self.collectionView.delegate = self
-//        self.collectionView.dataSource = self
-        self.categoryimg.kf.setImage(with: URL(string:curcategry.iconurl) , placeholder: UIImage(named:"palcehold"), options: nil, progressBlock: nil, completionHandler: nil)
-        self.categorytitle.text = curcategry.title
+    
+
+        self.categoryimg.kf.setImage(with: URL(string:self.curcategry.iconurl) , placeholder: UIImage(named:"palcehold"), options: nil, progressBlock: nil, completionHandler: nil)
+        self.categorytitle.text = self.curcategry.title
         
-        //  这里就是拿到过后
+        //  这里就是拿到过后  movieitem
+        weak   var  tmp = self
+        
+        var    itemurl = ""
+        if  category.code == "movie" || category.code == "tv"||category.code == "zongyi"||category.code == "comic"||category.code == "jilu"{
+            
+            itemurl = "http://open.moretv.com.cn/position/" + category.code
+            
+        }
+        else{
+            itemurl = "http://open.moretv.com.cn/position/comic"
+        }
+        
+        _ =  LLAuthManager.init(itemurl, .get, nil, datablock: { (data) in
+            
+             LLCategoryRecItem.GetMovieItems(category, data, { (items) in
+                tmp?.recitems = items
+                tmp?.collectionView.reloadData()
+                
+             })
+            
+        })
+        
+        
         
      
         
@@ -77,19 +124,24 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     override func layoutSubviews() {
         super.layoutSubviews()
         self.categoryimg.snp.makeConstraints { (maker) in
-            maker.height.equalTo(80)
+            maker.height.equalTo(70)
             maker.left.equalTo(leftpadding)
             maker.top.equalTo(leftpadding)
-            maker.width.equalTo(80)
+            maker.width.equalTo(70)
         }
         self.categorytitle.snp.makeConstraints { (maker) in
             maker.width.equalTo(100)
             maker.height.equalTo(30)
             maker.left.equalTo(130)
-            maker.top.equalTo(20)
+            maker.top.equalTo(30)
             
         }
-        
+        self.collectionView.snp.makeConstraints { (maker) in
+            maker.top.equalTo(90)
+            maker.width.equalTo(ScreenWidth)
+            maker.height.equalTo(ScreenWidth)
+            maker.left.equalTo(0)
+        }
         
     }
     
@@ -98,29 +150,8 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     }
     
     
-    //加载数据
-    func reloadData() {
-        //collectionView重新加载数据
-        self.collectionView.reloadData()
-    }
-    
-    //返回collectionView的单元格数量
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        
-        return 1
-    }
-    
-    //返回对应的单元格
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
-                                                       for: indexPath) as! LLMovieItemCell
-        
-        return cell
-    }
-    
-    //绘制单元格底部横线
+
+      //绘制单元格底部横线
     override func draw(_ rect: CGRect) {
         //线宽
         let lineWidth = 1 / UIScreen.main.scale
@@ -157,5 +188,39 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    //   代理
+    
+    
+    // 数据
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        
+        return    self.recitems.count
+    }
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return   1
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        var    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as?   LLMovieItemCell
+        
+        let  item = self.recitems[indexPath.row]
+        
+        if   cell == nil {
+            cell = LLMovieItemCell()
+            
+            
+            
+        }
+        cell?.backgroundColor = UIColor.black
+        cell?.setitem(item)
+        return   cell!
+    }
+    
+    
+    
 }
+
+
+
+
 

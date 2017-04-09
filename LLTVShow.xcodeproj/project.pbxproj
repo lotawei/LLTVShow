@@ -103,6 +103,8 @@
 		EDAAFF861E778A5900EC8865 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF5F1E778A5800EC8865 /* NVActivityIndicatorShape.swift */; };
 		EDAAFF871E778A5900EC8865 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF611E778A5800EC8865 /* NVActivityIndicatorView.swift */; };
 		EDAAFF881E778A5900EC8865 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAAFF621E778A5800EC8865 /* NVActivityIndicatorViewable.swift */; };
+		EDAC7E361E9A14D4008AC53F /* LLCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC7E351E9A14D4008AC53F /* LLCollectionViewLayout.swift */; };
+		EDAC7E381E9A2D09008AC53F /* LLMovieItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAC7E371E9A2D09008AC53F /* LLMovieItemCell.xib */; };
 		EDB754281E6910B100E2C350 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB754271E6910B100E2C350 /* BmobSDK.framework */; };
 		EDB7542B1E6910F800E2C350 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB7542A1E6910F800E2C350 /* libc++.tbd */; };
 		EDB7542E1E69110200E2C350 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB7542C1E69110200E2C350 /* libsqlite3.0.tbd */; };
@@ -192,7 +194,7 @@
 		EDD3C2581E728B9F005E43D8 /* Fragment.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2461E728B9F005E43D8 /* Fragment.png */; };
 		EDD3C2591E728B9F005E43D8 /* Smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2471E728B9F005E43D8 /* Smoke.png */; };
 		EDD3C25A1E728B9F005E43D8 /* Sparkle.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD3C2481E728B9F005E43D8 /* Sparkle.png */; };
-		EDD813AF1E9692E300A9D6B2 /* LLContegeryRecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD813AE1E9692E300A9D6B2 /* LLContegeryRecItem.swift */; };
+		EDD813AF1E9692E300A9D6B2 /* LLCategoryRecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD813AE1E9692E300A9D6B2 /* LLCategoryRecItem.swift */; };
 		EDDD54AF1E25EDDA00E3DC1F /* LLMainTabarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */; };
 		EDF154731E6002E20001A946 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF154471E6002E20001A946 /* MJRefreshAutoFooter.m */; };
 		EDF154741E6002E20001A946 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF154491E6002E20001A946 /* MJRefreshBackFooter.m */; };
@@ -342,6 +344,8 @@
 		EDAAFF601E778A5800EC8865 /* NVActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVActivityIndicatorView.h; sourceTree = "<group>"; };
 		EDAAFF611E778A5800EC8865 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorView.swift; sourceTree = "<group>"; };
 		EDAAFF621E778A5800EC8865 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
+		EDAC7E351E9A14D4008AC53F /* LLCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCollectionViewLayout.swift; sourceTree = "<group>"; };
+		EDAC7E371E9A2D09008AC53F /* LLMovieItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLMovieItemCell.xib; sourceTree = "<group>"; };
 		EDB754271E6910B100E2C350 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 		EDB7542A1E6910F800E2C350 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		EDB7542C1E69110200E2C350 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -434,7 +438,7 @@
 		EDD3C2461E728B9F005E43D8 /* Fragment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fragment.png; sourceTree = "<group>"; };
 		EDD3C2471E728B9F005E43D8 /* Smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Smoke.png; sourceTree = "<group>"; };
 		EDD3C2481E728B9F005E43D8 /* Sparkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sparkle.png; sourceTree = "<group>"; };
-		EDD813AE1E9692E300A9D6B2 /* LLContegeryRecItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLContegeryRecItem.swift; sourceTree = "<group>"; };
+		EDD813AE1E9692E300A9D6B2 /* LLCategoryRecItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLCategoryRecItem.swift; sourceTree = "<group>"; };
 		EDDD54AE1E25EDDA00E3DC1F /* LLMainTabarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMainTabarController.swift; sourceTree = "<group>"; };
 		EDF154461E6002E20001A946 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		EDF154471E6002E20001A946 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
@@ -506,11 +510,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB7543D1E69114700E2C350 /* CoreGraphics.framework in Frameworks */,
 				ED6487A41E752057009673E7 /* AVFoundation.framework in Frameworks */,
 				EDB754911E694F2900E2C350 /* Photos.framework in Frameworks */,
 				EDB754411E69115500E2C350 /* CoreLocation.framework in Frameworks */,
 				EDB7543F1E69114D00E2C350 /* Security.framework in Frameworks */,
-				EDB7543D1E69114700E2C350 /* CoreGraphics.framework in Frameworks */,
 				EDB7543B1E69114100E2C350 /* MobileCoreServices.framework in Frameworks */,
 				EDB754391E69113C00E2C350 /* CFNetwork.framework in Frameworks */,
 				EDB754371E69113400E2C350 /* CoreTelephony.framework in Frameworks */,
@@ -612,7 +616,7 @@
 			children = (
 				ED59FB5D1E2EFFC900216063 /* LLUser.swift */,
 				ED42B68C1E7A6098008FCCF3 /* LLContenCategory.swift */,
-				EDD813AE1E9692E300A9D6B2 /* LLContegeryRecItem.swift */,
+				EDD813AE1E9692E300A9D6B2 /* LLCategoryRecItem.swift */,
 				ED1F2B0C1E974A4000C6B08A /* LLWeatherInfo.swift */,
 			);
 			path = Model;
@@ -623,6 +627,8 @@
 			children = (
 				ED4DA7ED1E98C3600079FCD4 /* LLCategoryCell.swift */,
 				ED4DA7F11E98C8390079FCD4 /* LLMovieItemCell.swift */,
+				EDAC7E371E9A2D09008AC53F /* LLMovieItemCell.xib */,
+				EDAC7E351E9A14D4008AC53F /* LLCollectionViewLayout.swift */,
 				ED420D521E4C4F0D00C0EB4E /* LLBaseCollectionView.swift */,
 				ED4356D31E765F9200D5C0B8 /* LLUerInfoView.swift */,
 				ED4356D11E76557400D5C0B8 /* LLUerInfoView.xib */,
@@ -1126,6 +1132,7 @@
 				EDF154FD1E600B050001A946 /* Info-tvOS.plist in Resources */,
 				EDF154811E6002E20001A946 /* MJRefresh.bundle in Resources */,
 				ED8A9D031E2F5FEF001A2EC8 /* Info.plist in Resources */,
+				EDAC7E381E9A2D09008AC53F /* LLMovieItemCell.xib in Resources */,
 				ED59FB661E2F037F00216063 /* LLLoginViewController.xib in Resources */,
 				EDD3C2591E728B9F005E43D8 /* Smoke.png in Resources */,
 				EDD3C2571E728B9F005E43D8 /* Fire.png in Resources */,
@@ -1208,6 +1215,7 @@
 				ED8A9D021E2F5FEF001A2EC8 /* HoshiTextField.swift in Sources */,
 				EDAAFF811E778A5800EC8865 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
 				EDAAFF721E778A5800EC8865 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				EDAC7E361E9A14D4008AC53F /* LLCollectionViewLayout.swift in Sources */,
 				EDF154791E6002E20001A946 /* MJRefreshAutoNormalFooter.m in Sources */,
 				EDF155081E600B050001A946 /* SessionDelegate.swift in Sources */,
 				EDAAFF641E778A5800EC8865 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
@@ -1275,7 +1283,7 @@
 				ED8A9D0B1E2F5FEF001A2EC8 /* YoshikoTextField.swift in Sources */,
 				ED42B6D31E7A6DD8008FCCF3 /* MenuCell.swift in Sources */,
 				EDB754851E69478B00E2C350 /* ConstraintPriorityTarget.swift in Sources */,
-				EDD813AF1E9692E300A9D6B2 /* LLContegeryRecItem.swift in Sources */,
+				EDD813AF1E9692E300A9D6B2 /* LLCategoryRecItem.swift in Sources */,
 				EDF154801E6002E20001A946 /* MJRefreshStateHeader.m in Sources */,
 				ED42B6D21E7A6DD8008FCCF3 /* UIScrollView+NormalizedContentOffset.swift in Sources */,
 				EDD3C2521E728B9F005E43D8 /* LTMorphingLabel+Fall.swift in Sources */,

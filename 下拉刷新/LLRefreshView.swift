@@ -25,14 +25,14 @@ class LLRefreshView: MJRefreshGifHeader {
     override func prepare() {
         super.prepare()
         stateLabel?.isHidden = false
-        lastUpdatedTimeLabel?.isHidden = true
+        lastUpdatedTimeLabel?.isHidden = false
         
-        setImages([#imageLiteral(resourceName: "idel1"),#imageLiteral(resourceName: "idel2"),#imageLiteral(resourceName: "idel3"),#imageLiteral(resourceName: "idel4"),#imageLiteral(resourceName: "idel5")], for: MJRefreshState.idle)
-        setImages([UIImage(named: "v2_pullRefresh1")!], for: MJRefreshState.pulling)
+        setImages([#imageLiteral(resourceName: "v2_pullRefresh2"),#imageLiteral(resourceName: "v2_pullRefresh2"),#imageLiteral(resourceName: "v2_pullRefresh2")], for: MJRefreshState.idle)
+        setImages([UIImage(named: "v2_pullRefresh2")!], for: MJRefreshState.pulling)
         setImages([#imageLiteral(resourceName: "v2_pullRefresh2"),#imageLiteral(resourceName: "v2_pullRefresh3")], for: MJRefreshState.refreshing)
-        setTitle("下拉刷新", for: .idle)
-        setTitle("松手开始刷新", for: .pulling)
-        setTitle("正在刷新", for: .refreshing)
+        setTitle("刷新完成", for: .idle)
+        setTitle("", for: .pulling)
+        setTitle("努力刷新", for: .refreshing)
     }
    
 
