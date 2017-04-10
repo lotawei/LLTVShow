@@ -24,33 +24,36 @@ private let Authcodeurl = "http://open.moretv.com.cn/authorize"
 private let Tokenurl = "http://open.moretv.com.cn/get_access_token"
 private let  appid = "6989a62a22ad4677d14e3159228d5348"
 private let  scret = "f33abd6c0aaa453eaf170410113ede92"
+typealias   DataBlock = (_ data:DataResponse<Any>) -> Void
 class  LLAuthManager:NSObject{
     
 //    以逃逸闭包的方式传出去
-    typealias   DataBlock = (_ data:DataResponse<Any>) -> Void
+
   
     
-    //构造时必须要传参  这个 他有问题
+    //默认 一个静态 方法
     static   func  Authorizon(_ url:URLConvertible, datablock: DataBlock?) {
        
         if datablock  != nil {
             request(Authcodeurl,method:.get, parameters: ["appid":appid])
-                .responseJSON {  (JSON) in
+                .responseJSON {  (aJSON) in
                 
                     
-                    if   JSON.result.value != nil{
+                    if   aJSON.result.value != nil{
                         
-                        let   jsondata  = JSON.result.value  as! [String:Any]
+                        let   jsondata  = aJSON.result.value  as! [String:Any]
                         if   jsondata["status"] as! String == "200"{
                             //表示能拿到authcoe
                             let authcode = jsondata["authorize_code"] as!  String
                             //  获取token  appid   secrete   +  验证值
                             let  key = appid+"_"+scret+"_"+"\(authcode)"
-                            let   md5key = key.MD5
+                            let   md5key = String.MD5(str:key)
                             request(Tokenurl, method: .get, parameters:["authorize_code":authcode,"key":md5key])
-                                .responseJSON {  (JSON) in
-                                    if   JSON.result.value != nil{
-                                        let   jsondata  = JSON.result.value  as! [String:Any]
+                                .responseJSON {  (bJSON) in
+                                  
+                                    
+                                    if   bJSON.result.value != nil{
+                                        let   jsondata  = bJSON.result.value  as! [String:Any]
                                         let   strtoken =   jsondata["access_token"] as?  String
                                     
                                         
@@ -58,10 +61,10 @@ class  LLAuthManager:NSObject{
                                         if   strtoken != nil{
                                             
                                             request(url,method:.get, parameters:["access_token":strtoken!])
-                                                .responseJSON {  (JSON) in
+                                                .responseJSON {  (cJSON) in
+                                                  
                                                     print("认证成功")
-                                                    
-                                                    datablock!(JSON)
+                                                    datablock!(cJSON)
                                                     
                                                     
                                             }
@@ -71,13 +74,15 @@ class  LLAuthManager:NSObject{
                                           print("获取token失败")
                                             
                                         }
+                                    
                                     }
                                     else{
                                        print("你好像未连接网络")
                                     }
+                                        
                                     
                             }
-
+                            
                         }
                         else{
                             
@@ -96,7 +101,11 @@ class  LLAuthManager:NSObject{
         }
         
         
+    
+    
+    
     }
+    
     
 //    override init() {
 //        
@@ -188,7 +197,9 @@ class  LLAuthManager:NSObject{
     ////
     ////
     ////                                        }
-    
+    deinit {
+         print("LLaUTH  DE INIT")
+    }
     
 }
 

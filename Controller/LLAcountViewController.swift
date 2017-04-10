@@ -14,6 +14,7 @@ class LLAcountViewController: BaseViewController {
     let   mainscrollerview:UIScrollView! = nil
     // 数据  暂时先自己构建吧
    lazy var   accoutlistdata: NSMutableArray = {
+       autoreleasepool {
         let    data = NSMutableArray(capacity: 0)
         
         // isdefault 三个值  defalut 又详情的按钮  on  表示夜间开关模式  这样写会产生循环应用
@@ -34,6 +35,7 @@ class LLAcountViewController: BaseViewController {
         data.add(section3)
     
         return   data
+    }
     }()
     
     //头部
@@ -143,6 +145,7 @@ class LLAcountViewController: BaseViewController {
         super.viewDidAppear(animated)
          animateTable(tableview)
     }
+   
     // configheadview
     func updateview()  {
         //无用户
@@ -353,7 +356,7 @@ class LLAcountViewController: BaseViewController {
         NOTIfyCenter.removeObserver(self, name: NSNotification.Name(rawValue: notificationName), object: nil)
         
         NOTIfyCenter.removeObserver(self, name: NSNotification.Name(rawValue: notificationSelect), object: nil)
-        
+           print("LLAcountViewController释放")
         
         
     }
@@ -517,5 +520,6 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
         
     }
     
+   
     
 }

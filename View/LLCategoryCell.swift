@@ -79,16 +79,35 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
        collectionView.dataSource = self
 
        collectionView.register(LLMovieItemCell.self, forCellWithReuseIdentifier: "cell")
-        contentView.addSubview(collectionView)
+       contentView.addSubview(collectionView)
+        
+        
+        
+        categoryimg.snp.makeConstraints { (maker) in
+            maker.height.equalTo(70)
+            maker.left.equalTo(leftpadding)
+            maker.top.equalTo(leftpadding)
+            maker.width.equalTo(70)
+        }
+        categorytitle.snp.makeConstraints { (maker) in
+            maker.width.equalTo(100)
+            maker.height.equalTo(30)
+            maker.left.equalTo(130)
+            maker.top.equalTo(30)
+            
+        }
+        collectionView.snp.makeConstraints { (maker) in
+            maker.top.equalTo(90)
+            maker.width.equalTo(ScreenWidth)
+            maker.height.equalTo(ScreenWidth)
+            maker.left.equalTo(0)
+        }
+        
         
     }
     func setcategory(_ category:LLContenCategory){
         
          curcategry = category
-        
-       
-    
-
         categoryimg.kf.setImage(with: URL(string:category.iconurl) , placeholder: UIImage(named:"palcehold"), options: nil, progressBlock: nil, completionHandler: nil)
         categorytitle.text = curcategry.title
         
@@ -121,29 +140,7 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
         
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        categoryimg.snp.makeConstraints { (maker) in
-            maker.height.equalTo(70)
-            maker.left.equalTo(leftpadding)
-            maker.top.equalTo(leftpadding)
-            maker.width.equalTo(70)
-        }
-       categorytitle.snp.makeConstraints { (maker) in
-            maker.width.equalTo(100)
-            maker.height.equalTo(30)
-            maker.left.equalTo(130)
-            maker.top.equalTo(30)
-            
-        }
-        collectionView.snp.makeConstraints { (maker) in
-            maker.top.equalTo(90)
-            maker.width.equalTo(ScreenWidth)
-            maker.height.equalTo(ScreenWidth)
-            maker.left.equalTo(0)
-        }
-        
-    }
+  
     
     required  init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

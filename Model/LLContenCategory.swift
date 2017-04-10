@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+typealias CategoryResult = (_ categories:[LLContenCategory]?) ->  Void
 class LLContenCategory: NSObject {
     // {
 //    "status": "200",
@@ -25,7 +25,7 @@ class LLContenCategory: NSObject {
    
     
     
-    typealias CategoryResult = (_ categories:[LLContenCategory]?) ->  Void
+
     var   iconurl:String = ""
     var   code:String!
     var  link_data:String!

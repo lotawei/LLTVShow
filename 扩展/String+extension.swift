@@ -49,10 +49,10 @@ extension String {
     }
     
     //md5
-    var MD5: String {
-        let cString = self.cString(using: .utf8)
+    static  func MD5(str:String) -> String {
+        let cString = str.cString(using: .utf8)
         let length = CUnsignedInt(
-            self.lengthOfBytes(using: .utf8)
+            str.lengthOfBytes(using:.utf8)
         )
         let result = UnsafeMutablePointer<CUnsignedChar>.allocate(
             capacity: Int(CC_MD5_DIGEST_LENGTH)

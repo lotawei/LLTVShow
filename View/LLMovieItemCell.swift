@@ -7,6 +7,16 @@
 //
 
 import UIKit
+protocol ItemCellProDelegate {
+    
+    
+    
+    
+    
+}
+
+
+
 
 class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     //上边距
@@ -197,6 +207,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     }()
     lazy  var   btncollect:UIButton = {
         let   btn  =  UIButton()
+        btn.tag = 1000 //1000未收藏  10001 收藏
         btn.setTitle("收藏", for: .normal)
         btn.backgroundColor = UIColor.gray
         btn.setTitleColor(UIColor.white, for: .normal)
@@ -206,10 +217,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         
     }()
     
-    lazy var   itemmodel:LLCategoryRecItem = {
-        let  item  =  LLCategoryRecItem()
-        return  item
-    }()
+   weak   var   itemmodel:LLCategoryRecItem? = LLCategoryRecItem()
     override   init(frame:CGRect){
         
         
@@ -237,38 +245,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         contentView.addSubview(btncollect)
         
         
-    }
-    func   setitem(_ item:LLCategoryRecItem){
-        itemmodel = item
-        
-        
-        
-       itemimg.kf.setImage(with: URL(string:item.item_icon1) , placeholder: UIImage(named:"cellimgpalcehold"), options: nil, progressBlock: nil, completionHandler: nil)
-        
-       lblitemtitle.text = item.item_title
-        lbldirectxt.text = item.displaydirector()
-        lblcasttxt.text = item.displaycast()
-       lbltagttxt.text = item.displaytag()
-       lblyeartxt.text = item.item_year
-       lblscoretxt.text = item.item_score
-        let   score = item.item_score.StringToFloat()
-        if   score >= 7.0 {
-            scoreimg.image = UIImage(named:"hot")
-        }else  if  score > 5.0 &&  score < 7 {
-              scoreimg.image = UIImage(named:"mid")
-        }
-        else{
-             scoreimg.image = UIImage(named:"little")
-        }
-        
-        
-    }
-    
-    
-    override func layoutSubviews() {
-   
-      
-       lblitemtitle.snp.makeConstraints { (maker) in
+        lblitemtitle.snp.makeConstraints { (maker) in
             maker.top.equalTo(imgheight + 2 * toppadding )
             maker.left.equalTo(toppadding)
             maker.width.equalTo(imgwidth)
@@ -321,7 +298,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         lbltagttxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 2 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth)
-
+            
             maker.width.equalTo(lbltxtwitdh)
             maker.height.equalTo(lbltxtheight)
         }
@@ -334,7 +311,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         //
         lblyeartxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 3 *  (lblheight  +  lblpadding))
-             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth )
+            maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth )
             maker.width.equalTo(lbltxtwitdh)
             maker.height.equalTo(lbltxtheight)
         }
@@ -365,14 +342,42 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
             
             maker.height.equalTo(30)
             maker.right.equalTo(-toppadding)
- 
+            
             
         }
-       
         
+
         
         
     }
+    func   setitem(_ item:LLCategoryRecItem){
+        itemmodel = item
+        
+        
+        
+       itemimg.kf.setImage(with: URL(string:item.item_icon1) , placeholder: UIImage(named:"cellimgpalcehold"), options: nil, progressBlock: nil, completionHandler: nil)
+        
+       lblitemtitle.text = item.item_title
+        lbldirectxt.text = item.displaydirector()
+        lblcasttxt.text = item.displaycast()
+       lbltagttxt.text = item.displaytag()
+       lblyeartxt.text = item.item_year
+       lblscoretxt.text = item.item_score
+        let   score = item.item_score.StringToFloat()
+        if   score >= 7.0 {
+            scoreimg.image = UIImage(named:"hot")
+        }else  if  score > 5.0 &&  score < 7 {
+              scoreimg.image = UIImage(named:"mid")
+        }
+        else{
+             scoreimg.image = UIImage(named:"little")
+        }
+        
+        
+    }
+    
+    
+   
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

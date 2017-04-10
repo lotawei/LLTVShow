@@ -8,6 +8,7 @@
 
 import UIKit
 //  不同类型的内容推荐
+typealias MovieItemBlock = (_ result:[LLCategoryRecItem] ) -> Void
 class LLCategoryRecItem: NSObject {
 
     var  item_director:[JSON]!//导演
@@ -156,7 +157,7 @@ class LLCategoryRecItem: NSObject {
     //    "item_title" : "魔兽",
     //    "item_area" : "美国 | 中国大陆 | 加拿大"
     //}
-    typealias MovieItemBlock = (_ result:[LLCategoryRecItem] ) -> Void
+ 
     static  func GetMovieItems(_ category:LLContenCategory,_ data:DataResponse<Any>,_ result:@escaping MovieItemBlock){
          let   jsondata  =  JSON(data: data.data!)
         var   recitems:[LLCategoryRecItem] = [LLCategoryRecItem]()

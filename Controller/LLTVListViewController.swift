@@ -29,7 +29,7 @@ class LLTVListViewController: BaseViewController {
       
         var   finish = false
         
-        _ =  LLAuthManager.Authorizon(opentvurl, datablock: { (data) in
+      LLAuthManager.Authorizon(opentvurl,   datablock: { (data) in
             if  data.result.error != nil {
                  _  = SweetAlert().showAlert("服务器验证失败")
                  tmp?.tableview.mj_header.endRefreshing()
@@ -112,7 +112,14 @@ class LLTVListViewController: BaseViewController {
                navigationController?.navigationBar.isHidden  = false
         }
     }
+    deinit {
+        print("LLTVListViewController释放")
+    }
+    
+
+
 }
+
 extension LLTVListViewController:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -148,13 +155,7 @@ extension LLTVListViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return   ScreenWidth +  90
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         
-        
-        
-        
-    }
-    
+   
 }
 
 
