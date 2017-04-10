@@ -19,7 +19,7 @@ private  let  tvappurl = "http://japi.juhe.cn/tv/getCategory"
 
 
 //电视猫api
-private let AuthManagerinstance=LLAuthManager()
+
 private let Authcodeurl = "http://open.moretv.com.cn/authorize"
 private let Tokenurl = "http://open.moretv.com.cn/get_access_token"
 private let  appid = "6989a62a22ad4677d14e3159228d5348"
@@ -28,15 +28,11 @@ class  LLAuthManager:NSObject{
     
 //    以逃逸闭包的方式传出去
     typealias   datablock=(_ data:DataResponse<Any>) -> Void
-    var  cururl:URLConvertible!
-    var  method:HTTPMethod?
-    var  paramas:Parameters?
-    //构造时必须要传参
-    convenience  init(_ url:URLConvertible,_ method:HTTPMethod? ,_ paramas:Parameters?, datablock:datablock?) {
-        self.init()
-        self.cururl = url
-        self.method = method
-        self.paramas = paramas
+  
+    
+    //构造时必须要传参  这个 他有问题
+    static   func  Authorizon(_ url:URLConvertible, datablock:datablock?) {
+       
         if datablock  != nil {
             request(Authcodeurl,method:.get, parameters: ["appid":appid])
                 .responseJSON {  (JSON) in
@@ -56,12 +52,12 @@ class  LLAuthManager:NSObject{
                                     if   JSON.result.value != nil{
                                         let   jsondata  = JSON.result.value  as! [String:Any]
                                         let   strtoken =   jsondata["access_token"] as?  String
-                                        weak  var  tempself = self;
+                                    
                                         
                                         
                                         if   strtoken != nil{
                                             
-                                            request(tempself!.cururl,method:tempself!.method!, parameters:["access_token":strtoken!])
+                                            request(url,method:.get, parameters:["access_token":strtoken!])
                                                 .responseJSON {  (JSON) in
                                                     print("认证成功")
                                                     
@@ -72,12 +68,12 @@ class  LLAuthManager:NSObject{
                                             
                                         }
                                         else{
-                                            _ =  SweetAlert().showAlert("获取token失败")
+                                          print("获取token失败")
                                             
                                         }
                                     }
                                     else{
-                                        _ =  SweetAlert().showAlert("你好像未连接网络")
+                                       print("你好像未连接网络")
                                     }
                                     
                             }
@@ -85,12 +81,12 @@ class  LLAuthManager:NSObject{
                         }
                         else{
                             
-                            _ =  SweetAlert().showAlert("服务器认证失败")
+                            print("服务器认证失败")
                             
                         }
                     }
                     else{
-                        _ =  SweetAlert().showAlert("你可能需要检查网络或设置允许数据")
+                        print("你可能需要检查网络或设置允许数据")
                     }
             }
 

@@ -70,30 +70,30 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
         selectionStyle = .none
         
         
-        contentView.addSubview(self.categoryimg)
-        contentView.addSubview(self.categorytitle)
+        contentView.addSubview(categoryimg)
+        contentView.addSubview(categorytitle)
         //二级视图
         
      
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+       collectionView.delegate = self
+       collectionView.dataSource = self
 
-        self.collectionView.register(LLMovieItemCell.self, forCellWithReuseIdentifier: "cell")
+       collectionView.register(LLMovieItemCell.self, forCellWithReuseIdentifier: "cell")
         contentView.addSubview(collectionView)
         
     }
     func setcategory(_ category:LLContenCategory){
         
-          self.curcategry = category
+         curcategry = category
         
        
     
 
-        self.categoryimg.kf.setImage(with: URL(string:self.curcategry.iconurl) , placeholder: UIImage(named:"palcehold"), options: nil, progressBlock: nil, completionHandler: nil)
-        self.categorytitle.text = self.curcategry.title
+        categoryimg.kf.setImage(with: URL(string:category.iconurl) , placeholder: UIImage(named:"palcehold"), options: nil, progressBlock: nil, completionHandler: nil)
+        categorytitle.text = curcategry.title
         
         //  这里就是拿到过后  movieitem
-        weak   var  tmp = self
+    
         
         var    itemurl = ""
         if  category.code == "movie" || category.code == "tv"||category.code == "zongyi"||category.code == "comic"||category.code == "jilu"{
@@ -104,8 +104,8 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
         else{
             itemurl = "http://open.moretv.com.cn/position/comic"
         }
-        
-        _ =  LLAuthManager.init(itemurl, .get, nil, datablock: { (data) in
+            weak   var  tmp = self
+            _  =  LLAuthManager.Authorizon(itemurl, datablock: { (data) in
             
              LLCategoryRecItem.GetMovieItems(category, data, { (items) in
                 tmp?.recitems = items
@@ -114,7 +114,7 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
              })
             
         })
-        
+      
         
         
      
@@ -123,20 +123,20 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.categoryimg.snp.makeConstraints { (maker) in
+        categoryimg.snp.makeConstraints { (maker) in
             maker.height.equalTo(70)
             maker.left.equalTo(leftpadding)
             maker.top.equalTo(leftpadding)
             maker.width.equalTo(70)
         }
-        self.categorytitle.snp.makeConstraints { (maker) in
+       categorytitle.snp.makeConstraints { (maker) in
             maker.width.equalTo(100)
             maker.height.equalTo(30)
             maker.left.equalTo(130)
             maker.top.equalTo(30)
             
         }
-        self.collectionView.snp.makeConstraints { (maker) in
+        collectionView.snp.makeConstraints { (maker) in
             maker.top.equalTo(90)
             maker.width.equalTo(ScreenWidth)
             maker.height.equalTo(ScreenWidth)
@@ -195,7 +195,7 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         
-        return    self.recitems.count
+        return    recitems.count
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return   1
@@ -203,7 +203,7 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         var    cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as?   LLMovieItemCell
         
-        let  item = self.recitems[indexPath.row]
+        let  item = recitems[indexPath.row]
         
         if   cell == nil {
             cell = LLMovieItemCell()

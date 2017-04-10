@@ -11,8 +11,8 @@ import UIKit
 class LLTVListViewController: BaseViewController {
     
   
-  fileprivate  var    tableview:LLBaseTableView!
-  fileprivate  var    tabdata:[LLContenCategory] = [LLContenCategory]()
+    var    tableview:LLBaseTableView!
+    var    tabdata:[LLContenCategory] = [LLContenCategory]()
     
     
     lazy var refreshHeadView:LLRefreshView = {
@@ -29,9 +29,9 @@ class LLTVListViewController: BaseViewController {
       
         var   finish = false
         
-        _ =  LLAuthManager.init(opentvurl, .get, nil, datablock: { (data) in
+        _ =  LLAuthManager.Authorizon(opentvurl, datablock: { (data) in
             if  data.result.error != nil {
-                
+                 _  = SweetAlert().showAlert("服务器验证失败")
                  tmp?.tableview.mj_header.endRefreshing()
                 
             }
@@ -65,19 +65,17 @@ class LLTVListViewController: BaseViewController {
         tableview.delegate = self
         tableview.dataSource = self
 //        let refreshHeadView = LLRefreshView(refreshingTarget: self, refreshingAction: "headRefresh")
-        self.refreshHeadView.gifView?.frame = CGRect(x:0, y:30, width:100, height:100)
-        tableview.mj_header = self.refreshHeadView
+        refreshHeadView.gifView?.frame = CGRect(x:0, y:30, width:100, height:100)
+        tableview.mj_header = refreshHeadView
         
         
         tableview.register(LLCategoryCell.self,
                             forCellReuseIdentifier:"myCell")
         view.addSubview(tableview!)
+        headRefresh()
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        headRefresh()
-    }
+
     
     
     override func viewDidLayoutSubviews() {
@@ -110,8 +108,8 @@ class LLTVListViewController: BaseViewController {
         
      override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if  (self.navigationController?.viewControllers.count)! > 0 {
-               self.navigationController?.navigationBar.isHidden  = false
+        if  (navigationController?.viewControllers.count)! > 0 {
+               navigationController?.navigationBar.isHidden  = false
         }
     }
 }

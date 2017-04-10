@@ -9,37 +9,30 @@
 import UIKit
 import AVFoundation
 import Photos
-//  这里  使用 列表模拟数据
 class LLAcountViewController: BaseViewController {
     var sourceType:UIImagePickerControllerSourceType!
     let   mainscrollerview:UIScrollView! = nil
     // 数据  暂时先自己构建吧
-    let   accoutlistdata: NSMutableArray = {
+   lazy var   accoutlistdata: NSMutableArray = {
         let    data = NSMutableArray(capacity: 0)
         
-        // isdefault 三个值  defalut 又详情的按钮  on  表示夜间开关模式
-        let   se1 =    ["info":"我的消息","icon":"message","isdefault":"default"]
-        let  se2r0 =    ["info":"升级会员","icon":"VIP","isdefault":"default"]
-        let  se2r1 =     ["info":"猜你喜欢","icon":"intersting","isdefault":"default"]
-        let  se2r2 =     ["info":"主题皮肤","icon":"skin","isdefault":"default"]
-        let  se3r0 =    ["info":"夜间模式","icon":"darkstyle","isdefault":"on"]
-        let  se3r1 =      ["info":"分享","icon":"share","isdefault":"default"]
-        let  se3r2 =     ["info":"清理缓存","icon":"clean","isdefault":"default"]
-        let  se3r3 =     ["info":"关于","icon":"about","isdefault":"default"]
-        let    section1 = NSMutableArray(capacity: 0)
-        section1.add(se1)
-        let     section2 =  NSMutableArray(capacity: 0)
-         section2.add(se2r0)
-         section2.add(se2r1)
-         section2.add(se2r2)
-        let    section3 =  NSMutableArray(capacity: 0)
-        section3.add(se3r0)
-         section3.add(se3r1)
-         section3.add(se3r2)
-         section3.add(se3r3)
-        data.add(section1)
-        data.add(section2)
-        data.add(section3)
+//        // isdefault 三个值  defalut 又详情的按钮  on  表示夜间开关模式  这样写会产生循环应用
+//        let   se1 =    ["info":"我的消息","icon":"message","isdefault":"default"]
+//        let  se2r0 =    ["info":"升级会员","icon":"VIP","isdefault":"default"]
+//        let  se2r1 =     ["info":"猜你喜欢","icon":"intersting","isdefault":"default"]
+//        let  se2r2 =     ["info":"主题皮肤","icon":"skin","isdefault":"default"]
+//        let  se3r0 =    ["info":"夜间模式","icon":"darkstyle","isdefault":"on"]
+//        let  se3r1 =      ["info":"分享","icon":"share","isdefault":"default"]
+//        let  se3r2 =     ["info":"清理缓存","icon":"clean","isdefault":"default"]
+//        let  se3r3 =     ["info":"关于","icon":"about","isdefault":"default"]
+//        let    section1 = [se1]
+//        let     section2 =  [se2r0,se2r1,se2r2]
+//    
+//        let    section3 = [se3r0,se3r1,se3r2,se3r3]
+//        data.add(section1)
+//        data.add(section2)
+//        data.add(section3)
+    
         return   data
     }()
     
@@ -111,7 +104,8 @@ class LLAcountViewController: BaseViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.delegate = self
+        
+        navigationController?.delegate = self
         initialview()
         
         updateview()
@@ -147,7 +141,7 @@ class LLAcountViewController: BaseViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-         animateTable(self.tableview)
+         animateTable(tableview)
     }
     // configheadview
     func updateview()  {
@@ -168,86 +162,86 @@ class LLAcountViewController: BaseViewController {
         }
         if auser != nil {
             
-            self.btnlogin.isHidden  =  true
-            self.btnregister.isHidden = true
-            self.btnlogout.isHidden = false
+           btnlogin.isHidden  =  true
+           btnregister.isHidden = true
+           btnlogout.isHidden = false
         }
         else{
             
-            self.btnlogin.isHidden  =  false
-            self.btnregister.isHidden = false
-            self.btnlogout.isHidden = true
+            btnlogin.isHidden  =  false
+           btnregister.isHidden = false
+            btnlogout.isHidden = true
         }
-        self.portraitimg.image =  porimg
+       portraitimg.image =  porimg
     }
     func initialview(){
-        self.navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isHidden = true
         view.addSubview(headview)
         headview.backgroundColor = UIColor.init(colorLiteralRed: 244/255.0, green: 244.0/255.0, blue: 244.0/255.0, alpha: 0.5)
-        headview.addSubview(self.btnlogin)
-        headview.addSubview(self.btnregister)
-        headview.addSubview(self.portraitimg)
-        headview.addSubview(self.btnlogout)
-        view.addSubview(self.infoview)
-        view.addSubview(self.tableview)
-        self.infoview.delegate = self
-        self.tableview.delegate = self
-        self.tableview.dataSource = self
+        headview.addSubview(btnlogin)
+        headview.addSubview(btnregister)
+        headview.addSubview(portraitimg)
+        headview.addSubview(btnlogout)
+        view.addSubview(infoview)
+        view.addSubview(tableview)
+       infoview.delegate = self
+       tableview.delegate = self
+        tableview.dataSource = self
         let cellNib = UINib(nibName: "LLAccoutCell", bundle: nil)
-        self.tableview.register(cellNib, forCellReuseIdentifier: "cell")
+        tableview.register(cellNib, forCellReuseIdentifier: "cell")
         
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        self.portraitimg.clipsToBounds = true
-        self.portraitimg.layer.cornerRadius = 30
+        portraitimg.clipsToBounds = true
+        portraitimg.layer.cornerRadius = 30
         
         
-        self.btnlogin.snp.makeConstraints { (maker) in
+       btnlogin.snp.makeConstraints { (maker) in
             maker.width.equalTo(80)
             maker.height.equalTo(30)
             maker.bottom.equalTo(-70)
             maker.left.equalTo((ScreenWidth - 200)/2.0)
             
         }
-        self.infoview.snp.makeConstraints { (maker) in
+       infoview.snp.makeConstraints { (maker) in
             maker.width.equalTo(ScreenWidth)
             maker.height.equalTo(30)
             maker.bottom.equalTo(-60)
             maker.left.equalTo(0)
         }
         
-        self.portraitimg.snp.makeConstraints { (maker) in
+        portraitimg.snp.makeConstraints { (maker) in
             maker.width.equalTo(60)
             maker.height.equalTo(60)
             maker.centerX.equalTo(headview)
             maker.top.equalTo(25)
         }
-        self.btnregister.snp.makeConstraints { (maker) in
+        btnregister.snp.makeConstraints { (maker) in
             maker.width.equalTo(80)
             maker.height.equalTo(30)
             maker.bottom.equalTo(-70)
             maker.right.equalTo(-(ScreenWidth - 200 )/2.0)
         }
-        self.headview.snp.makeConstraints { (maker) in
+       headview.snp.makeConstraints { (maker) in
             maker.top.equalTo(0)
             maker.width.equalTo(ScreenWidth)
             maker.height.equalTo(200)
         }
-        self.btnlogout.snp.makeConstraints { (maker) in
+      btnlogout.snp.makeConstraints { (maker) in
             maker.centerX.equalTo(headview)
             maker.width.equalTo(80)
             maker.height.equalTo(30)
             maker.bottom.equalTo(-70)
             
         }
-        self.tableview.snp.makeConstraints { (maker) in
+       tableview.snp.makeConstraints { (maker) in
             maker.width.equalTo(ScreenWidth)
             
             maker.height.equalTo(ScreenHeight  -  245)
             maker.top.equalTo(202)
         }
-        self.infoview.snp.makeConstraints { (maker) in
+       infoview.snp.makeConstraints { (maker) in
             maker.width.equalTo(ScreenWidth)
             maker.left.equalTo(0)
             maker.height.equalTo(30)
@@ -259,12 +253,12 @@ class LLAcountViewController: BaseViewController {
     func login()  {
         
         
-        self.navigationController?.pushViewController(LLLoginViewController(), animated: true)
+        navigationController?.pushViewController(LLLoginViewController(), animated: true)
         
         
     }
     func     register(){
-        self.navigationController?.pushViewController(LLRegisterViewController(), animated: true)
+       navigationController?.pushViewController(LLRegisterViewController(), animated: true)
         
         
         
@@ -287,13 +281,14 @@ class LLAcountViewController: BaseViewController {
 
     
         
+        weak   var  tmp = self
 //        
         let   alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "相册", style: .default, handler: {(action) in
-            if(self.PhotoLibraryPermissions() == true){
-                self.sourceType = UIImagePickerControllerSourceType.photoLibrary
-                self.open()
+            if(tmp?.PhotoLibraryPermissions() == true){
+                tmp?.sourceType = UIImagePickerControllerSourceType.photoLibrary
+                tmp?.open()
             }else{
                 _  = SweetAlert().showAlert("请到通用－>隐私设置允许访问相册")
                 
@@ -302,10 +297,10 @@ class LLAcountViewController: BaseViewController {
         }))
         alert.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "相机", style: .default, handler: { (action) in
-            if(self.cameraPermissions() == true){
-                  self.sourceType  = UIImagePickerControllerSourceType.camera
+            if(tmp?.cameraPermissions() == true){
+                  tmp?.sourceType  = UIImagePickerControllerSourceType.camera
 
-                  self.open()
+                 tmp?.open()
             }else{
                 _  = SweetAlert().showAlert("请到通用－>隐私设置允许访问相机")
                 
@@ -316,7 +311,7 @@ class LLAcountViewController: BaseViewController {
             
         }))
         
-        self.present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
        
         
     }
@@ -327,7 +322,7 @@ class LLAcountViewController: BaseViewController {
         imagePickerController.delegate = self
         imagePickerController.allowsEditing = true//true为拍照、选择完进入图片编辑模式
         imagePickerController.sourceType = sourceType
-        self.present(imagePickerController, animated: true, completion:nil)
+        present(imagePickerController, animated: true, completion:nil)
     }
     //访问相机
     private  func cameraPermissions() -> Bool{
@@ -372,12 +367,12 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        let     arr = self.accoutlistdata[section] as!  NSArray
+        let     arr = accoutlistdata[section] as!  NSArray
         return  arr.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var  cell = tableview.dequeueReusableCell(withIdentifier: "cell") as?  LLAccoutCell
-        let  cells = self.accoutlistdata[indexPath.section]  as!   NSArray
+        let  cells = accoutlistdata[indexPath.section]  as!   NSArray
         let  info = cells[indexPath.row] as!  NSDictionary
         if   cell ==  nil {
             
@@ -396,7 +391,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
         if   indexPath.section == 2  && indexPath.row == 0{
             return
         }
-        let  cells = self.accoutlistdata[indexPath.section]  as!   NSArray
+        let  cells = accoutlistdata[indexPath.section]  as!   NSArray
         let  info = cells[indexPath.row] as!  NSDictionary
         let   selectnname = info["info"] as! String
         
@@ -418,7 +413,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
     //  图片选择代理
     func imagePickerControllerDidCancel(_ picker:UIImagePickerController)
     {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     func imagePickerController( _ picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
@@ -444,7 +439,7 @@ extension  LLAcountViewController : UITableViewDelegate,UITableViewDataSource,UI
         }
         
         
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
     

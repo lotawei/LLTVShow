@@ -30,11 +30,12 @@ class LLLoginViewController: BaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = false
+        
+        navigationController?.navigationBar.isHidden = false
         view.backgroundColor = fontcolor
-        if  self.navigationController != nil{
-            self.title = "登录"
-            self.tabBarController?.tabBar.isHidden =  true
+        if  navigationController != nil{
+            title = "登录"
+            tabBarController?.tabBar.isHidden =  true
         }
     }
   
@@ -46,17 +47,17 @@ class LLLoginViewController: BaseViewController {
    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.tabBarController?.tabBar.isHidden =  false
-          self.navigationController?.navigationBar.isHidden = true
+      tabBarController?.tabBar.isHidden =  false
+         navigationController?.navigationBar.isHidden = true
     }
     //创建动画 默认时长  3.0
    private func createbandanimation()  {
-    for lay in self.view.layer.sublayers! {
+    for lay in view.layer.sublayers! {
         if lay.isKind(of: ZYAnimationLayer.classForCoder()) {
             lay.removeFromSuperlayer()
         }
     }
-    let   logview = self.view  as!  LLLoginView
+    let   logview = view  as!  LLLoginView
     ZYAnimationLayer.createAnimationLayer(with: "welcome", andRect: logview.brandanimationview.bounds, andView: logview.brandanimationview, andFont: UIFont.systemFont(ofSize: 15), andStroke: fontcolor)
     }
  

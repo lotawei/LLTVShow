@@ -13,7 +13,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     let  toppadding:CGFloat = 5
     
     //  上下间距
-    let  lblpadding:CGFloat  = 25
+    let  lblpadding:CGFloat  = 30
     let  imgwidth:CGFloat = 208
     let  imgheight:CGFloat = 300
     
@@ -36,9 +36,6 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         
     }()
     
-    
-    
-    
     // 影片名称
     lazy var  lblitemtitle:LTMorphingLabel = {
         let  alab = LTMorphingLabel()
@@ -48,7 +45,13 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         alab.font = UIFont.systemFont(ofSize: 16)
         alab.morphingEffect = .burn
         alab.textAlignment = .center
-        
+//        let  alab = UILabel()
+////        alab.delegate = self
+////        alab.morphingDuration = 2.0
+//        alab.textColor = UIColor.white
+//        alab.font = UIFont.systemFont(ofSize: 16)
+////        alab.morphingEffect = .burn
+//        alab.textAlignment = .center
         
         return  alab
     }()
@@ -210,52 +213,52 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     override   init(frame:CGRect){
         
         
+        let    aframe =  CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenWidth)
+        super.init(frame: aframe)
         
-        super.init(frame: frame)
         
         
-        
-        contentView.addSubview(self.itemimg)
-        contentView.addSubview(self.lblitemtitle)
-        contentView.addSubview(self.lbldirector)
-        contentView.addSubview(self.lbltag)
-        contentView.addSubview(self.lblarea)
-        contentView.addSubview(self.lblcast)
-        contentView.addSubview(self.lblyear)
-        contentView.addSubview(self.lblscore)
-        contentView.addSubview(self.lblyear)
-        contentView.addSubview(self.lbltagttxt)
-        contentView.addSubview(self.lblscoretxt)
-        contentView.addSubview(self.lblyeartxt)
-        contentView.addSubview(self.lblareatxt)
-        contentView.addSubview(self.lblcasttxt)
-        contentView.addSubview(self.lbldirectxt)
-        contentView.addSubview(self.scoreimg)
-        contentView.addSubview(self.btncollect)
+        contentView.addSubview(itemimg)
+        contentView.addSubview(lblitemtitle)
+        contentView.addSubview(lbldirector)
+        contentView.addSubview(lbltag)
+        contentView.addSubview(lblarea)
+        contentView.addSubview(lblcast)
+        contentView.addSubview(lblyear)
+        contentView.addSubview(lblscore)
+        contentView.addSubview(lblyear)
+        contentView.addSubview(lbltagttxt)
+        contentView.addSubview(lblscoretxt)
+        contentView.addSubview(lblyeartxt)
+        contentView.addSubview(lblareatxt)
+        contentView.addSubview(lblcasttxt)
+        contentView.addSubview(lbldirectxt)
+        contentView.addSubview(scoreimg)
+        contentView.addSubview(btncollect)
         
         
     }
     func   setitem(_ item:LLCategoryRecItem){
-        self.itemmodel = item
+        itemmodel = item
         
         
         
-        self.itemimg.kf.setImage(with: URL(string:item.item_icon1) , placeholder: UIImage(named:"cellimgpalcehold"), options: nil, progressBlock: nil, completionHandler: nil)
+       itemimg.kf.setImage(with: URL(string:item.item_icon1) , placeholder: UIImage(named:"cellimgpalcehold"), options: nil, progressBlock: nil, completionHandler: nil)
         
-        self.lblitemtitle.text = item.item_title
-        self.lbldirectxt.text = item.displaydirector()
-        self.lblcasttxt.text = item.displaycast()
-        self.lbltagttxt.text = item.displaytag()
-        self.lblyeartxt.text = item.item_year
-        self.lblscoretxt.text = item.item_score
+       lblitemtitle.text = item.item_title
+        lbldirectxt.text = item.displaydirector()
+        lblcasttxt.text = item.displaycast()
+       lbltagttxt.text = item.displaytag()
+       lblyeartxt.text = item.item_year
+       lblscoretxt.text = item.item_score
         let   score = item.item_score.StringToFloat()
         if   score >= 7.0 {
-            self.scoreimg.image = UIImage(named:"hot")
+            scoreimg.image = UIImage(named:"hot")
         }else  if  score > 5.0 &&  score < 7 {
-              self.scoreimg.image = UIImage(named:"mid")
+              scoreimg.image = UIImage(named:"mid")
         }
         else{
-             self.scoreimg.image = UIImage(named:"little")
+             scoreimg.image = UIImage(named:"little")
         }
         
         
@@ -264,34 +267,29 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.snp.makeConstraints { (maker) in
-            maker.top.equalTo(0)
-            maker.left.equalTo(0)
-            maker.width.equalTo(ScreenWidth)
-            maker.height.equalTo(ScreenWidth)
-        }
-        self.lblitemtitle.snp.makeConstraints { (maker) in
+      
+       lblitemtitle.snp.makeConstraints { (maker) in
             maker.top.equalTo(imgheight + 2 * toppadding )
             maker.left.equalTo(toppadding)
             maker.width.equalTo(imgwidth)
             maker.height.equalTo(30)
         }
         
-        self.itemimg.snp.makeConstraints { (maker) in
+        itemimg.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding)
             maker.left.equalTo(toppadding)
             maker.width.equalTo(imgwidth)
             maker.height.equalTo(imgheight)
         }
         
-        self.lbldirector.snp.makeConstraints { (maker) in
+        lbldirector.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding)
             maker.left.equalTo(imgwidth + toppadding * 2)
             maker.width.equalTo(lblwidth)
             maker.height.equalTo(lblheight)
         }
         //
-        self.lbldirectxt.snp.makeConstraints { (maker) in
+        lbldirectxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding)
             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth)
             maker.width.equalTo(lbltxtwitdh)
@@ -299,78 +297,75 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
         }
         
         
-        self.lblcast.snp.makeConstraints { (maker) in
+        lblcast.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + lblheight + lblpadding)
             maker.left.equalTo(imgwidth + toppadding * 2)
             maker.width.equalTo(lblwidth)
             maker.height.equalTo(lblheight)
         }
         //
-        self.lblcasttxt.snp.makeConstraints { (maker) in
+        lblcasttxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + lblheight + lblpadding)
             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth)
             maker.width.equalTo(lbltxtwitdh)
             maker.height.equalTo(lbltxtheight)
         }
         
-        self.lbltag.snp.makeConstraints { (maker) in
+        lbltag.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 2 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2)
             maker.width.equalTo(lblwidth)
             maker.height.equalTo(lblheight)
         }
         //
-        self.lbltagttxt.snp.makeConstraints { (maker) in
+        lbltagttxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 2 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth)
 
             maker.width.equalTo(lbltxtwitdh)
             maker.height.equalTo(lbltxtheight)
         }
-        self.lblyear.snp.makeConstraints { (maker) in
+        lblyear.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 3 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2)
             maker.width.equalTo(lblwidth)
             maker.height.equalTo(lblheight)
         }
         //
-        self.lblyeartxt.snp.makeConstraints { (maker) in
+        lblyeartxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 3 *  (lblheight  +  lblpadding))
              maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth )
             maker.width.equalTo(lbltxtwitdh)
             maker.height.equalTo(lbltxtheight)
         }
         
-        self.lblscore.snp.makeConstraints { (maker) in
+        lblscore.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 4 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2)
             maker.width.equalTo(lblwidth)
             maker.height.equalTo(lblheight)
         }
         //
-        self.lblscoretxt.snp.makeConstraints { (maker) in
+        lblscoretxt.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 4 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth)
             maker.width.equalTo(scorewidth)
             maker.height.equalTo(lblheight)
         }
         //
-        self.scoreimg.snp.makeConstraints { (maker) in
+        scoreimg.snp.makeConstraints { (maker) in
             maker.top.equalTo(toppadding + 4 *  (lblheight  +  lblpadding))
             maker.left.equalTo(imgwidth + toppadding * 2 + lblwidth + scorewidth)
             maker.width.equalTo(lblheight)
             maker.height.equalTo(lblheight)
         }
-        self.btncollect.snp.makeConstraints { (maker) in
+        btncollect.snp.makeConstraints { (maker) in
             maker.top.equalTo( imgheight + 2 * toppadding)
             maker.width.equalTo(60)
             
-            maker.height.equalTo(lblheight)
+            maker.height.equalTo(30)
             maker.right.equalTo(-toppadding)
-            
-            
-            
-            
+ 
             
         }
        

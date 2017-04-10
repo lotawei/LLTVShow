@@ -23,7 +23,7 @@ class LLMainTabarController: LLAnimationTabBarController,UITabBarControllerDeleg
         
     }
     override  func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+     
         if isfirstLoadMaintabarcontroller {
             let   containers = createViewContainers()
             createCustomIcons(containers)
