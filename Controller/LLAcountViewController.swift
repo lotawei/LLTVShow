@@ -16,22 +16,22 @@ class LLAcountViewController: BaseViewController {
    lazy var   accoutlistdata: NSMutableArray = {
         let    data = NSMutableArray(capacity: 0)
         
-//        // isdefault 三个值  defalut 又详情的按钮  on  表示夜间开关模式  这样写会产生循环应用
-//        let   se1 =    ["info":"我的消息","icon":"message","isdefault":"default"]
-//        let  se2r0 =    ["info":"升级会员","icon":"VIP","isdefault":"default"]
-//        let  se2r1 =     ["info":"猜你喜欢","icon":"intersting","isdefault":"default"]
-//        let  se2r2 =     ["info":"主题皮肤","icon":"skin","isdefault":"default"]
-//        let  se3r0 =    ["info":"夜间模式","icon":"darkstyle","isdefault":"on"]
-//        let  se3r1 =      ["info":"分享","icon":"share","isdefault":"default"]
-//        let  se3r2 =     ["info":"清理缓存","icon":"clean","isdefault":"default"]
-//        let  se3r3 =     ["info":"关于","icon":"about","isdefault":"default"]
-//        let    section1 = [se1]
-//        let     section2 =  [se2r0,se2r1,se2r2]
-//    
-//        let    section3 = [se3r0,se3r1,se3r2,se3r3]
-//        data.add(section1)
-//        data.add(section2)
-//        data.add(section3)
+        // isdefault 三个值  defalut 又详情的按钮  on  表示夜间开关模式  这样写会产生循环应用
+        let   se1 =    ["info":"我的消息","icon":"message","isdefault":"default"]
+        let  se2r0 =    ["info":"升级会员","icon":"VIP","isdefault":"default"]
+        let  se2r1 =     ["info":"猜你喜欢","icon":"intersting","isdefault":"default"]
+        let  se2r2 =     ["info":"主题皮肤","icon":"skin","isdefault":"default"]
+        let  se3r0 =    ["info":"夜间模式","icon":"darkstyle","isdefault":"on"]
+        let  se3r1 =      ["info":"分享","icon":"share","isdefault":"default"]
+        let  se3r2 =     ["info":"清理缓存","icon":"clean","isdefault":"default"]
+        let  se3r3 =     ["info":"关于","icon":"about","isdefault":"default"]
+        let    section1 = [se1]
+        let     section2 =  [se2r0,se2r1,se2r2]
+    
+        let    section3 = [se3r0,se3r1,se3r2,se3r3]
+        data.add(section1)
+        data.add(section2)
+        data.add(section3)
     
         return   data
     }()

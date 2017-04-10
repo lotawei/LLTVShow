@@ -27,11 +27,11 @@ private let  scret = "f33abd6c0aaa453eaf170410113ede92"
 class  LLAuthManager:NSObject{
     
 //    以逃逸闭包的方式传出去
-    typealias   datablock=(_ data:DataResponse<Any>) -> Void
+    typealias   DataBlock = (_ data:DataResponse<Any>) -> Void
   
     
     //构造时必须要传参  这个 他有问题
-    static   func  Authorizon(_ url:URLConvertible, datablock:datablock?) {
+    static   func  Authorizon(_ url:URLConvertible, datablock: DataBlock?) {
        
         if datablock  != nil {
             request(Authcodeurl,method:.get, parameters: ["appid":appid])

@@ -37,21 +37,21 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     }()
     
     // 影片名称
-    lazy var  lblitemtitle:LTMorphingLabel = {
-        let  alab = LTMorphingLabel()
-        alab.delegate = self
-        alab.morphingDuration = 2.0
-        alab.textColor = UIColor.white
-        alab.font = UIFont.systemFont(ofSize: 16)
-        alab.morphingEffect = .burn
-        alab.textAlignment = .center
-//        let  alab = UILabel()
-////        alab.delegate = self
-////        alab.morphingDuration = 2.0
+    lazy var  lblitemtitle:UILabel = {
+//        let  alab = LTMorphingLabel()
+//        alab.delegate = self
+//        alab.morphingDuration = 2.0
 //        alab.textColor = UIColor.white
 //        alab.font = UIFont.systemFont(ofSize: 16)
-////        alab.morphingEffect = .burn
+//        alab.morphingEffect = .burn
 //        alab.textAlignment = .center
+        let  alab = UILabel()
+//        alab.delegate = self
+//        alab.morphingDuration = 2.0
+        alab.textColor = UIColor.white
+        alab.font = UIFont.systemFont(ofSize: 16)
+//        alab.morphingEffect = .burn
+        alab.textAlignment = .center
         
         return  alab
     }()
@@ -266,7 +266,7 @@ class LLMovieItemCell: UICollectionViewCell,LTMorphingLabelDelegate {
     
     
     override func layoutSubviews() {
-        super.layoutSubviews()
+   
       
        lblitemtitle.snp.makeConstraints { (maker) in
             maker.top.equalTo(imgheight + 2 * toppadding )
