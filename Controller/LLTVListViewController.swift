@@ -24,25 +24,29 @@ class LLTVListViewController: BaseViewController {
       func  headRefresh(){
         
         
-        weak var  tmp = self
+      
       
       
         var   finish = false
         
       LLAuthManager.Authorizon(opentvurl,   datablock: { (data) in
+            unowned let  tmp  = self
+            
+        
             if  data.result.error != nil {
                  _  = SweetAlert().showAlert("服务器验证失败")
-                 tmp?.tableview.mj_header.endRefreshing()
+                 tmp.tableview.mj_header.endRefreshing()
                 
             }
             else{
             LLContenCategory.GetContenCategory(data, { (categories) in
-                tmp?.tabdata = categories!
+                
+                tmp.tabdata = categories!
                 
                 finish = true
                 if  finish {
-                 tmp?.tableview.mj_header.endRefreshing()
-                 tmp?.tableview.reloadData()
+                 tmp.tableview.mj_header.endRefreshing()
+                 tmp.tableview.reloadData()
                     
                     
                 }

@@ -34,11 +34,15 @@ class  LLAuthManager:NSObject{
     //默认 一个静态 方法
     static   func  Authorizon(_ url:URLConvertible, datablock: DataBlock?) {
        
+        
+       
+        
+        
         if datablock  != nil {
             request(Authcodeurl,method:.get, parameters: ["appid":appid])
                 .responseJSON {  (aJSON) in
                 
-                    
+                  
                     if   aJSON.result.value != nil{
                         
                         let   jsondata  = aJSON.result.value  as! [String:Any]
@@ -48,6 +52,8 @@ class  LLAuthManager:NSObject{
                             //  获取token  appid   secrete   +  验证值
                             let  key = appid+"_"+scret+"_"+"\(authcode)"
                             let   md5key = String.MD5(str:key)
+                            
+                            
                             request(Tokenurl, method: .get, parameters:["authorize_code":authcode,"key":md5key])
                                 .responseJSON {  (bJSON) in
                                   
@@ -63,7 +69,7 @@ class  LLAuthManager:NSObject{
                                             request(url,method:.get, parameters:["access_token":strtoken!])
                                                 .responseJSON {  (cJSON) in
                                                   
-                                                    print("认证成功")
+                                                  
                                                     datablock!(cJSON)
                                                     
                                                     
@@ -93,7 +99,10 @@ class  LLAuthManager:NSObject{
                     else{
                         print("你可能需要检查网络或设置允许数据")
                     }
-            }
+                        
+                        
+                    }
+            
 
             
             

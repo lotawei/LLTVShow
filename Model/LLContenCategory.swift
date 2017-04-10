@@ -76,6 +76,7 @@ class LLContenCategory: NSObject {
     
     static  func  GetContenCategory(_ data:DataResponse<Any>,_  result:@escaping CategoryResult){
    
+    
         let   jsondata  =  JSON(data: data.data!)
 
         var   categeries:[LLContenCategory] = [LLContenCategory]()

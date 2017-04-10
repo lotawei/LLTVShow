@@ -158,7 +158,9 @@ class LLCategoryRecItem: NSObject {
     //    "item_area" : "美国 | 中国大陆 | 加拿大"
     //}
  
-    static  func GetMovieItems(_ category:LLContenCategory,_ data:DataResponse<Any>,_ result:@escaping MovieItemBlock){
+    static  func GetMovieItems(_ data:DataResponse<Any>,_ result:@escaping MovieItemBlock){
+        
+    
          let   jsondata  =  JSON(data: data.data!)
         var   recitems:[LLCategoryRecItem] = [LLCategoryRecItem]()
         let   items = jsondata["position"]["positionItems"].array
@@ -194,7 +196,6 @@ class LLCategoryRecItem: NSObject {
             
             
             result(recitems)
-       
         
         
         

@@ -123,12 +123,12 @@ class LLCategoryCell: UITableViewCell, UICollectionViewDelegate, UICollectionVie
         else{
             itemurl = "http://open.moretv.com.cn/position/comic"
         }
-            weak   var  tmp = self
+            unowned   let  tmp = self
             _  =  LLAuthManager.Authorizon(itemurl, datablock: { (data) in
-            
-             LLCategoryRecItem.GetMovieItems(category, data, { (items) in
-                tmp?.recitems = items
-                tmp?.collectionView.reloadData()
+             
+             LLCategoryRecItem.GetMovieItems( data, { (items) in
+                tmp.recitems = items
+                tmp.collectionView.reloadData()
                 
              })
             
